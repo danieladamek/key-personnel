@@ -11,7 +11,8 @@ import FieldView from '@/components/records/FieldView';
 import type { RecordType, OverlayKey } from '@/types';
 
 const buildErrors = buildErrorsJson as BuildError[];
-const P = provenanceJson;
+type Finding = { where: string; excerpt: string };
+const P = provenanceJson as unknown as Omit<typeof provenanceJson, 'voice' | 'todo'> & { voice: { items: Finding[]; imperatives: Finding[]; count: number; procedure_imperatives: number }; todo: { count: number; by_kind: Record<string, number>; inline_markers: Finding[] } };
 
 function Stat({ label, value }: { label: string; value: React.ReactNode }) {
   return <div className="bx-card p-3"><p className="text-[11px] font-semibold tracking-[0.15em] bx-muted">{label}</p><p className="text-base font-display mt-0.5">{value}</p></div>;

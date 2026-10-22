@@ -20,7 +20,7 @@
  */
 import { claimWords } from './parse';
 import { CITE_RE, escapeCurrency, expandCitation, linkCitations, linkTerms, type Matcher } from './linker';
-import { OVERLAYS, type BuildError, type RecordFile } from './schemas';
+import { CHANGE_STATUSES, OVERLAY_STATUSES, OVERLAYS, type BuildError, type RecordFile } from './schemas';
 
 export type AnyRecord = Record<string, unknown> & { id: string };
 export type RecordSet = Record<RecordFile, AnyRecord[]>;
@@ -171,16 +171,24 @@ export function checkRecords(set: RecordSet, ctx: RecordCheckContext): RecordChe
             const ov = r[o] as { gates?: unknown } | undefined;
             if (!ov) { E(key, `missing overlay ${o}`); continue; }
             refsTo(`${key}/${o}`, 'gates[]', ov.gates, ['gates'], 'gate');
+            const st = (ov as { status?: string }).status;
+            if (st && !OVERLAY_STATUSES[o].includes(st)) E(`${key}/${o}/status`, `status ${st} is not in the ${o} vocabulary of the states.yaml header (${OVERLAY_STATUSES[o].join(' | ')})`);
           }
+          refsTo(key, 'state_gates[]', r.state_gates, ['gates'], 'gate');
           break;
         }
         case 'changes': {
+          if (typeof r.status === 'string' && !(CHANGE_STATUSES as readonly string[]).includes(r.status)) E(`${key}/status`, `status ${r.status} is not in the changes.yaml header vocabulary (${CHANGE_STATUSES.join(' | ')})`);
           for (const x of list(r.records)) if (typeof x === 'string' && !anyId.has(x)) E(key, `records[] -> ${x} resolves to no record in any record file`);
           break;
         }
         default: break;
       }
 
+      for (const [i, pc] of list(r.pending_changes).entries()) {
+        const st = (pc as { status?: string }).status;
+        if (st && !(CHANGE_STATUSES as readonly string[]).includes(st)) E(`${key}/pending_changes/${i}/status`, `status ${st} is not in the pending-change vocabulary (${CHANGE_STATUSES.join(' | ')})`);
+      }
       for (const n of list(r.sources)) {
         if (typeof n !== 'number') continue;
         if (!ctx.refNs.has(n)) E(key, `sources -> [${n}] has no reference entry`);

@@ -127,7 +127,7 @@
     Georgia Tech ($500,000, August 2023), more than $2.5 million across job-platform users (2022–2023), General Motors
     ($365,000, April 2023) and American CyberSystems (May 2023) [49] [50].
   governing_text: 8 U.S.C. 1324b; 22 CFR 120 (ITAR) and 15 CFR 772 (EAR) definitions of U.S. person; DOJ IER employer fact sheet (April 18, 2023)
-  applies_when: 'Any posting or screen for work involving ITAR- or EAR-controlled items or technical data; any employer with four or more employees under 1324b (threshold not read this sweep; todo)'
+  applies_when: 'Any posting or screen for work involving ITAR- or EAR-controlled items or technical data [131] [49]; any employer with four or more employees under 1324b (threshold not read this sweep; todo)'
   binds: [attract, select, clear-start]
   steps:
   - 'Write postings that admit all U.S. persons; never "U.S. citizens only" for export reasons [51] [50]'
@@ -136,7 +136,7 @@
   official_url: https://www.justice.gov/opa/pr/justice-department-secures-agreement-it-staffing-and-services-company-posting-discriminatory
   pending_changes: []
   as_of: '2026-10-21'
-  sources: [49, 50, 51]
+  sources: [49, 50, 51, 131]
   conflicts: []
 
 - id: ai-screening-laws
@@ -207,7 +207,7 @@
   as_of: '2026-10-21'
   sources: [55, 73]
   conflicts:
-  - 'Threshold: the clause text read shows $100,000 for subcontract flow-down [73]; the 2026 final rule reports $200,000 [55]. Confirm against the amended 60-300.5 in sweep 8.'
+  - 'Threshold: the clause text read shows $100,000 for subcontract flow-down [73]; the 2026 final rule reports $200,000 [55]. The amended 60-300.5 text is a todo.'
 
 - id: adea-advertising
   name: Age-preference terms in help-wanted ads (29 CFR 1625.4)
@@ -236,7 +236,7 @@
     require ranges at other points, not in the posting [76]. By May 2025, 59 percent of US postings carried a salary figure
     regardless [75]. Within a title, a 10 percent higher posted wage draws 7.7 percent more applicants [65].
   governing_text: state statutes (sweep-8 primaries); California SB 642 effective 2026-01-01 clarifies "pay scale" [76]
-  applies_when: 'Postings for work performed in, or open to applicants in, a covered jurisdiction; remote postings reachable from a covered state are commonly treated as covered (secondary; verify per statute)'
+  applies_when: 'Postings for work performed in, or open to applicants in, a covered jurisdiction [76] [207]; remote postings reachable from a covered state are commonly treated as covered [76] (secondary; the statutes are a todo)'
   binds: [attract, offer]
   steps:
   - 'Show a good-faith range in every posting; the rule attaches by jurisdiction and the range is also the strongest applicant-count lever [65] [76]'
@@ -267,9 +267,9 @@
     Applicant definition and the online-recruiting recordkeeping rule of 2006 [87] [86]. What remains for contractors is
     statutory: Section 503 (written AAP at 50 employees and a $50,000 contract; threshold $20,000; the 7 percent goal and
     applicant self-identification rescinded) and VEVRAA (written AAP; threshold $200,000; veteran applicant and hire reporting
-    kept), both effective September 21, 2026 [55]. Title VII and the Uniform Guidelines are unchanged [30] [31].
+    kept), both effective September 21, 2026 [55]. Executive Order 14173, signed January 21, 2025, revoked the order at Sec. 3(b)(i) and allowed ninety days of continued compliance with the scheme in effect on January 20, 2025, a wind-down OFCCP dates to April 21, 2025 [308] [310]. Title VII and the Uniform Guidelines are unchanged [30] [31].
   governing_text: 91 FR 54444 (August 21, 2026); EO 14173 (January 2025); 41 CFR 60-300 and 60-741 as amended
-  applies_when: 'Every federal contractor and subcontractor from 2026-10-26; the EEO-1 filing duty and the Internet Applicant rule''s fate are to be confirmed from the unread portion of the rule (todo)'
+  applies_when: 'Every federal contractor and subcontractor from 2026-10-26 [86]; the EEO-1 filing duty and the Internet Applicant rule''s fate are to be confirmed from the unread portion of the rule [86] [87] (todo)'
   binds: [attract, select, plan]
   steps:
   - 'Stop maintaining EO 11246 AAPs after 2026-10-26; keep the Section 503 and VEVRAA plans and the veteran applicant data [55] [86]'
@@ -1114,3 +1114,204 @@
   sources: [108, 203]
   conflicts:
   - 'The Court of Federal Claims reads the post-submission notification duty more narrowly than GAO [109].'
+# sweep 9: Alabama statutory gates and federal-contractor gates (geo / sector tags, EXTENSIONS v0.3)
+- id: al-e-verify-beason-hammon
+  name: Alabama E-Verify mandate (Beason-Hammon Act, §§ 31-13-15 and 31-13-9)
+  what: Code of Alabama § 31-13-15(b) requires every business entity or employer in the state, effective April 1, 2012, to enroll in E-Verify and verify the employment eligibility of employees through it; an employer that uses E-Verify for an employee is not deemed to have violated the section as to that employee [246]. § 31-13-9(b) makes documentation of E-Verify enrollment a condition of any contract, grant or incentive from the state, a political subdivision or a state-funded entity to an employer with one or more Alabama employees, and (c) requires subcontractors to enroll before beginning work [246]. Both sections were read on a mirror of the Code; official text pending (synthesis).
+  governing_text: Ala. Code §§ 31-13-15, 31-13-9 (Act 2011-535; Act 2012-491)
+  applies_when: § 31-13-15 applies to every business entity or employer in Alabama; § 31-13-9 applies to employers with one or more Alabama employees receiving a state, political-subdivision or state-funded contract, grant or incentive, and to their subcontractors [246]. § 31-13-15(n) does not cover casual domestic labor [246].
+  binds:
+  - clear-start
+  - offer
+  steps:
+  - The employer enrolls in E-Verify and verifies each employee's eligibility through it; E-Verify use for an employee is the safe harbor for that employee [246].
+  - For a state, political-subdivision or state-funded contract, grant or incentive, the employer provides enrollment documentation as a condition of award, and § 31-13-9(k) contracts carry a clause affirming no knowing employment of unauthorized aliens [246].
+  - 'On a court finding of a first § 31-13-15 violation: termination of unauthorized workers, three-year probation with quarterly new-hire reports to the district attorney, a sworn affidavit within three days, and license suspension at the location of up to 10 business days; second violation, permanent revocation at that location; subsequent, statewide suspension [246].'
+  - 'Under § 31-13-9(e): first violation is breach with three-year probation and license suspension up to 60 days where a policy or practice is found; second within ten years, five-year probation and 60- to 120-day suspension; third, permanent revocation [246].'
+  geo: al
+  sector: all
+  official_url: https://alison.legislature.state.al.us/code-of-alabama
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 246
+  conflicts:
+  - Codified text read on a mirror of the Code (syfert.com); the official ALISON viewer served no statute text. § 31-13-9 text still names the Department of Labor, since renamed the Department of Workforce [246].
+- id: al-drug-free-workplace-program
+  name: Drug-Free Workplace Program certification (§§ 25-5-330 to 25-5-340)
+  what: A voluntary program under which an employer whose program meets §§ 25-5-333 to 25-5-339 and is certified by the department qualifies for a five percent workers' compensation premium discount for not more than four years, certified each year [241]. A certified program must contain a written policy, substance abuse testing, employee assistance resources, employee education and supervisor training [241]. Under § 25-5-335(a)(1) the employer requires job applicants to submit to a substance abuse test after extending an offer of employment [241]. The agency page states the same five elements, the 5% discount and the four-year term [242].
+  governing_text: Ala. Code §§ 25-5-330 to 25-5-340 (Acts 1995, No. 95-535)
+  applies_when: Only to employers that opt in and are certified by the Workers' Compensation Division as in full compliance with §§ 25-5-330 through 25-5-340; the article does not mandate drug testing by Alabama employers generally [242] [241].
+  binds:
+  - offer
+  - clear-start
+  - onboard
+  steps:
+  - The written policy states test types and triggers, consequences of a positive confirmed result and of refusal, confidentiality, EAP information, the right to contest or explain a positive result within five working days, and the federal Drug-Free Workplace Act if applicable; it is posted conspicuously [241].
+  - An employer without a testing program on July 1, 1996 lets at least 60 days elapse between a general one-time notice to all employees and the start of testing [241].
+  - Applicant testing occurs after an offer of employment; other triggers are reasonable suspicion, routine fitness-for-duty, follow-up at least yearly for two years after a program, and post-accident where the employee caused or contributed to an injury with lost work time [241].
+  - Certification is applied for each year in which a premium discount is granted, using the first-year and subsequent-year forms on the agency page [241] [242].
+  geo: al
+  sector: all
+  official_url: https://workforce.alabama.gov/employers/workplace-safety/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 241
+  - 242
+  conflicts:
+  - Statute text read on a mirror of the Code; the agency page (modified 2026-08-05) confirms the program elements, discount and term [242]. § 25-5-340 text still names the Department of Labor; the agency now operates as the Department of Workforce [241].
+- id: al-right-to-work
+  name: Alabama right to work (§§ 25-7-30 to 25-7-36; Const. art. I, § 36.05)
+  what: Code of Alabama § 25-7-30 declares the public policy that the right of persons to work shall not be denied or abridged on account of membership or nonmembership in a labor union, and § 25-7-31 declares any employer-union agreement making membership a condition of employment or continuation, or granting an employment monopoly, against public policy and an illegal combination (Acts 1953, No. 430) [243]. The 2016 constitutional amendment (HB37, 2016) adds that no person shall be required by an employer to become or remain a union member, and that an employer may not require payment of dues, fees or other charges to a labor organization as a condition of employment [244]. The recompiled 2022 Constitution carries the provision at Article I, § 36.05 [245].
+  governing_text: Ala. Code §§ 25-7-30 to 25-7-36; Ala. Const. art. I, § 36.05
+  applies_when: All Alabama employers, employees and labor organizations; the constitutional provision applies to contracts entered, renewed or extended after ratification, with existing lawful contracts not impaired [244] [243].
+  binds:
+  - offer
+  - onboard
+  steps:
+  - No offer or continuation of employment is conditioned on union membership, nonmembership or abstention [244].
+  - No dues, fees or other charges to a labor organization are required as a condition of employment or continuation [244].
+  - Union-security agreements of the kinds listed in § 25-7-31 are against public policy and an illegal combination or conspiracy [243].
+  geo: al
+  sector: all
+  official_url: https://alison.legislature.state.al.us/files/pdf/lsa/proposed-constitution/2022-constitution-statewide.pdf
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 243
+  - 244
+  - 245
+  conflicts:
+  - §§ 25-7-30 and 25-7-31 read on a mirror of the Code; §§ 25-7-32 to 25-7-36 not individually read [243]. The act number of the 2016 proposing act is blank in the enrolled PDF, and the ratification date (reported as 2016-11-08 by secondary trackers only) was not confirmed from a primary page [244].
+- id: al-new-hire-reporting
+  name: Alabama new-hire reporting within seven days (§ 25-11-5)
+  what: Code of Alabama § 25-11-5(a) requires an employer to report each new hire, recall or rehire to the department within seven days of hiring, with the employee's name, address, Social Security number and date of hire (Acts 1997, No. 97-228) [249]. The agency page states the same seven-day window, adds the employer FEIN, Alabama employer account number, first day of work and new-hire or recall flag as data elements, allows electronic reporters to transmit twice a month 12 to 16 days apart, and states a fine of up to $25 per violation [250].
+  governing_text: Ala. Code § 25-11-5
+  applies_when: All employers, including government entities, labor organizations, religious and nonprofit organizations; independent contractors are not reported, following federal law [250].
+  binds:
+  - clear-start
+  - onboard
+  steps:
+  - Each newly hired or recalled employee is reported to Workforce Alabama within seven days of the date of hire or reemployment [250].
+  - The report carries name, address, Social Security number and date of hire under the statute, plus the employer identifiers the agency page lists [249] [250].
+  - Electronic filers may transmit twice a month, 12 to 16 days apart [250].
+  geo: al
+  sector: all
+  official_url: https://workforce.alabama.gov/employers/new-hires/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 249
+  - 250
+  conflicts:
+  - The $25-per-violation fine appears on the agency page only; § 25-11-5 itself states no penalty [249] [250]. Statute read on a mirror of the Code; the agency page (modified 2026-08-04) confirms the seven-day rule.
+- id: al-child-labor-certificates
+  name: Alabama child labor certificates (§ 25-8-45)
+  what: Code of Alabama § 25-8-45 requires an employer to obtain a Class I Child Labor Certificate from the department for each location employing any minor aged 14 or 15, and a Class II certificate for any minor aged 16 or 17; the fee for either is fifteen dollars ($15) [251]. The agency page states the same classes and a $15 cost per business location, and adds that certificates are posted in public view and that time records show daily hours with start and end times and break periods [252]. The mirror flags § 25-8-45 as amended by Act 2026-539; the amendment's content was not read [251].
+  governing_text: Ala. Code § 25-8-45 (Acts 1995, No. 95-604; Act 2009-565; Act 2024-352; Act 2026-539)
+  applies_when: Alabama employers of minors aged 14 to 17, per location [251].
+  binds:
+  - clear-start
+  steps:
+  - A Class I or Class II certificate is obtained from the department for each location before the minor works there [251].
+  - The certificate is posted in public view [252].
+  - Time records show hours worked each day, including start and end times and break periods [252].
+  geo: al
+  sector: all
+  official_url: https://workforce.alabama.gov/employers/child-labor/
+  pending_changes:
+  - status: final
+    date: '2026-10-22'
+    text: § 25-8-45 is flagged as amended by Act 2026-539 (2026 Regular Session); the amendment's text and effective date were not read, so details beyond the certificate classes and fee rest on the pre-amendment reading [251]. The date shown is the access date, not the act's date (synthesis).
+  as_of: '2026-10-22'
+  sources:
+  - 251
+  - 252
+  conflicts:
+  - Statute read on a mirror of the Code flagged 'Amended by Act 2026-539'; the agency page (documents dated 2026-02-25) confirms the classes and fee but does not cite the statute, hours limits or penalties [251] [252].
+- id: al-warn-federal-only
+  name: WARN notices in Alabama (federal WARN only)
+  what: 'Alabama has no state plant-closing or mass-layoff notice statute; searches of 2024–2026 bills and of the state agencies found none, and the state''s own WARN list cites no state statute [247]. Federal WARN notices filed in Alabama are published by the Department of Commerce on its Warn List, with columns for Closing or Layoff, Initial Report Date, Planned Starting Date, Company, City and Planned # of Affected Employees; the fetched page displayed 1,000 rows with report dates visible through 2024-09-03 [247]. The U.S. Department of Labor directory lists Alabama''s Rapid Response Coordinator in the Workforce Development Division of the Alabama Department of Workforce, 50 N. Ripley Street, Montgomery, AL 36131, 334-353-8940 [248].'
+  governing_text: Federal WARN Act (29 U.S.C. §§ 2101–2109); no Alabama statute
+  applies_when: Employers subject to the federal WARN Act with covered closings or layoffs in Alabama; no additional state threshold or notice period exists [247].
+  binds:
+  - plan
+  - handover
+  steps:
+  - The federal notice goes to the state Rapid Response unit, which the federal directory places in the Workforce Development Division of the Alabama Department of Workforce [248].
+  - Received notices appear on the Department of Commerce Warn List, which carries some placeholder dates (01/01/0001) and some zero or missing employee counts [247].
+  geo: al
+  sector: all
+  official_url: https://www.madeinalabama.com/warn-list/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 247
+  - 248
+  conflicts:
+  - The WARN list is hosted by the Department of Commerce while the federal directory places the Rapid Response Coordinator in the Department of Workforce; no Department of Workforce WARN or Rapid Response page was found, and the Alabama directory entry lists no URL [247] [248].
+- id: cmmc-2-0
+  name: CMMC (Cybersecurity Maturity Model Certification) — 32 CFR part 170 and DFARS 252.204-7021
+  what: 'The program rule at 32 CFR part 170 (effective 2024-12-16) sets CMMC levels and assessment types: Level 1 is an annual self-assessment against the 15 FAR 52.204-21 requirements, and Level 2 covers the 110 NIST SP 800-171 R2 requirements by self-assessment or C3PAO certification, with a new assessment every three years and annual affirmation by the Affirming Official in SPRS [305]. The DFARS rule (effective 2025-11-10) makes the required CMMC status a condition of award; contracting officers shall not award without it in SPRS, and contractors need an affirming official under 32 CFR 170.4 [306]. Application is phased: Phase 1 began on the DFARS rule''s effective date, each later phase begins one year after the one before, and the DFARS rule applies the requirement selectively ''until three years after the effective date of the rule'' with full application ''Beginning three years and one day after'' [305] [306]. Phase 2 start on 2026-11-10 and full application on 2028-11-11 follow arithmetically from those texts [306]. (synthesis) The DFARS rule''s own estimates put 1,104 small entities in scope in year one and 229,818 by year four and beyond, out of 337,968 unique entities [306].
+  
+    '
+  governing_text: 32 CFR part 170; 48 CFR 204.75, 252.204-7021, 252.204-7025
+  applies_when: A DoD solicitation or contract involves processing, storing or transmitting FCI or CUI; subcontractors are reached by flow-down, and the requirement is met at time of award [306].
+  binds:
+  - clear-start
+  - plan
+  - develop
+  steps:
+  - 'Level 1 (Self): the OSA meets all 15 FAR 52.204-21 requirements and self-assesses annually, with no exceptions [305].'
+  - 'Level 2 (C3PAO): the OSA hires a C3PAO to assess compliance with the 110 requirements; a new assessment is due every three years with an annual affirmation in SPRS (170.22) [305].'
+  - Any POA&M is closed within 180 days of the Conditional CMMC Status Date (170.21) [305].
+  - 'Assessor personnel: a CCA candidate must first be a CCP and complete a Tier 3 background investigation or equivalent; a CCP may take part in Level 2 certification assessments under CCA oversight, and CCAs make the final Level 2 (C3PAO) determinations [305].'
+  - Posting a self-assessment result in SPRS is estimated by the rule at about 5 minutes [306].
+  geo: us
+  sector: defense
+  official_url: https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-170
+  pending_changes:
+  - status: final
+    date: '2026-11-10'
+    text: Phase 2 begins one calendar year after Phase 1, which started on the DFARS rule's effective date of 2025-11-10 [305] [306].
+  - status: final
+    date: '2028-11-11'
+    text: Full application of the DFARS requirement 'Beginning three years and one day after the effective date of the rule' [306].
+  as_of: '2026-10-22'
+  sources:
+  - 305
+  - 306
+  conflicts:
+  - The 32 CFR 170.4 definitions of 'Affirming Official', CCP and CCA were not captured verbatim; the assessor-personnel statements come from the rule preamble [305].
+  - Calendar dates for Phase 2 and full application are arithmetic from the rules' relative wording; the texts themselves say 'one calendar year following' and 'three years and one day after' [306].
+- id: vevraa-section-503-aaps
+  name: VEVRAA and Section 503 affirmative action plans (what remains after the 2026 OFCCP rules)
+  what: 'VEVRAA obligations continue: the rule published 2026-08-21 (effective 2026-09-21) revises 41 CFR 60-300.40(a) so that an affirmative action plan is required of every Government contractor with 50 or more employees and a contract of $200,000 or more, reflecting an inflation-adjusted coverage threshold raised from $150,000 [309]. Section 503 obligations continue with the same 50-employee threshold and a $50,000 contract or subcontract (60-741.40(b)); the companion rule, effective 2026-09-21, rescinds the disability self-identification invitation at 60-741.42 and the 7% utilization goal and analysis at 60-741.45, while its part 60-30 amendment takes effect 2026-12-21 [310]. OFCCP states that Section 503 and VEVRAA, with their implementing regulations, remain in effect, that the AAP certification period ''will remain closed'', that pending compliance reviews were administratively closed, and that a VAHBP moratorium runs through 2027-05-07 [310].
+  
+    '
+  governing_text: 41 CFR part 60-300 (VEVRAA), 60-300.40(a), 60-300.65; 41 CFR part 60-741 (Section 503), 60-741.40(b); 41 CFR part 60-30
+  applies_when: 'VEVRAA AAP: 50 or more employees and a contract of $200,000 or more; Section 503 AAP: 50 or more employees and a Federal contract or subcontract of $50,000 or more [309] [310].'
+  binds:
+  - plan
+  - select
+  - attract
+  steps:
+  - VEVRAA rule effective 2026-09-21 removes EO 11246 cross-references and moves administrative-enforcement procedures into 60-300.65 [309].
+  - Section 503 rule effective 2026-09-21 removes the self-identification requirement and the 7% goal; nondiscrimination provisions and the written AAP remain [310].
+  - The Section 503 amendment to part 60-30 takes effect 2026-12-21 [310].
+  geo: us
+  sector: all
+  official_url: https://www.federalregister.gov/documents/2026/08/21/2026-17116/modifications-to-the-regulations-implementing-the-vietnam-era-veterans-readjustment-assistance-act
+  pending_changes:
+  - status: final
+    date: '2026-12-21'
+    text: Section 503 rule's amendment to 41 CFR part 60-30 takes effect [310].
+  as_of: '2026-10-22'
+  sources:
+  - 309
+  - 310
+  conflicts:
+  - A law-firm compilation lists veteran self-identification invitations, hiring benchmarks and VETS-4212 reporting as retained under VEVRAA; this was not confirmed in the rule text read [309].
+  - A VEVRAA correction notice (FR Doc. 2026-17757, 2026-08-31) was listed by the Federal Register API and not read [309].
+  - OFCCP's undated page says the AAP certification period 'will remain closed' and does not mention the August 2026 rules in the portion read [310].

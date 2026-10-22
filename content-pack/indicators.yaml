@@ -39,6 +39,7 @@
   published: '2026-09-29'
   publisher: U.S. Bureau of Labor Statistics (JOLTS)
   series: JTS540099000000000JOR
+  series_confirmed: api
   stages: [plan, attract]
   note: 'down from 5.5% in July 2026; economy-wide openings rate 4.3%, hires 3.3%, quits 1.9% [57]; the series ID follows the BLS JOLTS format (JT, seasonal code, industry 540099, state 00, area 00000, size 00, element JO, rate R) [230]; the API probe is the KICKOFF step'
   sources: [57, 230]
@@ -195,6 +196,7 @@
   published: '2026-08-05'
   publisher: U.S. Bureau of Labor Statistics (ECI)
   series: CIU2020000000000A
+  series_confirmed: api
   stages: [offer, plan, retain]
   note: 'year to June 2025: +3.5% / +3.5% / +3.4% [103]; the series ID is confirmed by the BLS ECI guide as private-industry wages and salaries, 12-month percent change, not seasonally adjusted; companions CIU2010000000000A (total compensation) and CIU2030000000000A (benefits), with CIS… for the seasonally adjusted versions [231]'
   sources: [103, 231]
@@ -206,6 +208,7 @@
   published: '2026-09-09'
   publisher: U.S. Bureau of Labor Statistics (ECEC)
   series: CMU2030000000000P
+  series_confirmed: api
   stages: [offer, retain]
   note: 'management, professional and related: 31.5% of $78.88; health insurance 7.4% [104]; the series ID is benefits as a percent of total compensation, private industry, all workers, per the BLS ECEC guide, which does not confirm that the combination is published; the fallback is CMU2030000000000D over CMU2010000000000D (dollars per hour worked) [232]'
   sources: [104, 232]
@@ -478,6 +481,10 @@
   sources: [57, 230, 235]
 
 # ---- sweep 7 (plan), 2026-10-22 ----
+  series_confirmed: api
+  counterpart: ind-jolts-south-quits-aug2026
+  geo: us
+  sector: all
 - id: ind-shrm-cost-per-hire-2025
   name: Median cost-per-hire
   value: '$1,200 nonexecutive · $10,625 executive'
@@ -499,3 +506,747 @@
   stages: [plan, select]
   note: 'small organisations filled 100% of executive and nonexecutive positions externally [196]'
   sources: [196]
+# sweep 9: Alabama, Huntsville-MSA and defense-industry indicators with national counterparts (geo / sector / counterpart, EXTENSIONS v0.3)
+- id: ind-huntsville-oews-software-developers-may2024
+  name: Software Developers (SOC 15-1252), annual mean wage and employment, Huntsville, AL
+  value: $128,528 annual mean ($61.79/hr); employment 7,010
+  reference_period: May 2024 OEWS survey, aged with ECI factors to June 2025 (June 2025 edition)
+  published: '2025-08-07'
+  publisher: Alabama Department of Workforce, Labor Market Information Division
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - offer
+  note: From the Huntsville, AL 'June 2025 Occupational Employment and Wage Estimates' PDF, produced in cooperation with BLS from the May 2024 survey; the PDF does not state the counties covered [265]. The LMI home page reported occupation wages 'Updated to 2nd Quarter 2026' on 2026-08-13, while the static PDF served on 2026-10-22 was still the June 2025 edition [265]. The figure is a mean; the national twin is to be an OEWS median (see todo).
+  sources:
+  - 265
+- id: ind-al-unemployment-sep2026
+  name: Unemployment rate, Alabama (seasonally adjusted)
+  value: 3.5% (preliminary)
+  reference_period: September 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, LAUS
+  series: LASST010000000000003
+  series_confirmed: api
+  counterpart: ind-us-unemployment-sep2026
+  geo: al
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted; labor force 2,362.0 thousand, unemployment 82.1 thousand, from the Alabama Economy at a Glance page [271]. The state LMI table released 2026-10-14 shows the same 3.5% for September 2026 [292]. Series ID echoed on the DBnomics mirror; not confirmed through api.bls.gov [271].
+  sources:
+  - 271
+  - 292
+- id: ind-us-unemployment-sep2026
+  name: Unemployment rate, United States (seasonally adjusted)
+  value: 4.2%
+  reference_period: September 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, Current Population Survey
+  series: LNS14000000
+  series_confirmed: api
+  counterpart: ind-al-unemployment-sep2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted; value read from FRED's copy of the BLS series (UNRATE, last updated 2026-10-02) because BLS pages and the API were not reachable [273]. Standard BLS CPS ID, not echoed on DBnomics in this session [273].
+  sources:
+  - 273
+- id: ind-huntsville-unemployment-aug2026
+  name: Unemployment rate, Huntsville MSA (not seasonally adjusted)
+  value: 3.0% (preliminary)
+  reference_period: August 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, LAUS
+  series: LAUMT012662000000003
+  series_confirmed: api
+  counterpart: ind-us-unemployment-aug2026
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Not seasonally adjusted (the 'U' at position 3 of the ID); labor force 284.7 thousand, employed 276.1 thousand, unemployed 8.6 thousand, from the BLS Huntsville area page [272]. The smoothed seasonally adjusted metro rate was 2.9% for August 2026 on FRED's copy of the BLS series (HUNT601UR), but its BLS ID (candidate LASMT012662000000003) is unconfirmed [272]. The state LMI table released 2026-10-14 already shows September 2026 at 3.1% NSA, ahead of the BLS page [292].
+  sources:
+  - 272
+  - 292
+- id: ind-us-unemployment-aug2026
+  name: Unemployment rate, United States (seasonally adjusted)
+  value: 4.1%
+  reference_period: August 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, Current Population Survey
+  series: LNS14000000
+  series_confirmed: api
+  counterpart: ind-huntsville-unemployment-aug2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted national rate for the same month as the Huntsville NSA figure; value read from FRED's copy of the BLS series (UNRATE) [273]. The national figure is seasonally adjusted and the Huntsville twin is not, so the pair is not strictly like for like [272]. (synthesis)
+  sources:
+  - 272
+  - 273
+- id: ind-al-nonfarm-sep2026
+  name: Total nonfarm employment, Alabama (seasonally adjusted)
+  value: 2,219.0 thousand (preliminary), +1.0% over the year
+  reference_period: September 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, CES (state and area)
+  series: SMS01000000000000001
+  series_confirmed: api
+  counterpart: ind-us-nonfarm-sep2026
+  geo: al
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted, thousands of jobs, from the Alabama Economy at a Glance page; August 2026 was 2,220.2 thousand [274]. Series ID echoed on the DBnomics mirror; the same value appears on FRED ALNA [274].
+  sources:
+  - 274
+- id: ind-huntsville-nonfarm-sep2026
+  name: Total nonfarm employment, Huntsville MSA (seasonally adjusted)
+  value: 298.8 thousand (preliminary)
+  reference_period: September 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, CES (state and area)
+  series: SMS01266200000000001
+  series_confirmed: api
+  counterpart: ind-us-nonfarm-sep2026
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted value read from FRED's copy of the BLS series (HUNT601NA, updated 2026-10-20); the BLS Huntsville area page shows the not seasonally adjusted figure, 298.7 thousand, up 2.3% over the year [275]. The NSA counterpart series is SMU01266200000000001 [275]. SA ID echoed on the DBnomics mirror [275].
+  sources:
+  - 275
+- id: ind-us-nonfarm-sep2026
+  name: Total nonfarm employment, United States (seasonally adjusted)
+  value: 159,044 thousand
+  reference_period: September 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, CES (national)
+  series: CES0000000001
+  series_confirmed: api
+  counterpart: ind-al-nonfarm-sep2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted; value read from FRED's copy of the BLS series (PAYEMS, last updated 2026-10-02); August 2026 was 159,015 thousand [278]. Also the national twin of ind-huntsville-nonfarm-sep2026 [275]. (synthesis)
+  sources:
+  - 275
+  - 278
+- id: ind-al-pbs-employment-sep2026
+  name: Professional and business services employment, Alabama (seasonally adjusted)
+  value: 269.2 thousand (preliminary), +1.7% over the year
+  reference_period: September 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, CES (state and area)
+  series: SMS01000006000000001
+  series_confirmed: api
+  counterpart: ''
+  geo: al
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted, supersector 60 (NAICS 54, 55, 56), from the Alabama Economy at a Glance page; August 2026 was 269.7 thousand [276]. Series ID echoed on the DBnomics mirror; the same value appears on FRED ALPBSV [276]. No national professional and business services value was in the researcher file, so the counterpart is pending [276]. (synthesis)
+  sources:
+  - 276
+- id: ind-huntsville-pbs-employment-sep2026
+  name: Professional and business services employment, Huntsville MSA (not seasonally adjusted)
+  value: 71.9 thousand (preliminary), +5.0% over the year
+  reference_period: September 2026
+  published: '2026-10-20'
+  publisher: U.S. Bureau of Labor Statistics, CES (state and area)
+  series: SMU01266206000000001
+  series_confirmed: api
+  counterpart: ''
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Not seasonally adjusted; BLS publishes no seasonally adjusted professional and business services series for the Huntsville MSA (SMS01266206000000001 does not exist on the DBnomics mirror), and FRED's HUNT601PBSV is adjusted by the St. Louis Fed, so it is not a BLS figure [277]. Value from the BLS Huntsville area page; August 2026 was 71.7 thousand on FRED's copy of the BLS series (HUNT601PBSVN) [277]. No national twin was supplied, so the counterpart is pending [277]. (synthesis)
+  sources:
+  - 277
+- id: ind-jolts-south-openings-aug2026
+  name: Job openings rate, total nonfarm, South region (seasonally adjusted)
+  value: 4.5%
+  reference_period: August 2026
+  published: '2026-09-29'
+  publisher: U.S. Bureau of Labor Statistics, JOLTS
+  series: JTS000000SO0000000JOR
+  series_confirmed: api
+  counterpart: ind-jolts-us-openings-aug2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Census South region, which includes Alabama; seasonally adjusted; July 2026 was 4.4% [281]. ID echoed on the DBnomics mirror (data to 2024-12); latest value from FRED's copy of the BLS series (JTS00SOJOR) [281]. The region code 'SO' sits in the state-code positions 10-11 [280].
+  sources:
+  - 280
+  - 281
+- id: ind-jolts-us-openings-aug2026
+  name: Job openings rate, total nonfarm, United States (seasonally adjusted)
+  value: 4.3%
+  reference_period: August 2026
+  published: '2026-09-29'
+  publisher: U.S. Bureau of Labor Statistics, JOLTS
+  series: JTS000000000000000JOR
+  series_confirmed: api
+  counterpart: ind-jolts-south-openings-aug2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Seasonally adjusted; value read from FRED's copy of the BLS series (JTSJOR); July 2026 was 4.4% [281]. National ID derived from the confirmed South-region ID by blanking the region code; not itself echoed on DBnomics in this session [281].
+  sources:
+  - 281
+- id: ind-jolts-south-quits-aug2026
+  name: Quits rate, total nonfarm, South region (seasonally adjusted)
+  value: 2.4%
+  reference_period: August 2026
+  published: '2026-09-29'
+  publisher: U.S. Bureau of Labor Statistics, JOLTS
+  series: JTS000000SO0000000QUR
+  series_confirmed: api
+  counterpart: ind-jolts-quits-rate-aug2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Census South region; seasonally adjusted; July 2026 was 2.2% [282]. Value read from FRED's copy of the BLS series (JTS00SOQUR); the ID was derived from the confirmed openings ID by substituting data element QU and was not itself opened on DBnomics [282].
+  sources:
+  - 282
+- id: ind-huntsville-oews-aerospace-engineers-may2025
+  name: Aerospace engineers (SOC 17-2011), Huntsville MSA — employment, location quotient, mean hourly wage
+  value: 4,880 jobs; location quotient 42.03; mean hourly wage $65.22
+  reference_period: May 2025
+  published: '2026-07-09'
+  publisher: U.S. Bureau of Labor Statistics, OEWS (Southeast Information Office release 26-1141-ATL)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-oews-aerospace-engineers-may2025
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: 'From Table 1 of the regional release; not seasonally adjusted (not applicable) [283]. May 2024 comparison: 4,580 jobs, location quotient 39.67, mean hourly wage $67.86 [284]. The release gives mean hourly wages, not medians; the national twin is an OOH median annual wage, so the pair compares a mean hourly figure with a median annual one [286]. (synthesis) Candidate series ID OEUM002662000000017201104 is unverified [283].'
+  sources:
+  - 283
+  - 284
+  - 286
+- id: ind-us-oews-aerospace-engineers-may2025
+  name: Aerospace engineers (SOC 17-2011), United States — median annual wage
+  value: $134,960 median annual wage; 68,700 jobs (2025)
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-huntsville-oews-aerospace-engineers-may2025
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $86,700, highest 10 percent over $205,890 [286]. Huntsville employment of 4,880 is about 7% of the national 68,700 [286]. Candidate series ID OEUN000000000000017201113 (annual median) is unverified [286].
+  sources:
+  - 286
+- id: ind-huntsville-oews-electrical-engineers-may2025
+  name: Electrical engineers (SOC 17-2071), Huntsville MSA — employment, location quotient, mean hourly wage
+  value: 2,190 jobs; location quotient 6.42; mean hourly wage $66.28
+  reference_period: May 2025
+  published: '2026-07-09'
+  publisher: U.S. Bureau of Labor Statistics, OEWS (Southeast Information Office release 26-1141-ATL)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-oews-electrical-engineers-may2025
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: 'From Table 1 of the regional release [283]. May 2024 comparison: 2,240 jobs, location quotient 7.04, mean hourly wage $63.59 [284]. The national twin is an OOH median annual wage, so the pair compares a mean hourly figure with a median annual one [287]. (synthesis) Candidate series ID OEUM002662000000017207104 is unverified [283].'
+  sources:
+  - 283
+  - 284
+  - 287
+- id: ind-us-oews-electrical-engineers-may2025
+  name: Electrical engineers (SOC 17-2071), United States — median annual wage
+  value: $120,630 median annual wage
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-huntsville-oews-electrical-engineers-may2025
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $76,550, highest 10 percent over $184,300; electronics engineers, except computer (17-2072) median $130,220; combined profile 297,900 jobs in 2025 [287]. Candidate series ID OEUN000000000000017207113 is unverified [287].
+  sources:
+  - 287
+- id: ind-huntsville-oews-all-occupations-mean-may2025
+  name: All occupations, Huntsville MSA — mean hourly wage
+  value: $34.18
+  reference_period: May 2025
+  published: '2026-07-09'
+  publisher: U.S. Bureau of Labor Statistics, OEWS (Southeast Information Office release 26-1141-ATL)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-oews-all-occupations-mean-may2025
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: 'Mean hourly wage across all occupations in the Huntsville MSA, from the regional release; May 2024 was $33.35 [283] [284]. Architecture and engineering occupations group: 19,930 jobs, location quotient 4.44, mean hourly wage $59.93 [283].'
+  sources:
+  - 283
+  - 284
+- id: ind-us-oews-all-occupations-mean-may2025
+  name: All occupations, United States — mean hourly wage
+  value: $33.54
+  reference_period: May 2025
+  published: '2026-07-09'
+  publisher: U.S. Bureau of Labor Statistics, OEWS (as printed in the Huntsville regional release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-huntsville-oews-all-occupations-mean-may2025
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: National all-occupations mean hourly wage as printed beside the Huntsville figure in the regional release; May 2024 was $32.66 [283] [284].
+  sources:
+  - 283
+  - 284
+- id: ind-us-oews-software-developers-may2025
+  name: Software developers (SOC 15-1252), United States — median annual wage
+  value: $135,980 median annual wage
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $82,460, highest 10 percent over $214,670; the combined profile shows 2025 median pay $134,040 per year ($64.44 per hour), 1,905,400 jobs in 2025 and +10% projected growth 2025-35 [285]. The Huntsville MSA value was not obtained because the OEWS metro table is served only by an unreachable app, so the Huntsville twin is pending [285]. Candidate series ID OEUN000000000000015125213 is unverified [285].
+  sources:
+  - 285
+- id: ind-us-oews-ae-managers-may2025
+  name: Architectural and engineering managers (SOC 11-9041), United States — median annual wage
+  value: $171,270 median annual wage; 220,900 jobs (2025)
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $120,810, highest 10 percent over $262,760 [288]. The Huntsville MSA value was not obtained, so the Huntsville twin is pending [288]. Candidate series ID OEUN000000000000011904113 is unverified [288].
+  sources:
+  - 288
+- id: ind-us-oews-hr-specialists-may2025
+  name: Human resources specialists (SOC 13-1071), United States — median annual wage
+  value: $75,940 median annual wage ($36.51 per hour); 939,700 jobs (2025)
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $47,180, highest 10 percent over $128,720 [289]. The Huntsville MSA value was not obtained, so the Huntsville twin is pending [289]. Candidate series ID OEUN000000000000013107113 is unverified [289].
+  sources:
+  - 289
+- id: ind-us-oews-infosec-analysts-may2025
+  name: Information security analysts (SOC 15-1212), United States — median annual wage
+  value: $129,180 median annual wage ($62.11 per hour); 192,900 jobs (2025)
+  reference_period: May 2025
+  published: '2026-08-27'
+  publisher: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook (OEWS data)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: OOH pay tab; lowest 10 percent under $75,090, highest 10 percent over $199,850; projected growth +21% over 2025-35 [290]. The Huntsville MSA value was not obtained, so the Huntsville twin is pending [290]. Candidate series ID OEUN000000000000015121213 is unverified [290].
+  sources:
+  - 290
+- id: ind-madison-county-qcew-employment-2026q1
+  name: Covered employment, Madison County, AL (QCEW)
+  value: 235,427 jobs, +1.0% over the year (national rank 57)
+  reference_period: March 2026 (first quarter 2026)
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-qcew-employment-2026q1
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Not seasonally adjusted; employment as of March 2026 from the County Employment and Wages in Alabama release [279]. Madison County is the core county of the Huntsville MSA, so the record carries geo huntsville-msa [279]. (synthesis) County-total QCEW series IDs (ENU01089…) were not verified [279].
+  sources:
+  - 279
+- id: ind-us-qcew-employment-2026q1
+  name: Covered employment, United States (QCEW)
+  value: 154,771,900 jobs, +0.1% over the year
+  reference_period: March 2026 (first quarter 2026)
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-madison-county-qcew-employment-2026q1
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: National covered employment as printed in the Alabama county release; Alabama statewide was 2,121,200, +0.7% [279].
+  sources:
+  - 279
+- id: ind-al-qcew-employment-2026q1
+  name: Covered employment, Alabama (QCEW)
+  value: 2,121,200 jobs, +0.7% over the year
+  reference_period: March 2026 (first quarter 2026)
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-qcew-employment-2026q1
+  geo: al
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Statewide covered employment as of March 2026 from the County Employment and Wages in Alabama release [279]. Statewide QCEW series IDs were not verified [279].
+  sources:
+  - 279
+- id: ind-madison-county-qcew-weekly-wage-2026q1
+  name: Average weekly wage, Madison County, AL (QCEW)
+  value: $1,596 (national rank 98 by level)
+  reference_period: First quarter 2026
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-qcew-weekly-wage-2026q1
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: The county's over-the-year wage change was not published because the data did not meet disclosure standards; the level and rank are published [279]. The Alabama statewide twin is ind-al-qcew-weekly-wage-2026q1 ($1,292) [279]. (synthesis) Candidate county NAICS-level IDs (ENU01089…) are unverified [279].
+  sources:
+  - 279
+- id: ind-al-qcew-weekly-wage-2026q1
+  name: Average weekly wage, Alabama (QCEW)
+  value: $1,292, +3.6% over the year
+  reference_period: First quarter 2026
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-us-qcew-weekly-wage-2026q1
+  geo: al
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: Statewide average weekly wage from the County Employment and Wages in Alabama release; the Madison County twin is ind-madison-county-qcew-weekly-wage-2026q1 ($1,596) [279]. (synthesis)
+  sources:
+  - 279
+- id: ind-us-qcew-weekly-wage-2026q1
+  name: Average weekly wage, United States (QCEW)
+  value: $1,654, +3.9% over the year
+  reference_period: First quarter 2026
+  published: '2026-09-02'
+  publisher: U.S. Bureau of Labor Statistics, QCEW (Southeast Information Office release)
+  series: ''
+  series_confirmed: none
+  counterpart: ind-madison-county-qcew-weekly-wage-2026q1
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  - offer
+  note: National average weekly wage as printed in the Alabama county release, which states that weekly wages in all seven large Alabama counties were below this figure [279]. Also the national twin of ind-al-qcew-weekly-wage-2026q1 [279]. (synthesis)
+  sources:
+  - 279
+- id: ind-madison-county-pst-services-share-2024
+  name: Professional, scientific and technical services share of jobs, Madison County, AL (LEHD)
+  value: 23.1%
+  reference_period: '2024'
+  published: n.d.
+  publisher: Alabama Department of Workforce, Labor Market Information Division (Madison County Profile, LEHD data)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: huntsville-msa
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: From the state LMI Madison County Profile, which mixes ACS, LAUS, OEWS and LEHD sources and carries no publication date; county all-occupations annual wages from the OEWS 2025 release aged with ECI are entry $31,844, median $55,848, mean $74,778, experienced $96,246 [296]. No national share was in the researcher file, so the counterpart is pending [296]. (synthesis)
+  sources:
+  - 296
+- id: ind-continuous-vetting-enrollment-fy26q3
+  name: Continuous vetting enrollment, share of covered population (Trusted Workforce 2.0)
+  value: 78% (all); 54% (nonsensitive public trust)
+  reference_period: FY2026 Q3 (April–June 2026)
+  published: n.d.
+  publisher: Performance Accountability Council via performance.gov
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - clear-start
+  - plan
+  note: 'Percentages read from the PAC quarterly progress report charts; the ''all'' series ran 72% in FY25 Q4, 74% in FY26 Q1 and Q2, then 78% in FY26 Q3, and the chart''s y-axis spans 4,400,000–5,000,000 with no exact headcount printed [297]. The report lists milestones of industry RapBack enrollment beginning March 2026, CV offered for the low-risk population September 2027 and full enrollment September 2028, and rates Goal #3 ''Poor'' [297]. GAO reports that CV alerts requiring review rose from about 30,000 per quarter in FY2023 to over 100,000 in FY2025 Q3 [298]. No DCSA page with an enrollment headcount was located; the figure is the PAC''s, not DCSA''s [297].
+  
+    '
+  sources:
+  - 297
+  - 298
+- id: ind-clearance-timeliness-gao-ts-initial-fy25q2
+  name: Initial Top Secret clearance timeliness, fastest 90% (GAO figure)
+  value: 206 days average against a 114-day goal
+  reference_period: FY2025 Q2
+  published: '2026-02-24'
+  publisher: U.S. Government Accountability Office (GAO-26-108838)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - clear-start
+  - plan
+  note: 'This is GAO''s figure as printed in GAO-26-108838, separate from any DCSA-published timeliness series in the pack; GAO states that agencies ''have not met timeliness goals for nearly all phases of the security clearance process'' [298]. The 206-day average is 92 days over the 114-day goal [298]. GAO also reports that DoD projects about $2.2 billion more NBIS development spending through FY2031 after $2.4 billion spent through FY2024, with major development complete by the end of FY2027 against an original 2019 target [298].
+  
+    '
+  sources:
+  - 298
+- id: ind-cleared-facilities-fy2025
+  name: Cleared contractor facilities under the NISP
+  value: more than 12,500 cleared facilities; over 4,600 security reviews; over 470 industrial security personnel
+  reference_period: FY2025
+  published: '2026-04-24'
+  publisher: U.S. Government Accountability Office (GAO-26-107861)
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - plan
+  - clear-start
+  note: 'GAO reports DCSA oversight of more than 12,500 cleared facilities and 5,500 classified IT systems in industry, with over 4,600 security reviews, over 800 documented security violations and over 1,000 open vulnerabilities in FY2025 [300]. DCSA''s industrial-security mission ran on over 470 personnel and over $160 million that year, and contractor personnel logged 338,136 NISP-related training completions, a completion count and not a headcount [300]. DCSA''s own undated page puts the figure at about 10,000 cleared companies and 12,500 cleared facilities [300].
+  
+    '
+  sources:
+  - 300
+- id: ind-dib-transitioning-service-members
+  name: Service members transitioning out of the military each year
+  value: over 200,000 per year
+  reference_period: FY2025 plan (data as of August 2024)
+  published: n.d.
+  publisher: U.S. Department of Defense, OUSD(A&S), NDIS Implementation Plan FY2025
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - attract
+  - plan
+  note: 'The NDIS Implementation Plan states ''Over 200,000 Service members transition out of the military each year'' in its Manpower & Reserve Affairs in-sourcing discussion and names workforce readiness among its four priorities [299]. The plan gives no total defense-industrial-base headcount in the portion read [299]. The SkillBridge overview page carries a matching figure of approximately 200,000 members leaving active duty each year [303]. (synthesis)
+  
+    '
+  sources:
+  - 299
+  - 303
+- id: ind-ces-aerospace-3364-aug2026
+  name: Employment, aerospace product and parts manufacturing (NAICS 3364), seasonally adjusted
+  value: 596.5 thousand (preliminary)
+  reference_period: August 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, CES
+  series: CES3133640001
+  series_confirmed: api
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - plan
+  - attract
+  note: 'From Table B-1a of the September 2026 Employment Situation; the September 2026 cell for this row prints ''-'', so August 2026 (p) is the latest value, with July 2026 at 594.3 and September 2025 at 566.3 [301]. The series id is the standard CES national code for the row and was not confirmed through the BLS API, which was unreachable from the research session [301].
+  
+    '
+  sources:
+  - 301
+- id: ind-ces-engineering-5413-sep2026
+  name: Employment, architectural, engineering, and related services (NAICS 5413), seasonally adjusted
+  value: 1,778.8 thousand (preliminary)
+  reference_period: September 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, CES
+  series: CES6054130001
+  series_confirmed: api
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - plan
+  - attract
+  note: 'From Table B-1 of the September 2026 Employment Situation; August 2026 (p) was 1,773.0 [301]. The series id is the standard CES national code for the row and was not confirmed through the BLS API [301].
+  
+    '
+  sources:
+  - 301
+- id: ind-ces-computer-systems-5415-sep2026
+  name: Employment, computer systems design and related services (NAICS 5415), seasonally adjusted
+  value: 2,355.4 thousand (preliminary)
+  reference_period: September 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, CES
+  series: CES6054150001
+  series_confirmed: api
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - plan
+  - attract
+  note: 'From Table B-1 of the September 2026 Employment Situation; August 2026 (p) was 2,359.8 [301]. The series id is the standard CES national code for the row and was not confirmed through the BLS API [301].
+  
+    '
+  sources:
+  - 301
+- id: ind-ces-scientific-rd-5417-sep2026
+  name: Employment, scientific research and development services (NAICS 5417), seasonally adjusted
+  value: 918.3 thousand (preliminary)
+  reference_period: September 2026
+  published: '2026-10-02'
+  publisher: U.S. Bureau of Labor Statistics, CES
+  series: CES6054170001
+  series_confirmed: api
+  counterpart: ''
+  geo: us
+  sector: defense
+  stages:
+  - plan
+  - attract
+  note: 'From Table B-1 of the September 2026 Employment Situation; August 2026 (p) was 916.3 [301]. The release headline put total nonfarm growth at +29,000 for September 2026 with an unemployment rate of 4.2 percent [301]. The series id is the standard CES national code for the row and was not confirmed through the BLS API [301].
+  
+    '
+  sources:
+  - 301
+- id: ind-veteran-unemployment-2025
+  name: Unemployment rate, all veterans (annual average)
+  value: 3.5%
+  reference_period: 2025 annual average
+  published: '2026-04-28'
+  publisher: U.S. Bureau of Labor Statistics, CPS
+  series: ''
+  series_confirmed: none
+  counterpart: ind-nonveteran-unemployment-2025
+  geo: us
+  sector: defense
+  stages:
+  - attract
+  - plan
+  note: 'The rate rose from 3.0 percent in 2024 to 3.5 percent in 2025; Gulf War-era II veterans stood at 3.6 percent, little changed over the year, and BLS counts 17.3 million veterans [302]. The 2025 annual averages exclude October because the survey was not collected during the federal shutdown, so they are not strictly comparable with other years [302].
+  
+    '
+  sources:
+  - 302
+- id: ind-nonveteran-unemployment-2025
+  name: Unemployment rate, nonveterans (annual average)
+  value: 4.2%
+  reference_period: 2025 annual average
+  published: '2026-04-28'
+  publisher: U.S. Bureau of Labor Statistics, CPS
+  series: ''
+  series_confirmed: none
+  counterpart: ind-veteran-unemployment-2025
+  geo: us
+  sector: defense
+  stages:
+  - attract
+  - plan
+  note: Twin of the veteran rate from the same release; the 2025 figures exclude October because of the federal shutdown [302].
+  sources:
+  - 302
+- id: ind-redstone-arsenal-workforce
+  name: Redstone Arsenal workforce (civilians and contractors)
+  value: roughly 27,300 civilians and just over 17,000 contractors, approximately 45,500 people
+  reference_period: undated; page release 2026-07-09
+  published: n.d.
+  publisher: U.S. Department of Defense, Military OneSource
+  series: ''
+  series_confirmed: none
+  counterpart: ''
+  geo: huntsville-msa
+  sector: defense
+  stages:
+  - plan
+  - attract
+  note: 'The Military OneSource overview gives the civilian and contractor split and an installation of roughly 38,000 acres; it does not count federal agencies [312]. A 2020 army.mil article described ''nearly 44,000 person workforce across 78 government organizations'', and that dated statement is the only primary source located for the organization count [312]. The Army garrison home page (last modified 2025-07-02) lists 19 tenant organizations and no workforce figure [312]. No national counterpart figure was supplied.
+  
+    '
+  sources:
+  - 312

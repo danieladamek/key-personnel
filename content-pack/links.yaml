@@ -236,7 +236,7 @@
   from: c-channel-mix-untested
   to: c-posting-draws-wrong-applicants
   relation: precondition
-  link: 'you cannot fix a channel you do not measure'
+  link: 'a channel is not fixable until it is measured'
   evidence: >
     Sources differ in tenure and performance [62]; without per-source records of qualified rate, starts and retention the
     difference is invisible and spending stays on volume (synthesis). The Uniform Guidelines' selection-rate records are the

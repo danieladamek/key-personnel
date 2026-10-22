@@ -95,3 +95,29 @@ test('the stage map links its nodes to stage records', async ({ page }) => {
   await page.locator('[data-kind="stage"]').first().click();
   await expect(page.getByTestId('pathway-card').getByRole('link', { name: /stage page/ })).toBeVisible();
 });
+
+test('/states/us-al lists its six state rules above the overlays', async ({ page }) => {
+  await page.goto('/states/us-al');
+  const rules = page.getByTestId('state-rules');
+  await expect(rules).toBeVisible();
+  await expect(rules.locator('a')).toHaveCount(6);
+  const top = await rules.boundingBox();
+  const firstOverlay = await page.getByTestId('overlay-pay_transparency').boundingBox();
+  expect(top!.y).toBeLessThan(firstOverlay!.y);
+  await page.goto('/states/us-wa');
+  await expect(page.getByTestId('state-rules')).toHaveCount(0);
+});
+
+test('/benchmarks groups the numbers by geography and sector, each Alabama figure beside its national twin', async ({ page }) => {
+  await page.goto('/benchmarks');
+  for (const g of ['national', 'alabama', 'huntsville', 'defense']) await expect(page.getByTestId(`numbers-${g}`)).toBeVisible();
+  const al = page.getByTestId('indicator-ind-al-unemployment-sep2026');
+  await expect(al.getByTestId('counterpart')).toContainText('Alabama 3.5%');
+  await expect(al.getByTestId('counterpart')).toContainText('U.S. 4.2%');
+  await expect(al.getByTestId('series-confirmed').first()).toHaveText('API-confirmed');
+});
+
+test('gate pages carry their geography and sector chips', async ({ page }) => {
+  await page.goto('/gates/cmmc-2-0');
+  await expect(page.getByTestId('sector-chip').first()).toHaveText('defense industry');
+});

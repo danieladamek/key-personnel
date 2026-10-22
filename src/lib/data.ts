@@ -104,6 +104,11 @@ export const OVERLAY_LABEL: Record<OverlayKey, string> = {
 /** The tag a `primary_pending: true` overlay carries everywhere (KICKOFF §1). */
 export const PENDING_TAG = 'compilation-sourced; statute not yet read';
 
+/** EXTENSIONS v0.3 geography and sector tags; records without them are read as U.S. / all sectors. */
+export const GEO_LABEL: Record<string, string> = { us: 'U.S.', al: 'Alabama', 'huntsville-msa': 'Huntsville area' };
+export const SECTOR_LABEL: Record<string, string> = { all: 'all sectors', defense: 'defense industry' };
+export const SERIES_CONFIRMED_LABEL: Record<string, string> = { api: 'API-confirmed', mirror: 'mirror-confirmed', none: 'unconfirmed' };
+
 /** Hypothesis-ledger statuses in the header's order. */
 export const LEDGER_STATUSES = ['supported', 'partly-supported', 'contradicted', 'unstudied', 'reframed', 'untested'];
 

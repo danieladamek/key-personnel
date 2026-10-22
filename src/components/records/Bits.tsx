@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import ledgerIndexJson from '@/data/ledger-index.json';
 import type { PendingChange, RecordType, ReferenceMeta } from '@/types';
-import { AS_OF, recordedDate, stageColour, stageLabel, STATUS_WORD } from '@/lib/data';
+import { AS_OF, GEO_LABEL, recordedDate, SECTOR_LABEL, stageColour, stageLabel, STATUS_WORD } from '@/lib/data';
 import { findRecord, recordMeta } from '@/lib/records';
 import { loadReference, loadRefMeta } from '@/lib/heavy';
 import type { Reference } from '@/types';
@@ -24,6 +24,16 @@ export function StageChip({ stage }: { stage?: string | null }) {
       <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: stageColour(stage) }} />
       {stageLabel(stage)}
     </Link>
+  );
+}
+
+/** A record's geography and sector (EXTENSIONS v0.3), shown only where set to something other than U.S. / all sectors. */
+export function GeoChips({ geo, sector }: { geo?: string; sector?: string }) {
+  return (
+    <>
+      {geo && geo !== 'us' && <span className="bx-chip border border-[color:var(--bx-line)]" data-testid="geo-chip">{GEO_LABEL[geo] ?? geo}</span>}
+      {sector && sector !== 'all' && <span className="bx-chip border border-[color:var(--bx-line)]" data-testid="sector-chip">{SECTOR_LABEL[sector] ?? sector}</span>}
+    </>
   );
 }
 

@@ -44,7 +44,7 @@
   date: '2026-06-30'
   status: pending-implementation
   title: Colorado AI Act effective date (delayed from 2026-02-01)
-  what: 'SB25B-004 moved the date; amendments were expected in the 2026 session [39]. Superseded: the Act was repealed and reenacted by SB 26-189 before this date and never took effect (ch-027).'
+  what: 'Superseded: the Act was repealed and reenacted by SB 26-189 before this date and never took effect (ch-027). SB25B-004 had moved the date and amendments were expected in the 2026 session [39].'
   stages: [attract, select]
   records: [ai-screening-laws]
   sources: [39]
@@ -282,3 +282,183 @@
   stages: [clear-start, attract, plan]
   records: [export-control-deemed-exports, c-foreign-national-hire-blocked]
   sources: [143, 225, 226]
+# sweep 9 (2026-10-22): Alabama and federal-contractor changes
+- id: ch-035
+  date: '2023-04-18'
+  status: expired
+  title: HB331 (2023) salary-history inquiry ban died in committee
+  what: HB331, which would have barred employers from requesting a prospective employee's wage history except in certain circumstances and added a voluntary-disclosure clause to § 25-1-30, was read first time and referred to House Commerce and Small Business on 2023-04-18 and died in committee; no 2024–2026 successor was located [238].
+  stages:
+  - offer
+  - select
+  records: []
+  sources:
+  - 238
+- id: ch-036
+  date: '2025-05-06'
+  status: expired
+  title: SB49 (2025) public-employer ban-the-box bill indefinitely postponed
+  what: SB49, which would have barred the State, its agencies and political subdivisions as employers from inquiring into arrest or conviction history before a conditional offer, was indefinitely postponed in the Senate on 2025-05-06; private employers were outside its scope [254].
+  stages:
+  - select
+  - clear-start
+  records: []
+  sources:
+  - 254
+- id: ch-037
+  date: '2024-10-01'
+  status: final
+  title: Alabama Department of Labor renamed Alabama Department of Workforce (statutory effective date)
+  what: SB247 (2024), the Alabama Workforce Transformation Act, renames the Department of Labor the Department of Workforce and transfers Commerce's workforce programs other than AIDT to it, effective October 1, 2024, with full implementation not later than October 1, 2025 [266].
+  stages:
+  - plan
+  records:
+  - al-department-of-workforce
+  - al-dow-employer-services
+  - al-dow-lmi
+  sources:
+  - 266
+- id: ch-038
+  date: '2025-02-01'
+  status: final
+  title: Department of Workforce name change takes effect operationally
+  what: The Governor's release of 2025-01-31 states that on February 1, 2025 the Alabama Department of Labor officially becomes the Department of Workforce, with its first Secretary of Workforce named [266].
+  stages:
+  - plan
+  records:
+  - al-department-of-workforce
+  sources:
+  - 266
+- id: ch-039
+  date: '2024-12-31'
+  status: expired
+  title: Alabama Apprenticeship Tax Credit expires
+  what: ADOR states 'This credit expired on Dec. 31, 2024.'; no extension or replacement for tax years 2025 onward was found as of 2026-10-22 [263].
+  stages:
+  - plan
+  - develop
+  records:
+  - al-apprenticeship-credit
+  sources:
+  - 263
+- id: ch-040
+  date: '2025-01-01'
+  status: final
+  title: Alabama employer childcare tax credit window opens (2025–2027)
+  what: Act 2024-303 takes effect January 1, 2025 for tax years beginning on or after that date and ending December 31, 2027; ADOR rule 810-3-135-.05 opened first-come reservations on March 1, 2025 [267].
+  stages:
+  - plan
+  - retain
+  records:
+  - al-employer-childcare-credit
+  sources:
+  - 267
+- id: ch-041
+  date: '2028-07-31'
+  status: final
+  title: Alabama Jobs Act sunset for new project agreements
+  what: Under § 40-18-382 as amended by HB241 (2023), Jobs Act incentives are unavailable to qualifying projects whose project agreements are not executed on or prior to July 31, 2028 [260].
+  stages:
+  - plan
+  records:
+  - al-jobs-act
+  sources:
+  - 260
+- id: ch-042
+  date: '2026-10-22'
+  status: suspended
+  title: Innovate Alabama Supplemental Grant applications closed
+  what: On 2026-10-22 the Supplemental Grant Program page stated 'Applications are currently closed' and 'Stay tuned for details on upcoming rounds' [261].
+  stages:
+  - plan
+  - attract
+  records:
+  - al-innovate-alabama-sbir-match
+  sources:
+  - 261
+- id: ch-043
+  date: '2025-11-10'
+  status: final
+  title: DFARS CMMC rule takes effect; Phase 1 begins
+  what: The DFARS rule published 2025-09-10 (90 FR 43560) took effect 2025-11-10, making CMMC status a condition of award and starting the 32 CFR 170.3(e) phase clock [306] [305].
+  stages:
+  - clear-start
+  - plan
+  records:
+  - cmmc-2-0
+  sources:
+  - 305
+  - 306
+- id: ch-044
+  date: '2026-11-10'
+  status: final
+  title: CMMC Phase 2 begins
+  what: Phase 2 'Begins one calendar year following the start date of Phase 1' under 32 CFR 170.3(e)(2); with Phase 1 on 2025-11-10, the date follows arithmetically [305]. (synthesis)
+  stages:
+  - clear-start
+  - plan
+  records:
+  - cmmc-2-0
+  sources:
+  - 305
+- id: ch-045
+  date: '2028-11-11'
+  status: final
+  title: CMMC full application under DFARS
+  what: The DFARS rule applies the requirement to all offerors on applicable solicitations 'Beginning three years and one day after the effective date of the rule' [306].
+  stages:
+  - clear-start
+  - plan
+  records:
+  - cmmc-2-0
+  sources:
+  - 306
+- id: ch-046
+  date: '2026-10-26'
+  status: final
+  title: OFCCP rescission of EO 11246 implementing regulations effective
+  what: The final rule at 91 FR 54444 removes 41 CFR parts 60-1, 60-2, 60-3, 60-4, 60-20, 60-40, 60-50 and 60-999 and amends part 60-30, effective 2026-10-26 [308].
+  stages:
+  - plan
+  - select
+  records:
+  - eeo-contractor-framework-2026
+  sources:
+  - 308
+- id: ch-047
+  date: '2026-09-21'
+  status: final
+  title: VEVRAA and Section 503 regulation modifications effective
+  what: The VEVRAA rule (91 FR 54234) and the Section 503 rule (91 FR 54482), both published 2026-08-21, took effect 2026-09-21; the Section 503 rule rescinds the disability self-identification requirement and the 7% utilization goal [309] [310].
+  stages:
+  - plan
+  - select
+  - attract
+  records:
+  - vevraa-section-503-aaps
+  sources:
+  - 309
+  - 310
+- id: ch-048
+  date: '2026-12-21'
+  status: final
+  title: Section 503 rule's part 60-30 amendment effective
+  what: Amendatory instruction 1 of the Section 503 rule, amending 41 CFR part 60-30, takes effect 2026-12-21 [310].
+  stages:
+  - plan
+  records:
+  - vevraa-section-503-aaps
+  sources:
+  - 310
+- id: ch-049
+  date: '2026-03-13'
+  status: final
+  title: FAC 2026-01 currency of FAR 22.1803 E-Verify prescription
+  what: At FAC 2026-01, effective 2026-03-13, FAR 22.1803 reads 'all solicitations and contracts that exceed $150,000' with the outside-U.S., under-120-day and COTS exceptions [307].
+  stages:
+  - clear-start
+  - offer
+  records:
+  - e-verify-federal-contractor
+  sources:
+  - 307

@@ -15,7 +15,7 @@
     claim: 'the conditions under which Sackett et al. call concurrent range restriction negligible (r ≈ .90 with the selection variable; selection ratio ≤ .30) are plausible, and their Table 5 understates the bias; the no-correction recommendation lacks support [2]'
     sources: [2]
   - holder: Practitioner summaries (SIOP TIP; HumRRO)
-    claim: 'treat the revision as a course correction; do not correct without empirical support; structured interviews could become the focal predictor [52] [53]'
+    claim: 'the practitioner summaries treat the revision as a course correction, advise against correcting without empirical support, and expect structured interviews to become the focal predictor [52] [53]'
     sources: [52, 53]
   what_a_recruiter_can_rely_on: >
     Both sides agree on the ordering that matters for a small firm: a structured interview, a job-knowledge test and a work
@@ -43,11 +43,11 @@
     claim: 'years of experience predicts job performance at .07 and years of education was excluded for insufficient data; what predicts is structured interviews, knowledge tests and work samples [1]'
     sources: [1]
   what_a_recruiter_can_rely_on: >
-    The credential is a weak proxy and the announcement is not the practice. Dropping a degree line from the posting changes
-    hiring only when the screen and the assessment change with it; where they do, the people hired without the credential stay
-    longer. For a small firm the sequence is a job analysis, a skill-based posting, an affirmative filter and a work sample or
-    knowledge test, in that order (synthesis). Where a customer's labor category requires the degree, the requirement is the
-    customer's to lift (sweep 7).
+    The credential is a weak proxy [1] and the announcement is not the practice [44] [58]. Dropping a degree line from the
+    posting changes hiring only when the screen and the assessment change with it; where they do, the people hired without
+    the credential stay longer [68]. For a small firm the sequence that follows from the positions is a job analysis, a
+    skill-based posting, an affirmative filter and a work sample or knowledge test, in that order (synthesis from [1] [44]
+    [68]). Where a customer's labor category requires the degree, the requirement is the customer's to lift (sweep 7).
   sources: [1, 44, 58, 68, 79]
 
 - id: pay-transparency
@@ -72,12 +72,12 @@
     claim: 'early salary-history bans raised the gender earnings ratio by about 1 percent, mainly among job changers [96]'
     sources: [96]
   what_a_recruiter_can_rely_on: >
-    The posted range is cross-firm transparency and the evidence says it raises what the firm has to pay by a few percent
-    while raising applicant counts; coworker transparency is the compression mechanism, and it is now the law in many states
-    whether the firm likes it or not. A small firm that posts a defensible range, states negotiability, reviews incumbents
-    before each offer and sets pay from the job rather than from prior salary is acting on the evidence from all five
-    positions at once; the thing it cannot do is keep a new hire's pay from becoming the incumbents' comparison point
-    (synthesis).
+    The posted range is cross-firm transparency, and the evidence says it raises what the firm has to pay by a few percent
+    while raising applicant counts [97] [91]; coworker transparency is the compression mechanism [92] [90], and the posted
+    range is now the law in many states whether the firm likes it or not [97]. A small firm that posts a defensible range,
+    states negotiability, reviews incumbents before each offer and sets pay from the job rather than from prior salary is
+    acting on the evidence from all five positions at once [90] [91] [92] [96] [97]; the thing it cannot do is keep a new
+    hire's pay from becoming the incumbents' comparison point (synthesis from [92]).
   sources: [90, 91, 92, 96, 97]
 
 - id: clearance-timeliness-figures
@@ -99,10 +99,11 @@
     claim: 'averages hide the distribution a hiring manager needs; no public figure exists for how often or how fast contractor applicants receive interim eligibility, and the industry bar graphs arrive four to six months after the data [127]'
     sources: [127]
   what_a_recruiter_can_rely_on: >
-    Plan on the DCSA industry figure for the current quarter and treat it as a floor, because the government-wide number
-    mixes faster federal cases with industry's, the series changed basis in FY2026 Q3, and GAO found the older figures
-    understated. Promise no start date that depends on an interim, since nobody publishes how often one is granted. The
-    only phase the firm influences is initiation, about three weeks of the total (synthesis).
+    The figure a recruiter can rely on is the DCSA industry number for the current quarter, read as a floor, because the
+    government-wide number mixes faster federal cases with industry's [54] [126], the series changed basis in FY2026 Q3
+    [126], and GAO found the older figures understated [56]. A start date that depends on an interim grant rests on
+    nothing published, since nobody publishes how often one is granted [127]. The only phase the firm influences is
+    initiation, about three weeks of the total [126] (synthesis).
   sources: [54, 56, 124, 125, 126, 127]
 
 - id: who-pays-for-training
@@ -127,11 +128,11 @@
     claim: 'repayment provisions shift the cost and the risk to the worker, chill mobility whether or not enforced, and are now barred or narrowed by statute; the research the Bureau cites puts their effect at about 15 percent less quitting [166] [167] [168]'
     sources: [166, 167, 168]
   what_a_recruiter_can_rely_on: >
-    Expect to recover the investment through the productivity–wage wedge while the person stays and through the applicants
-    the offer of training attracts, not through a repayment clause, which is now unlawful in the strictest states for most
-    purposes and a reputational cost everywhere. The things that extend the stay are the ones sweep 6 covers, pay that moves
-    with capability and a next assignment; the things that shorten it are a cleared, certified professional's outside market
-    (synthesis).
+    What a recruiter can rely on is recovery of the investment through the productivity–wage wedge while the person stays
+    [159] and through the applicants the offer of training attracts [160], not through a repayment clause, which is now
+    unlawful in the strictest states for most purposes [167] [168] and a reputational cost everywhere [166]. The things
+    that extend the stay are the ones the retain stage covers, pay that moves with capability and a next assignment; the
+    things that shorten it are a cleared, certified professional's outside market [161] (synthesis).
   sources: [159, 160, 161, 166, 167, 168]
 
 - id: cost-of-turnover
@@ -157,8 +158,9 @@
     claim: 'the practice literature carries misconceptions about turnover that the evidence does not support; retention should be managed from the measured predictors [179]'
     sources: [179]
   what_a_recruiter_can_rely_on: >
-    Plan with the measured fifth of salary for ordinary replacements, count the indirect costs the case studies left out,
-    and treat the specialist whose market is thin as the exception the multiples were invented for: there the cost is the
-    contract's capacity, the customer's satisfaction and the pay of everyone adjacent, which is why the handover stage
-    spends delivery time on cross-training (synthesis).
+    The figure a recruiter can rely on is the measured fifth of salary for ordinary replacements [180], with the indirect
+    costs the case studies left out counted on top [180] [179]; the specialist whose market is thin is the exception the
+    multiples were invented for [193] [195], and there the cost is the contract's capacity, the customer's satisfaction
+    [181] and the pay of everyone adjacent [193], which is why the handover stage spends delivery time on cross-training
+    (synthesis).
   sources: [179, 180, 181, 193, 195]

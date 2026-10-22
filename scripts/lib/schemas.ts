@@ -209,7 +209,11 @@ export type Pathway = z.infer<typeof PathwaySchema>;
 
 export const REF_ROLES = ['support', 'method', 'contrast', 'prior-result', 'data-source', 'background'] as const;
 export const REF_TIERS = ['seminal', 'classic', 'current', 'background'] as const;
-export const STUDY_DESIGNS = ['meta-analysis', 'field-experiment', 'quasi-experimental', 'observational', 'practitioner-survey', 'regulation', 'guidance', 'report'] as const;
+/** `dataset` arrived with sweep 9 (statistical releases: LAUS, CES, QCEW, OEWS pages); the pack's validator accepts it. */
+export const STUDY_DESIGNS = ['meta-analysis', 'field-experiment', 'quasi-experimental', 'observational', 'practitioner-survey', 'regulation', 'guidance', 'report', 'dataset'] as const;
+export const GEOS = ['us', 'al', 'huntsville-msa'] as const;
+export const SECTORS = ['all', 'defense'] as const;
+const geoTags = { geo: z.enum(GEOS).default('us'), sector: z.enum(SECTORS).default('all') };
 
 export const ReferenceSchema = z
   .object({
@@ -254,7 +258,7 @@ export const ReferenceSchema = z
 export const ReferencesSchema = z.array(ReferenceSchema);
 export type Reference = z.infer<typeof ReferenceSchema>;
 
-export const TODO_KINDS = ['gap', 'conflict', 'unverified', 'recheck', 'hypothesis'] as const;
+export const TODO_KINDS = ['gap', 'conflict', 'unverified', 'recheck', 'hypothesis', 'source', 'series'] as const;
 export const TodoSchema = z.array(z.object({
   id: z.string().min(1),
   kind: z.enum(TODO_KINDS),
@@ -328,8 +332,9 @@ const prose = z.string().min(1);
 /** Prose lists: a single string is accepted and kept as written. */
 const proseList = z.union([z.array(z.string()), z.string()]).default([]);
 
+/** status words are checked against CHANGE_STATUSES in records.ts (reported, never dropped) */
 export const PendingChangeSchema = z.object({
-  status: z.enum(CHANGE_STATUSES),
+  status: z.string().min(1),
   date: isoish,
   text: z.string().min(1),
 }).passthrough();
@@ -405,6 +410,7 @@ export const LeverSchema = z.object({
 
 export const GateSchema = z.object({
   ...recBase,
+  ...geoTags,
   as_of: isoish,
   what: prose,
   governing_text: z.string().default(''),
@@ -418,6 +424,7 @@ export const GateSchema = z.object({
 
 export const EnablerSchema = z.object({
   ...recBase,
+  ...geoTags,
   as_of: isoish,
   kind: z.enum(ENABLER_KINDS),
   what: prose,
@@ -435,6 +442,9 @@ export const IndicatorSchema = z.object({
   published: isoish,
   publisher: z.string().min(1),
   series: z.string().nullable().default('').transform((v) => v ?? ''),
+  series_confirmed: z.enum(['api', 'mirror', 'none']).optional(),
+  counterpart: z.string().nullable().default('').transform((v) => v ?? ''),
+  ...geoTags,
   stages: z.array(z.enum(STAGES)).default([]),
   note: z.string().default(''),
 }).passthrough();
@@ -468,15 +478,12 @@ export const StateSchema = z.object({
   abbr: z.string().regex(/^[A-Z]{2}$/),
   ...Object.fromEntries(OVERLAYS.map((o) => [o, OverlaySchema])) as Record<OverlayKey, typeof OverlaySchema>,
   localities: z.string().optional(),
+  /** v0.3: the ids of gates.yaml records with this state's geo (the Alabama row carries six) */
+  state_gates: ids,
   sources: refList.default([]),
   as_of: isoish,
   recheck: z.boolean().default(true),
-}).passthrough().superRefine((s, ctx) => {
-  for (const o of OVERLAYS) {
-    const ov = (s as Record<string, { status?: string } | undefined>)[o];
-    if (ov?.status && !OVERLAY_STATUSES[o].includes(ov.status)) ctx.addIssue({ code: z.ZodIssueCode.custom, path: [o, 'status'], message: `status ${ov.status} is not in the ${o} vocabulary (${OVERLAY_STATUSES[o].join(' | ')})` });
-  }
-});
+}).passthrough(); // the per-overlay status vocabulary is checked in records.ts, so a stray word is reported without dropping the state
 
 export const ControversySchema = z.object({
   ...recBase,
@@ -488,7 +495,7 @@ export const ControversySchema = z.object({
 export const ChangeSchema = z.object({
   id: kebab,
   date: z.string().regex(/^(\d{4}(-\d{2}(-\d{2})?)?|unknown)$/, 'date must be YYYY-MM-DD, YYYY-MM, YYYY or unknown'),
-  status: z.enum(CHANGE_STATUSES),
+  status: z.string().min(1),
   title: z.string().min(1),
   what: z.string().min(1),
   stages: z.array(z.enum(STAGES)).default([]),

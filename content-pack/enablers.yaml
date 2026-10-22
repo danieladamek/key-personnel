@@ -80,10 +80,10 @@
   kind: reference
   what: >
     The Immigrant and Employee Rights Section's fact sheet (rev. March 2024): U.S. persons are citizens, nationals,
-    permanent residents, refugees and asylees; do not tell applicants the export rules require a citizenship; assess only
-    the positions that work with controlled items; keep the assessment separate from Form I-9 and do not limit document
-    choice; apply to State or Commerce for authorization for a non-U.S. person [131]. Read in sweep 1 through a law-firm
-    summary [51]; the primary was read in sweep 4.
+    permanent residents, refugees and asylees; the fact sheet tells employers not to tell applicants that the export rules
+    require a citizenship, to assess only the positions that work with controlled items, to keep the assessment separate
+    from Form I-9 without limiting document choice, and to apply to State or Commerce for authorization for a non-U.S.
+    person [131]. Read in sweep 1 through a law-firm summary [51]; the primary was read in sweep 4.
   cost: 'free [131]'
   conditions: 'none; the fact sheet is guidance, with the enforcement record behind it [49] [50]'
   levers: [l-conditional-offer-sequencing, l-start-date-compliance-sequence]
@@ -164,7 +164,7 @@
     15, 2026 (software developers: median $65.38 per hour, mean $148,100 a year) [110]. The series the Service Contract Act
     wage determinations are generally built from [101].
   cost: 'free [110]'
-  conditions: 'use the metro-area table for the SOC code; the refresh routine should pull by series (todo)'
+  conditions: 'the metro-area table for the SOC code is the one to read; the refresh routine pulls by series (todo)'
   levers: [l-set-range-from-rate-and-market, l-rate-relief-request]
   official_url: https://www.bls.gov/oes/
   pending_changes: []
@@ -300,7 +300,7 @@
     pre-award and post-award documents, the NISS steps on a day-by-day clock, the key officials who must be cleared, and
     the reasons packages are rejected [146].
   cost: 'free [146]'
-  conditions: 'June 2022 presentation; check DCSA for updated submission procedures (todo)'
+  conditions: 'June 2022 presentation; DCSA''s current submission procedures are a todo'
   levers: [l-facility-clearance-sponsorship]
   official_url: https://www.onr.navy.mil/media/document/roadmap-getting-facility-clearancefcl-sponsorship
   pending_changes: []
@@ -529,3 +529,357 @@
   pending_changes: []
   as_of: '2026-10-22'
   sources: [57]
+# sweep 9: Alabama programs and defense-industry programs (geo / sector tags, EXTENSIONS v0.3)
+- id: al-drug-free-workplace-discount
+  name: Drug-Free Workplace Program premium discount (Alabama)
+  kind: program
+  what: A workers' compensation premium discount for an employer whose drug-free workplace program is certified by the Workers' Compensation Division as in full compliance with Code of Alabama §§ 25-5-330 through 25-5-340 [242]. The statute sets the discount at five percent, continuing not more than four years, with certification required each year [241].
+  cost: no fee stated on the agency page; certification applications (first-year and subsequent-year forms dated 2023-11-01) [242]
+  conditions: 'Five required elements: written policy statement, substance abuse testing, employee assistance resources, employee education and supervisor training [242]. The discount is pro rata from the certification date, lasts up to four years, and afterwards depends on experience rating [242]. Employers without a testing program on July 1, 1996 must let at least 60 days elapse between a general notice to all employees and the start of testing [241]. Participation is voluntary; the article does not mandate drug testing by Alabama employers generally [241].'
+  levers:
+  - l-start-date-compliance-sequence
+  stages:
+  - offer
+  - clear-start
+  - retain
+  geo: al
+  sector: all
+  official_url: https://workforce.alabama.gov/employers/workplace-safety/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 241
+  - 242
+- id: al-aidt
+  name: AIDT (Alabama Industrial Development Training)
+  kind: program
+  what: AIDT is the state's industrial training agency, a division of the Alabama Department of Commerce, whose mission is to provide quality workforce development for Alabama's new and expanding businesses [255]. Its statute, Ala. Code §§ 41-29-280 to 41-29-286 as created by HB554 (2015), places it under the supervision of the Secretary of Commerce and funds it from the Education Trust Fund [256]. The services page lists pre-employment selection and training, leadership development, on-the-job training, and continuous improvement, maintenance and industrial safety assessments, delivered by AIDT staff or contracted instructors in classrooms or through 38 Mobile Training Units set up on the employer's site [255]. A companion Commerce page describes selection as a rigorous screening and interview process in which job seekers must meet employer criteria to be accepted for training [255]. The 2024 Workforce Transformation Act left AIDT in Commerce when other workforce programs moved to the new Department of Workforce, and renamed Commerce's Workforce Development Division the Alabama Industrial Development and Training Institute [266]. The Alabama Robotics Technology Park in Tanner is an AIDT training facility; see al-robotics-technology-park [257].
+  cost: no cost to employers or trainees, as stated on the AIDT homepage and about page [255]
+  conditions: The AIDT site serves 'new and expanding businesses' and states no size threshold, industry restriction, wage floor, exclusion list or statutory citation [255]. Job seekers are accepted for training only when they meet the employer's criteria [255]. The site does not mention the Alabama Office of Apprenticeship or the Alabama Workforce Training Center [255].
+  levers:
+  - l-university-pipeline
+  - l-representative-task-training
+  - l-validate-and-document-screen
+  stages:
+  - attract
+  - develop
+  geo: al
+  sector: all
+  official_url: https://www.aidt.edu/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 255
+  - 256
+  - 257
+  - 266
+- id: al-robotics-technology-park
+  name: Alabama Robotics Technology Park (AIDT)
+  kind: program
+  what: The Alabama Robotics Technology Park is an AIDT training facility at 6505 U.S. Hwy 31, Tanner, AL 35671 [257]. Its site lists a Robotics and Automation Training Center, an Advanced Research & Development Center with dedicated space for organizations doing R&D on robot and automation technologies, an Automation and Advanced Manufacturing Training Center, an EV Technology Center, a Mobile Robotics Training Lab, and a Military Transition Program that connects transitioning military members, veterans and their spouses with training [257]. A 2019 AIDT news item states the park is not part of Calhoun Community College [257].
+  cost: no cost to the company or the employee for Alabama business clients [257]
+  conditions: Services go to Alabama business clients; the site states no size thresholds, industry limits or statute and refers companies to a 'Become A Client' page [257]. The AIDT homepage, about and services pages do not mention the park [255].
+  levers:
+  - l-representative-task-training
+  - l-military-transition-pipeline
+  stages:
+  - develop
+  - attract
+  geo: al
+  sector: all
+  official_url: https://www.alabamartp.org/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 255
+  - 257
+- id: al-jobs-act
+  name: Alabama Jobs Act (Jobs Credit and Investment Credit)
+  kind: program
+  what: The Alabama Jobs Act, Ala. Code §§ 40-18-370 through 40-18-383, provides two incentives to approved companies with qualifying projects [258]. The Jobs Credit is a cash rebate of up to 3% annually of the previous year's gross payroll, excluding fringe benefits, for up to 10 years; the rate rises to up to 4% for Targeted or Jumpstart County projects, Technology Companies and qualifying pharmaceutical, biomedical and medical technology projects, with a further 0.5% where the eligible workforce is at least 12% veterans or the project sits within a BRAC-closed former installation [258]. The statute applies the jobs credit against utility taxes paid [260]. The Investment Credit is up to 1.5% annually of qualified capital investment for up to 10 years, or 15 in a Targeted or Jumpstart County, with a five-year carry-forward and transfer of the first five years at not less than 85% of face value with the Governor's approval [258]. The original 2015 act set a 3% jobs credit and a 1.5% investment credit over 10 years [259]; the 2023 Enhancing Economic Progress Act (HB241) added the enhanced rates, the 10-employee thresholds and a cap schedule rising to $475,000,000 for calendar 2027 [260].
+  cost: no cost stated; the incentives are a payroll rebate and a tax credit [258]
+  conditions: Net new full-time job thresholds are 50 in Non-Targeted/Non-Jumpstart counties, 10 in a Targeted or Jumpstart County, 10 for a Technology Company, and any number for chemical manufacturing, data centers, renewable energy generation, engineering/design/research, and metal/machining technology or toolmaking [258]. A Targeted or Jumpstart County project also involves at least $2,000,000 of direct or indirect investment [260]. Under § 40-18-382 as amended in 2023, the incentives are unavailable to projects whose project agreements are not executed on or prior to July 31, 2028; projects with executed agreements keep them [260]. Madison County is not listed as Targeted or Jumpstart in the Commerce summary [258]. The researcher found no 5-job threshold in any primary text (synthesis).
+  levers:
+  - l-all-in-acquisition-budget
+  - l-rolling-demand-forecast
+  stages:
+  - plan
+  geo: al
+  sector: all
+  official_url: https://www.madeinalabama.com/resources/documents/job-acts-summary/
+  pending_changes:
+  - status: final
+    date: '2028-07-31'
+    text: Sunset for executing new project agreements under § 40-18-382 as amended by HB241 (2023) [260]
+  as_of: '2026-10-22'
+  sources:
+  - 258
+  - 259
+  - 260
+- id: al-innovate-alabama-sbir-match
+  name: Innovate Alabama SBIR/STTR Supplemental Grant Program
+  kind: program
+  what: Innovate Alabama's Supplemental Grant Program provides a state match of 50% of a federal SBIR or STTR award, up to $100,000 for a Phase I award and up to $250,000 for a Phase II award, with no equity taken [261]. Permitted uses listed on the program page include 'Highly Skilled New Hires', business plan development, product testing, market research, IP protection and technical work [261]. Innovate Alabama describes itself as Alabama's first statewide public-private partnership focused on entrepreneurship, technology and innovation; the Alabama Innovation Commission was established in July 2020 and the board appointed in December 2021 [261]. The organisation's separate Tax Credit Program serves nonprofit economic development organizations and their donors under Ala. Code §§ 41-10-842 and 41-10-844, with $25 million allocated per fiscal year and a sunset of July 31, 2028 [261].
+  cost: a grant; no fee stated [261]
+  conditions: An active Phase I or Phase II federal SBIR or STTR award is required; businesses without federal SBIR/STTR funding are 'not eligible' [261]. On 2026-10-22 the page stated 'Applications are currently closed' and 'Stay tuned for details on upcoming rounds' [261]. The page does not state an Alabama-location requirement, application dates or a statutory basis [261]. No 'Growth credit', 'R&D credit' or employer hiring credit appears on the programs page [261].
+  levers:
+  - l-all-in-acquisition-budget
+  - l-tie-development-to-named-demand
+  stages:
+  - plan
+  - attract
+  geo: al
+  sector: all
+  official_url: https://innovatealabama.org/programs/supplemental-grant-program/
+  pending_changes:
+  - status: final
+    date: '2026-10-22'
+    text: Supplemental Grant applications closed as of 2026-10-22, with upcoming rounds announced only as 'stay tuned' [261]
+  as_of: '2026-10-22'
+  sources:
+  - 261
+- id: al-dow-employer-services
+  name: Alabama Department of Workforce employer services (Career Centers, OJT, WOTC, veterans)
+  kind: program
+  what: 'The Department of Workforce''s employer pages describe recruiting assistance through an employer dashboard in the Workforce Alabama system: finding and reviewing candidates, managing job listings and viewing active applications, plus labor market services drawn from résumés and job orders in that system [262]. Under WIOA On-the-Job Training, employers of OJT participants may be reimbursed for a portion of wages, up to 75% of hourly wages based on employee count, for a training period not exceeding six months [262]. The pages note that employers can receive the federal Work Opportunity Tax Credit for hiring job seekers who have faced employment barriers [262]. The legacy Career Centers page lists 52 One-Stop Career Centers and satellites offering job listings and résumé searches, pre-employment screening, interview space, and a Rapid Response Team that meets on-site after a plant closing or substantial layoff notice [262]. For veterans, a Local Veterans'' Employment Representative runs résumé searches for new openings, registered veterans receive a daily email of local openings, veterans and eligible spouses receive priority of service, and the HIRE Vets Medallion is a voluntary recognition program for employers that recruit, employ and retain veterans [262].'
+  cost: no fees stated on any employer page [262]
+  conditions: The pages address Alabama employers of any size using the state Employment Service [262]. 'Alabama JobLink' is not named on the current employer pages; the job bank is referred to as the Workforce Alabama system [262]. The Career Centers page still attributes Rapid Response to the Department of Commerce Workforce Development Division, whose workforce programs other than AIDT were transferred to the Department of Workforce by SB247 (2024) [262] [266] (synthesis).
+  levers:
+  - l-source-of-hire-tracking
+  - l-military-transition-pipeline
+  - l-posting-rewrite
+  stages:
+  - attract
+  - develop
+  - handover
+  geo: al
+  sector: all
+  official_url: https://workforce.alabama.gov/employers
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 262
+  - 266
+- id: al-apprenticeship-credit
+  name: Alabama Apprenticeship Tax Credit (expired 2024-12-31)
+  kind: program
+  what: 'ADOR''s page on the Alabama Apprenticeship Tax Credit, Ala. Code §§ 40-18-420 through 40-18-424, states: ''This credit expired on Dec. 31, 2024.'' [263]. While in force it provided $1,000 per qualifying apprentice, up to five apprentices, for tax years beginning 2017 through 2019, and $1,250 per qualifying apprentice, up to 10, for tax years beginning 2020 through 2024, with an additional credit of up to $500 per apprentice aged 18 or younger [263]. Act 2019-506 set the $1,250 rate, required the apprentice to be employed for at least seven full months of the prior taxable year, and capped the aggregate at $7,500,000 annually [263]. The credit was nonrefundable, nontransferable, without carry-forward, applied against income tax and financial institution excise tax, and unavailable for an individual apprentice for more than four taxable years [263]. Eligibility rested on a written apprenticeship agreement registered with the U.S. DOL Office of Apprenticeship, reviewed by the Alabama Office of Apprenticeship, and the credit was claimed through My Alabama Taxes [263].'
+  cost: expired; a nonrefundable credit while in force [263]
+  conditions: The credit covered tax years beginning on or after 2017-01-01 through 2024-12-31 and expired on December 31, 2024 [263]. No statewide extension or replacement credit for tax years 2025 onward was found on ADOR or ALISON as of 2026-10-22 [263]. ADOR's resource list includes a file named 'Act-2023-539-Repealing-Apprenticeship.pdf' whose effect the page does not explain [263]. The Alabama Office of Apprenticeship, which Act 2019-506 placed under Commerce's Workforce Development Division, was transferred to the Department of Workforce by SB247 (2024) [263] [266] (synthesis).
+  levers:
+  - l-registered-apprenticeship
+  stages:
+  - plan
+  - develop
+  geo: al
+  sector: all
+  official_url: https://www.revenue.alabama.gov/tax-incentives/apprenticeship-credit/
+  pending_changes:
+  - status: expired
+    date: '2024-12-31'
+    text: ADOR states the apprenticeship credit expired on Dec. 31, 2024; no replacement found as of 2026-10-22 [263]
+  as_of: '2026-10-22'
+  sources:
+  - 263
+  - 266
+- id: al-accs-atn
+  name: Alabama Technology Network (ACCS / NIST MEP affiliate)
+  kind: program
+  what: The Alabama Technology Network is part of the Alabama Community College System and serves as the Manufacturing Extension Partnership affiliate for Alabama, having served Alabama manufacturers since 1996 [264]. NIST's center page states that ATN provides technical assistance and customized training through local offices at 15 community colleges and 3 research universities, and reports FY2024 impacts of 3,375 jobs created or retained and $78,149,218 in cost savings [264]. ATN's own site describes it as the leading provider of training and technical assistance solutions for industry in Alabama, with workshop tracks in Lean Manufacturing, Environmental Health & Safety, Quality Systems & Engineering, Industrial Maintenance, Human Resources & Organizational Development, and Leadership & Management Development; it has been ISO 9001:2015 certified since 2008 [264].
+  cost: no fee schedule published; delivery is contract-based under posted Proposal/Contract Terms & Conditions, with no 'no cost' statement [264]
+  conditions: No size threshold is stated [264]. The locations page lists 18 sites under a '19 locations' header; North Alabama entries are the Decatur ACCS Innovation Center, Cullman, Rainsville, Muscle Shoals and Gadsden, with no Huntsville site [264]. ACCS's own workforce-development page could not be fetched [264].
+  levers:
+  - l-representative-task-training
+  stages:
+  - develop
+  geo: al
+  sector: all
+  official_url: https://www.atn.org/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 264
+- id: al-dow-lmi
+  name: Alabama Labor Market Information (Department of Workforce LMI Division)
+  kind: data-source
+  what: The LMI Division publishes OEWS-based occupational wage estimates by area, including a Huntsville, AL table, along with LAUS unemployment, CES employment, and statewide and regional long-term (2022–2032) and short-term (2022–2024) occupational projections [265]. The home page's dated update lines on 2026-10-22 read 'October 16, 2026 - September Unemployment Statistics', 'October 16, 2026 - Current Employment Statistics updated' and 'August 13, 2026 - Occupation Wages Updated to 2nd Quarter 2026' [265]. The Huntsville wage PDF served on 2026-10-22 was the June 2025 edition, built from the May 2024 OEWS survey aged with ECI factors in cooperation with BLS [265]. The long-term projections book (November 2024) gives statewide Software Developers 16,860 in 2022 to 20,120 in 2032, +19.34%, with 1,305 annual openings, and Industrial Engineers 7,120 to 8,570, +20.41% [265].
+  cost: free public data [265]
+  conditions: 'Projections are provided for the state and the seven AlabamaWorks regions only; no MSA-level projections are offered [265]. No formal release calendar is published [265]. The Huntsville wage PDF does not state the counties covered [265]. The projections book''s Highlights section cites 2020–2030 while its cover and tables say 2022–2032 [265]. Product URLs: OEWS www2.labor.alabama.gov/OES/OES_Default.aspx; Projections www2.labor.alabama.gov/Projections/ProjectionsTAB.aspx; LAUS www2.labor.alabama.gov/LAUS/LAUS_Default.aspx; CES www2.labor.alabama.gov/CES/CES_Default.aspx [265].'
+  levers:
+  - l-set-range-from-rate-and-market
+  - l-rolling-demand-forecast
+  - l-pay-review-against-market-and-peers
+  stages:
+  - plan
+  geo: al
+  sector: all
+  official_url: https://www2.labor.alabama.gov/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 265
+- id: al-employer-childcare-credit
+  name: Alabama employer childcare tax credit (Act 2024-303)
+  kind: program
+  what: Act 2024-303 (HB358) creates an employer tax credit equal to 75 percent of eligible childcare expenses, or 100 percent for a small business, defined as an employer with fewer than 25 employees, capped at $600,000 per employer per year [267]. Aggregate caps are $15,000,000 for 2025, $17.5 million for 2026 and $20 million for 2027 [267]. ADOR rule 810-3-135-.05, effective 2025-03-17, awards credits on a first-come, first-served basis until the annual aggregate is reached, reserves at least 25 percent for small businesses or employers headquartered in rural areas, opens reservations through My Alabama Taxes from March 1, 2025, and sets claims due by March 1 each year starting 2026 [267]. The same act creates a separate Childcare Facility Tax Credit for licensed for-profit providers, with per-child credits of $1,000–$2,000 by Quality STARS rating, $25,000 per facility and $5M statewide [267].
+  cost: a tax credit; reservation through My Alabama Taxes, no fee stated [267]
+  conditions: The credit applies to tax years beginning on or after January 1, 2025 and ending December 31, 2027, with the act effective January 1, 2025 [267]. Employers who do not secure a credit reservation do not qualify to claim the credit [267]. The OCR'd act PDF has scan errors; the figures here follow the rule text [267].
+  levers:
+  - l-approved-schedule-flexibility
+  - l-embeddedness-building
+  stages:
+  - plan
+  - retain
+  geo: al
+  sector: all
+  official_url: https://revenue.alabama.gov/wp-content/uploads/2024/09/Act-2024-303-Childcare-HB358.pdf
+  pending_changes:
+  - status: final
+    date: '2027-12-31'
+    text: Employer childcare credit window ends with tax years ending December 31, 2027 [267]
+  as_of: '2026-10-22'
+  sources:
+  - 267
+- id: al-department-of-workforce
+  name: Alabama Department of Workforce (formerly Department of Labor) and the 2024 Working for Alabama acts
+  kind: reference
+  what: SB247 (2024), the Alabama Workforce Transformation Act, renames the Alabama Department of Labor the Alabama Department of Workforce, headed by a Secretary of Workforce [266]. Section 13 makes the act effective October 1, 2024 and section 12 requires full implementation not later than October 1, 2025; the Governor's release of 2025-01-31 states that on February 1, 2025 the Department of Labor officially becomes the Department of Workforce [266]. The act transfers Commerce's workforce programs, including WIOA Title I, the Alabama Office of Apprenticeship, the Alabama STEM Council and the Office of Education and Workforce Statistics, to the new department, excepting the Alabama Industrial Development Training Institute, and creates the Alabama Workforce Board of no more than 40 members with seven regional boards [266]. The department retains workplace safety, child labor enforcement, unemployment, workers' compensation and labor market information [266]. Companion 2024 enrolled bills include SB252, the Alabama Growth Alliance Act, and SB253, the Alabama Workforce Pathways Act, a K-12 diploma pathway, both effective 2024-10-01 [266]; HB358, the employer childcare credit (see al-employer-childcare-credit) [267]; and HB346, the Alabama Workforce Housing Tax Credit (Act 2024-302), a housing-developer credit of up to $2 million per project for up to 10 years with no employer hiring or wage component [268].
+  cost: n/a (reference record)
+  conditions: The LMI site already carries the new name while legacy labor.alabama.gov pages still read Department of Labor or Commerce [265] [262] (synthesis). The SB247 enrolled PDF prints no act number [266]. The Workforce Pathways Act contains no employer-facing provision [266].
+  levers:
+  - l-source-of-hire-tracking
+  stages:
+  - plan
+  geo: al
+  sector: all
+  official_url: https://www.workforce.alabama.gov/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 262
+  - 265
+  - 266
+  - 267
+  - 268
+- id: al-dow-projections-2022-2032
+  name: Alabama long-term occupational projections, 2022–2032 (Alabama Department of Workforce LMI)
+  kind: data-source
+  what: The state LMI division's long-term occupational projections by SOC occupation, base year 2022 and projection year 2032, published November 2024 as a statewide and regional PDF [293]. The projections landing page offers industry projections, occupational projections, a High Demand interactive tool and a methodology PDF [294].
+  cost: no cost; public PDF and web pages [294]
+  conditions: Statewide employment projected from 2,284,580 (2022) to 2,426,430 (2032), +6.21%, with 266,890 annual openings; software developers +19.34% (1,305 annual openings) and information security analysts +27.26% (255 annual openings) [293]. The document's Highlights section cites a 2020-2030 period with different totals, and no 2024–2034 edition was found [293]. The landing page shows no projection period, publication dates or release schedule [294].
+  levers:
+  - l-rolling-demand-forecast
+  - l-two-track-hiring-plan
+  stages:
+  - plan
+  - attract
+  geo: al
+  sector: all
+  official_url: https://www2.labor.alabama.gov/Projections/ProjectionsTAB.aspx
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 293
+  - 294
+- id: al-dow-qcew-products
+  name: Alabama QCEW products page (Alabama Department of Workforce LMI)
+  kind: data-source
+  what: The state LMI division's QCEW page lists annual statewide covered employment and wages by industry, annual county covered employment by industry, quarterly employment, an hourly-wages visualization, industry concentrations and business employment dynamics, served as web pages [295].
+  cost: no cost; public web pages [295]
+  conditions: No reference periods or release dates appear on the page, and it does not break out NAICS 5413, 5415, 5417 or 3364 for Madison County [295]. The BLS regional release remains the published source for Madison County totals and the county's national ranks [279]. (synthesis)
+  levers:
+  - l-set-range-from-rate-and-market
+  - l-vacancy-cost-estimate
+  stages:
+  - plan
+  - attract
+  geo: al
+  sector: all
+  official_url: https://www2.labor.alabama.gov/QCEW/QCEW_Default.aspx
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 279
+  - 295
+- id: bls-southeast-huntsville-area-page
+  name: BLS Southeast Information Office, Huntsville MSA area page
+  kind: data-source
+  what: The BLS regional landing page for the Huntsville MSA carries an Economy at a Glance table with LAUS and CES figures by supersector, 12-month percent changes, the Huntsville Area Economic Summary PDF and links to the regional OEWS and QCEW releases [291].
+  cost: no cost; public page [291]
+  conditions: The table's LAUS and CES figures are not seasonally adjusted; at access on 2026-10-22 LAUS ran through August 2026 and CES through September 2026, both preliminary [291]. The state LMI table released 2026-10-14 already showed the September 2026 Huntsville rate, a timing gap of one month against the BLS page [292]. (synthesis)
+  levers:
+  - l-set-range-from-rate-and-market
+  - l-rolling-demand-forecast
+  stages:
+  - plan
+  - attract
+  geo: huntsville-msa
+  sector: all
+  official_url: https://www.bls.gov/regions/southeast/al_huntsville_msa.htm
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 291
+  - 292
+- id: bls-series-id-formats
+  name: BLS series ID formats help page
+  kind: reference
+  what: The BLS help page defines series-ID layouts for LAUS, state and metro CES, QCEW and JOLTS, with worked examples for each; it carries no entry for the OEWS (OE) format [280].
+  cost: no cost [280]
+  conditions: The layouts place the seasonal code at position 3 (LAUS, CES, QCEW) and the JOLTS state or region code at positions 10-11; QCEW IDs run EN + seasonal code + 5-character area + data type + size + ownership + industry code [280]. Candidate QCEW and OEWS IDs built from these layouts remain unverified until pulled from the BLS API [280]. (synthesis)
+  levers:
+  - l-rolling-demand-forecast
+  stages:
+  - plan
+  geo: us
+  sector: all
+  official_url: https://www.bls.gov/help/hlpforma.htm
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 280
+- id: hire-vets-medallion
+  name: HIRE Vets Medallion Award
+  kind: program
+  what: 'A Department of Labor employer-recognition award created by the HIRE Vets Act of 2017, administered by the Veterans'' Employment and Training Service [304]. The award is graded on the veteran share of new hires, veteran retention, and the veteran share of employees, with integration-program requirements that rise by employer size [304].
+  
+    '
+  cost: Application fees of $120 for small employers (1–50 employees), $250 for medium (51–499) and $640 for large (500+), the same for Gold and Platinum [304].
+  conditions: 'For small employers, Platinum requires 10% veteran new hires, 85% veteran retention and 10% veteran employees; Gold requires 7%, 75% and 7% [304]. The same percentage thresholds apply to medium and large employers, with Platinum for large employers requiring all listed integration programs [304]. The 2025 application window opened January 31, 2025; the page links to 2026 criteria but the criteria text shown is the 2025 cycle [304].
+  
+    '
+  levers:
+  - l-military-transition-pipeline
+  - l-employer-image-management
+  stages:
+  - attract
+  - retain
+  geo: us
+  sector: all
+  official_url: https://www.hirevets.gov/
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 304
+- id: dod-smart-scholarship
+  name: SMART Defense Education Program (scholarship-for-service)
+  kind: program
+  what: 'A statutory Department of Defense scholarship-for-service program under 10 U.S.C. § 4093 for U.S. citizens pursuing associate, undergraduate or advanced degrees in critical skills or disciplines [311]. The recipient enters a written agreement to accept and continue employment with the Department for the period of obligated service, which may include serving on active duty in the Armed Forces [311].
+  
+    '
+  cost: Not stated in the statute text read [311].
+  conditions: 'The service obligation is employment with the Department of Defense; the statute contains no provision for contractor employment to satisfy it, and the phrase ''at a facility of the Department'' does not appear [311]. Non-citizen awards are capped at five per year under subsection (g) [311]. The program''s own site could not be read, so the statute is the only text behind this record; a contractor employer gains no placement pathway from the program as the statute describes it [311]. (synthesis)
+  
+    '
+  levers:
+  - l-university-pipeline
+  - l-two-track-hiring-plan
+  stages:
+  - plan
+  geo: us
+  sector: defense
+  official_url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section4093&num=0&edition=prelim
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources:
+  - 311

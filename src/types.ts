@@ -91,23 +91,27 @@ export interface Lever extends RecordBase {
   when_it_binds_elsewhere: string[]; gates: string[]; enablers: string[]; how_to: string[] | string; as_of: string; controversy?: string;
   constraints: string[]; inbound: string[]; outbound: string[];
 }
+export type Geo = 'us' | 'al' | 'huntsville-msa';
+export type Sector = 'all' | 'defense';
 export interface Gate extends RecordBase {
+  geo: Geo; sector: Sector;
   what: string; governing_text: string; applies_when: string; binds: StageId[]; steps: string[] | string; official_url: string;
   pending_changes: PendingChange[]; as_of: string; conflicts: string[];
   stages: StageId[]; constraints: string[]; levers: string[]; states: { state: string; overlay: OverlayKey; status: string; primary_pending: boolean }[];
 }
 export interface Enabler extends RecordBase {
-  kind: 'data-source' | 'program' | 'reference' | 'tooling' | 'standard'; what: string; cost: string; conditions: string;
+  kind: 'data-source' | 'program' | 'reference' | 'tooling' | 'standard'; what: string; cost: string; conditions: string; geo: Geo; sector: Sector;
   levers: string[]; official_url: string; pending_changes: PendingChange[]; as_of: string; levers_all: string[];
 }
 export interface Indicator extends RecordBase {
   value: string; reference_period: string; published: string; publisher: string; series: string; stages: StageId[]; note: string;
+  geo: Geo; sector: Sector; counterpart: string; series_confirmed?: 'api' | 'mirror' | 'none';
   constraints: string[]; metric_stages: StageId[];
 }
 export interface Link { id: string; from: string; to: string; relation: Relation; link: string; evidence: string; grade: string; legacy: string[]; sources: number[]; changes_affecting: string[] }
 export type OverlayKey = 'pay_transparency' | 'salary_history_ban' | 'noncompete' | 'stay_or_pay' | 'ai_hiring' | 'cannabis_testing' | 'ban_the_box' | 'credit_check' | 'mini_warn';
 export interface Overlay { status: string; text: string; sources: number[]; primary_pending: boolean; gates: string[]; threshold?: string; effective?: string; notice_days?: string; [k: string]: unknown }
-export type StateRecord = { id: string; state: string; abbr: string; localities?: string; sources: number[]; as_of: string; recheck: boolean; changes_affecting: string[] } & Record<OverlayKey, Overlay>;
+export type StateRecord = { id: string; state: string; abbr: string; localities?: string; state_gates: string[]; sources: number[]; as_of: string; recheck: boolean; changes_affecting: string[] } & Record<OverlayKey, Overlay>;
 export interface Controversy extends RecordBase { question: string; positions: { holder: string; claim: string; sources: number[] }[]; what_a_recruiter_can_rely_on: string; named_by: string[] }
 export interface Change { id: string; date: string; status: string; title: string; what: string; stages: StageId[]; records: string[]; sources: number[]; superseded_by: string | null }
 

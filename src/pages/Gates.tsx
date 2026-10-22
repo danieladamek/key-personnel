@@ -27,7 +27,7 @@ export default function Gates() {
                 if (seen.has(g.id)) return <p key={g.id} className="text-sm pl-3"><span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-sm mr-1.5" style={{ background: GATE_COLOUR }} /><Link className="underline" to={`/gates/${g.id}`}>{g.name}</Link> <span className="text-xs bx-muted">(also binds an earlier stage; opened there)</span></p>;
                 seen.add(g.id);
                 return (
-                  <Disclosure key={g.id} id={g.id} summary={<><span className="font-semibold">{g.name}</span><span className="block text-xs bx-muted mt-0.5">binds {g.binds.join(', ')}{g.pending_changes.length ? ` · ${g.pending_changes.length} pending change${g.pending_changes.length === 1 ? '' : 's'}` : ''}{g.conflicts.length ? ' · sources differ' : ''}</span></>}>
+                  <Disclosure key={g.id} id={g.id} summary={<><span className="font-semibold">{g.name}</span><span className="block text-xs bx-muted mt-0.5">{g.geo !== 'us' ? `${g.geo === 'al' ? 'Alabama' : g.geo} · ` : ''}{g.sector === 'defense' ? 'defense industry · ' : ''}binds {g.binds.join(', ')}{g.pending_changes.length ? ` · ${g.pending_changes.length} pending change${g.pending_changes.length === 1 ? '' : 's'}` : ''}{g.conflicts.length ? ' · sources differ' : ''}</span></>}>
                     <p className="mt-1"><Link className="underline text-sm font-semibold" to={`/gates/${g.id}`}>The gate’s own page, with the constraints, levers and states that touch it →</Link></p>
                     <GateBody g={g} />
                   </Disclosure>

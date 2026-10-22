@@ -4,9 +4,9 @@
   name: Structured interview with scored rubric
   stages: [select]
   what: >
-    Ask every candidate the same predetermined job-related questions in the same order and score every answer on the same
-    rating scale with behavioural anchors [41]. It is the most valid single predictor in the 2022 re-estimation (.42) and
-    carries a smaller Black–White difference (.23) than tests of knowledge (.54) or cognitive ability (.79) [1].
+    Every candidate is asked the same predetermined job-related questions in the same order, and every answer is scored on
+    the same rating scale with behavioural anchors [41]. It is the most valid single predictor in the 2022 re-estimation
+    (.42) and carries a smaller Black–White difference (.23) than tests of knowledge (.54) or cognitive ability (.79) [1].
   evidence:
     grade: meta-analysis
     effect: 'operational validity .42 (Sackett et al. 2022), the highest of any single predictor [1]; structured .44 vs unstructured .33 in McDaniel et al. 1994 [5]'
@@ -35,9 +35,9 @@
   name: Combine the evidence by formula, not by feel
   stages: [select]
   what: >
-    Score each predictor, weight and add the scores, and treat the total as the anchor for the decision. The same information
-    combined by formula predicts job performance at r .44 against .28 when combined by judgement [7]; managers who override a
-    valid test make worse hires on average [10].
+    Each predictor is scored, the scores are weighted and added, and the total is the anchor for the decision. The same
+    information combined by formula predicts job performance at r .44 against .28 when combined by judgement [7]; managers
+    who override a valid test make worse hires on average [10].
   evidence:
     grade: meta-analysis
     effect: 'mechanical r .44 (cross-validated .40) vs clinical r .28 for job performance [7]; override hires worse than test-concordant hires [10]'
@@ -122,10 +122,10 @@
   name: Realistic job preview
   stages: [select, offer, onboard]
   what: >
-    Tell candidates the hard parts of the job and the firm before they decide: the hours, the site, the customer, the clearance
-    wait, the pay range. Across 40 studies previews lowered inflated expectations and reduced attrition during recruiting and
-    voluntary turnover [12]; across 52 studies the effect ran mainly through perceived organisational honesty rather than
-    through self-selection [13].
+    Candidates hear the hard parts of the job and the firm before they decide: the hours, the site, the customer, the
+    clearance wait, the pay range. Across 40 studies previews lowered inflated expectations and reduced attrition during
+    recruiting and voluntary turnover [12]; across 52 studies the effect ran mainly through perceived organisational
+    honesty rather than through self-selection [13].
   evidence:
     grade: meta-analysis
     effect: 'lower initial expectations, lower attrition during recruitment, lower voluntary and total turnover, higher performance [12]; organisational honesty the primary mechanism [13]'
@@ -159,8 +159,9 @@
     population: 'N = 3,012 archival records at one company [15]'
     k_n: 'one study'
   what_it_does_not_do: >
-    One company's archival data; the acceptance effect sizes were not read (todo). Speed does not substitute for an affordable
-    offer, and where a customer or an outside authority must approve the hire the firm does not own the clock (sweep 7).
+    One company's archival data [15]; the acceptance effect sizes were not read (todo). Speed does not substitute for an
+    affordable range [98] or for a process applicants find fair [16]; a fast offer below the market is still declined
+    (synthesis).
   costs: >
     Manager calendar discipline and a pre-authorised pay band (synthesis).
   when_it_binds_elsewhere: []
@@ -203,8 +204,9 @@
   name: Interviewer training and calibration
   stages: [select]
   what: >
-    Train everyone who interviews in the structured method and calibrate their ratings against each other. Formal training was
-    the modifiable antecedent of using the structure components that carry validity among 131 professional interviewers [19].
+    Everyone who interviews is trained in the structured method and calibrates their ratings against the others'. Formal
+    training was the modifiable antecedent of using the structure components that carry validity among 131 professional
+    interviewers [19].
   evidence:
     grade: observational
     effect: 'training and a selection focus predicted question sophistication, consistency, note-taking and standardised evaluation [19]'
@@ -228,10 +230,10 @@
   name: Validate the screen and keep the records
   stages: [select]
   what: >
-    Tie each criterion, test and question to a job analysis; keep criterion-related, content or construct validity evidence;
-    record selection rates by sex and by race or ethnic group; and keep the documentation the Uniform Guidelines describe
-    [31] [32]. For an automated screen, keep the anti-bias testing and the ADS records that California now treats as a defence
-    factor and a four-year retention duty [40].
+    Each criterion, test and question is tied to a job analysis; criterion-related, content or construct validity evidence
+    is kept; selection rates are recorded by sex and by race or ethnic group; and the documentation the Uniform Guidelines
+    describe is kept [31] [32]. For an automated screen, the anti-bias testing and the ADS records that California now
+    treats as a defence factor and a four-year retention duty are kept as well [40].
   evidence:
     grade: regulation
     effect: 'binding framework under Title VII; professional standard in the SIOP Principles [29]'
@@ -340,13 +342,13 @@
   name: Sequence the inquiries around the conditional offer
   stages: [select, offer, clear-start]
   what: >
-    Put every inquiry the law reserves on the far side of a conditional offer, and write the posting for the people the law
-    actually allows. Before the offer: ability to perform job functions with or without accommodation, licences, attendance,
-    and (for non-contract roles) arrest or conviction records [34]. After the offer: medical questions and examinations asked
-    of everyone in the job category [34]; criminal history for positions under a federal contract, with exceptions for
-    classified-access and national-security positions [48]; and individualised assessment where a record is disqualifying
-    [47]. For export-controlled work, state that U.S. persons include nationals, permanent residents, refugees and asylees, and
-    keep export screening out of the Form I-9 [51] [49].
+    Every inquiry the law reserves sits on the far side of a conditional offer, and the posting is written for the people
+    the law actually allows. Before the offer: ability to perform job functions with or without accommodation, licences,
+    attendance, and (for non-contract roles) arrest or conviction records [34]. After the offer: medical questions and
+    examinations asked of everyone in the job category [34]; criminal history for positions under a federal contract, with
+    exceptions for classified-access and national-security positions [48]; and individualised assessment where a record is
+    disqualifying [47]. For export-controlled work, the posting states that U.S. persons include nationals, permanent
+    residents, refugees and asylees, and export screening stays out of the Form I-9 [51] [49].
   evidence:
     grade: regulation
     effect: 'ADA, Title VII guidance, the Fair Chance Act and 8 U.S.C. 1324b as enforced [34] [47] [48] [49] [50]'
@@ -374,11 +376,11 @@
   name: Employee referral program with a bonus tied to tenure
   stages: [attract]
   what: >
-    Ask employees to refer people from their networks and pay a bonus when the referral is hired and again when they pass a
-    tenure milestone. Referred hires quit 10 to 30 percent less across nine firms in three industries and were worth about 25
-    percent more in discounted profit in the one firm where it could be computed [60]; in a financial-services firm referred
-    applicants were 7.3 points more likely to be interviewed, 2.4 points more likely to be offered, and about 15 percent less
-    likely to leave [61].
+    Employees are asked to refer people from their networks and receive a bonus when the referral is hired and again when
+    they pass a tenure milestone. Referred hires quit 10 to 30 percent less across nine firms in three industries and were
+    worth about 25 percent more in discounted profit in the one firm where it could be computed [60]; in a
+    financial-services firm referred applicants were 7.3 points more likely to be interviewed, 2.4 points more likely to
+    be offered, and about 15 percent less likely to leave [61].
   evidence:
     grade: quasi-experimental
     effect: 'quit rates 10–30% lower; profit per worker $2,201 vs $1,756 (trucking); hire probability higher [60] [61]'
@@ -407,18 +409,20 @@
   name: Track qualified rate, starts and retention by source
   stages: [attract, plan]
   what: >
-    Record the source of every applicant and follow the cohort to qualified, interviewed, offered, started and retained at 90
-    days and one year. Inside sources show higher tenure and performance than outside ones [62]; the difference is invisible
-    without the record (synthesis). Contractors kept online search and applicant records under the Internet Applicant rule until
-    its removal with part 60-1 on October 26, 2026 [87] [86]; the Uniform Guidelines' selection-rate records by group remain [31].
+    The source of every applicant is recorded and the cohort is followed to qualified, interviewed, offered, started and
+    retained at 90 days and one year. Inside sources show higher tenure and performance than outside ones [62]; the
+    difference is invisible without the record (synthesis). Contractors kept online search and applicant records under the
+    Internet Applicant rule until its removal with part 60-1 on October 26, 2026 [87] [86]; the Uniform Guidelines'
+    selection-rate records by group remain [31].
   evidence:
     grade: observational
     effect: 'source effects on turnover and performance are meta-analytic (Zottoli & Wanous 2000, via [62]); the tracking practice itself is guidance'
     population: 'recruitment-source studies summarised in [62]'
     k_n: ''
   what_it_does_not_do: >
-    Small samples mislead: one good hire from a board is not a channel effect (synthesis). Recording source does not improve any
-    channel; it only shows which to stop buying (synthesis).
+    Small samples mislead: one good hire from a board is not a channel effect (synthesis from [62]). Recording source does
+    not improve any channel by itself; the inside-source advantage is a tenure and performance difference measured across
+    sources [62], and no study of the record-keeping practice itself was found.
   costs: >
     A source field in the applicant record and a quarterly tally (synthesis).
   when_it_binds_elsewhere: []
@@ -435,12 +439,12 @@
   name: 'Rewrite the posting: searchable title, pay range, plain requirements, neutral wording'
   stages: [attract]
   what: >
-    Use the title candidates search for, show the pay range, state the real requirements and the hard constraints (site,
-    schedule, clearance), and strip gendered and age-coded words. Within a job title, a 10 percent higher posted wage draws 7.7
-    percent more applicants [65]; 59 percent of US postings and 63 percent of software-development postings already show pay
-    [75]; masculine-coded wording lowers women's appeal and belonging for the same job [77]; "recent college graduate" and
-    "young" are unlawful age terms [78]; a citizenship restriction on export-controlled work is unlawful unless law or contract
-    requires it [49].
+    The posting uses the title candidates search for, shows the pay range, states the real requirements and the hard
+    constraints (site, schedule, clearance), and carries no gendered or age-coded words. Within a job title, a 10 percent
+    higher posted wage draws 7.7 percent more applicants [65]; 59 percent of US postings and 63 percent of
+    software-development postings already show pay [75]; masculine-coded wording lowers women's appeal and belonging for
+    the same job [77]; "recent college graduate" and "young" are unlawful age terms [78]; a citizenship restriction on
+    export-controlled work is unlawful unless law or contract requires it [49].
   evidence:
     grade: observational
     effect: '+10% posted wage → +7.7% applicants within title [65]; wording effect on appeal 4.16 vs 4.50 [77]'
@@ -468,18 +472,19 @@
   name: Offer remote or hybrid work where the contract allows
   stages: [attract, retain]
   what: >
-    Open the posting to candidates who will not relocate by making the work remote or hybrid. Workers assign a hybrid option a
-    mean value of 8 percent of pay, and 239 of 470 surveyed firms expanded or plan to expand remote work to keep staff and
-    moderate wage growth [70]; 28 percent of paid workdays were at home in mid-2023 [69]; 1.6 percent of job seekers relocated
-    for a job in early 2023 [85].
+    The posting is opened to candidates who will not relocate by making the work remote or hybrid. Workers assign a hybrid
+    option a mean value of 8 percent of pay, and 239 of 470 surveyed firms expanded or plan to expand remote work to keep
+    staff and moderate wage growth [70]; 28 percent of paid workdays were at home in mid-2023 [69]; 1.6 percent of job
+    seekers relocated for a job in early 2023 [85].
   evidence:
     grade: observational
     effect: 'WFH valued at 8% of pay (mean); half of firms use it in place of wage growth [70]'
     population: 'SWAA, N ≈ 31,000; 470 firms [70]'
     k_n: ''
   what_it_does_not_do: >
-    It does not exist for classified or site-bound work, and a customer's access rules decide, not the firm (sweep 4). The
-    differential then has to be paid in cash or absorbed as a smaller pool (synthesis).
+    It does not exist for classified or site-bound work, and a customer's access rules decide, not the firm [119] (sweep
+    4). The 8 percent valuation is a mean over workers who differ widely [70], and the option does nothing for a role the
+    customer requires onsite.
   costs: >
     Where allowed, little; where not, the 8 percent differential the firm competes against [70].
   when_it_binds_elsewhere: []
@@ -495,9 +500,9 @@
   name: Replace credential requirements with skill requirements where the job allows
   stages: [attract]
   what: >
-    Drop the degree or years-of-experience line from the posting when the job analysis does not support it, and name the skills
-    instead. Years of experience predicts performance at .07 [1]; the non-degree hires made after requirement removals stayed
-    longer [68]; nearly 70 percent of campus-recruiting employers report using skills-based hiring [79].
+    The degree or years-of-experience line comes off the posting when the job analysis does not support it, and the skills
+    are named instead. Years of experience predicts performance at .07 [1]; the non-degree hires made after requirement
+    removals stayed longer [68]; nearly 70 percent of campus-recruiting employers report using skills-based hiring [79].
   evidence:
     grade: observational
     effect: 'announced removals produced a 3.5-point rise in non-degree hiring in affected roles and less than one hire in 700 economy-wide; retention of non-degree hires higher [68]'
@@ -579,10 +584,10 @@
   name: Manage the employer image candidates actually see
   stages: [attract]
   what: >
-    Put the firm's work, people and terms where candidates look, and train whoever recruits. Favourable employer images relate to
-    better recruitment outcomes and form through recruiters and word of mouth [64]; recruiter behaviour, process perceptions and
-    job and organisation characteristics predict attraction, and recruiter demographics do not [63]; perceived fit is the
-    strongest predictor [62].
+    The firm's work, people and terms are put where candidates look, and whoever recruits is trained. Favourable employer
+    images relate to better recruitment outcomes and form through recruiters and word of mouth [64]; recruiter behaviour,
+    process perceptions and job and organisation characteristics predict attraction, and recruiter demographics do not
+    [63]; perceived fit is the strongest predictor [62].
   evidence:
     grade: meta-analysis
     effect: 'category-level predictors of attraction and job choice, mediated by attitudes and intentions [63]'
@@ -607,10 +612,10 @@
   name: Audit who the ad actually reaches
   stages: [attract]
   what: >
-    Check the audience a paid ad platform delivered against the occupation's workforce. A gender-neutral STEM ad reached fewer
-    women because the algorithm optimised cost and young women are an expensive audience [66]. California treats targeted job
-    advertisements as an automated-decision system [40], and selection-rate records by group are expected under the Uniform
-    Guidelines [31].
+    The audience a paid ad platform delivered is checked against the occupation's workforce. A gender-neutral STEM ad
+    reached fewer women because the algorithm optimised cost and young women are an expensive audience [66]. California
+    treats targeted job advertisements as an automated-decision system [40], and selection-rate records by group are
+    expected under the Uniform Guidelines [31].
   evidence:
     grade: field-experiment
     effect: 'skewed delivery of a neutral ad through cost optimisation [66]'
@@ -634,11 +639,11 @@
   name: Set the range from the labor-category rate and the market, before recruiting
   stages: [offer, plan]
   what: >
-    Work backwards from the contract: the labor category's hourly rate contains wages, overhead, G&A and profit [98], so the
-    affordable salary is the rate less the firm's indirect rates and margin (synthesis). Check the result against the market:
-    OEWS wages for the occupation and metro area [110], the ECI's 3.1 percent annual wage growth [103], awarded ceiling rates
-    for comparable categories in CALC+ [111], and for cleared work the premium ladder [89]. Pre-approve the range so the offer
-    can follow the final interview within days [15].
+    The range is worked backwards from the contract: the labor category's hourly rate contains wages, overhead, G&A and
+    profit [98], so the affordable salary is the rate less the firm's indirect rates and margin (synthesis). The result is
+    then checked against the market: OEWS wages for the occupation and metro area [110], the ECI's 3.1 percent annual wage
+    growth [103], awarded ceiling rates for comparable categories in CALC+ [111], and for cleared work the premium ladder
+    [89]. A pre-approved range lets the offer follow the final interview within days [15].
   evidence:
     grade: regulation
     effect: 'the rate ceiling is contractual [98] [99]; speed of offer raises acceptance with no later penalty [15]'
@@ -665,10 +670,10 @@
   name: Post the range and say whether pay is negotiable
   stages: [attract, offer]
   what: >
-    Put the range in the posting and say in plain words whether it is negotiable. State posting laws raised disclosure by about
-    thirty points and wages by 1.3 to 3.6 percent with no loss of employment or postings [97]; most competing postings already
-    show pay [75]; within a title, a higher posted wage draws more applicants [65]. Saying pay is negotiable removed the gender
-    gap in who negotiates in a field experiment with nearly 2,500 applicants [95].
+    The range goes in the posting, with a plain statement of whether it is negotiable. State posting laws raised
+    disclosure by about thirty points and wages by 1.3 to 3.6 percent with no loss of employment or postings [97]; most
+    competing postings already show pay [75]; within a title, a higher posted wage draws more applicants [65]. Saying pay
+    is negotiable removed the gender gap in who negotiates in a field experiment with nearly 2,500 applicants [95].
   evidence:
     grade: field-experiment
     effect: 'negotiation gap closes or reverses when negotiability is stated [95]; posting laws +1.3–3.6% wages, +30 pp disclosure [97]'
@@ -753,11 +758,11 @@
   name: Request a rate adjustment with market and recruiting evidence
   stages: [offer, plan]
   what: >
-    Use the contract's price-adjustment mechanism, or the next option or recompete, to move the labor rate, and bring the
-    evidence: ECI wage growth of 3.1 percent [103], CALC+ ceiling rates for the same category, education and clearance [111],
-    and the firm's own declined offers and departures (synthesis). On GSA schedules the clause allows up to three increases a
-    period inside a window, thirty days apart, with approval beyond ten percent; GSA suspended those limits in 2022 when
-    inflation ran ahead of them [117].
+    The firm uses the contract's price-adjustment mechanism, or the next option or recompete, to move the labor rate, and
+    brings the evidence: ECI wage growth of 3.1 percent [103], CALC+ ceiling rates for the same category, education and
+    clearance [111], and its own declined offers and departures (synthesis). On GSA schedules the clause allows up to
+    three increases a period inside a window, thirty days apart, with approval beyond ten percent; GSA suspended those
+    limits in 2022 when inflation ran ahead of them [117].
   evidence:
     grade: regulation
     effect: 'the adjustment mechanism and its limits [117]; the market series [103]'
@@ -1079,11 +1084,11 @@
   name: Run the access steps with named owners before the start date
   stages: [clear-start, onboard]
   what: >
-    List every access the first productive day needs and who grants it: the credential sponsorship through TASS with the
-    fingerprint check and the submitted investigation [138] [137]; the reciprocity request with its five-day standard [122];
-    the SCI or SAP read-in and any polygraph [119] [122] [147]; the cyber qualification the role needs on day one [139]; the
-    customer's own onboarding interval, 41 days from a favourable determination at DHS in FY2026 Q3 [125]. A named contact and
-    a first-day plan are among the practices the one field study on no-shows recommends [144].
+    A list of every access the first productive day needs, and who grants each: the credential sponsorship through TASS
+    with the fingerprint check and the submitted investigation [138] [137]; the reciprocity request with its five-day
+    standard [122]; the SCI or SAP read-in and any polygraph [119] [122] [147]; the cyber qualification the role needs on
+    day one [139]; the customer's own onboarding interval, 41 days from a favourable determination at DHS in FY2026 Q3
+    [125]. A named contact and a first-day plan are among the practices the one field study on no-shows recommends [144].
   evidence:
     grade: regulation
     effect: 'the access prerequisites and their owners [137] [138] [139] [122]'
@@ -1142,12 +1147,12 @@
   name: A structured onboarding with an insider beside the newcomer
   stages: [onboard, clear-start]
   what: >
-    Write the first week, month and quarter down, assign an experienced insider as guide, affirm what the hire already
-    brings, and keep supervisor contact from falling off. Institutionalized tactics correlate .24 to .40 with adjustment and
-    social tactics .29 to .47 [152]; serial (insider role model) and investiture tactics each roughly halved the odds of
-    leaving within a year at one firm [155]; early supervisor and coworker support predicted integration and commitment at
-    ninety days while support itself declined week by week [156]. Pre-start contact and a first-day plan also lower the
-    odds that an accepted hire never arrives [144].
+    The first week, month and quarter are written down, an experienced insider is assigned as guide, what the hire already
+    brings is affirmed, and supervisor contact is kept from falling off. Institutionalized tactics correlate .24 to .40
+    with adjustment and social tactics .29 to .47 [152]; serial (insider role model) and investiture tactics each roughly
+    halved the odds of leaving within a year at one firm [155]; early supervisor and coworker support predicted
+    integration and commitment at ninety days while support itself declined week by week [156]. Pre-start contact and a
+    first-day plan also lower the odds that an accepted hire never arrives [144].
   evidence:
     grade: meta-analysis
     effect: 'institutionalized tactics r .24–.40, social tactics .29–.47 with adjustment; social acceptance → performance .35, turnover −.12 [152]; serial OR 0.44, investiture OR 0.52 for turnover [155]'
@@ -1229,12 +1234,12 @@
   name: Pay for training on terms the law still allows, and expect the return in who applies
   stages: [develop, offer]
   what: >
-    Offer the training openly in the posting, pay for it under a written section 127 plan up to $5,250 a year tax-free
-    [174], and if a repayment term is used at all make it the shape the strictest states permit: a separate agreement for a
-    transferable credential, at the firm's actual cost, prorated, without interest, never for required training, and never
-    enforced on a termination without misconduct [167] [168]. The retention effect of paying for education came mostly
-    (80 percent) through who chose to join [160]; repayment contracts cut quitting by about 15 percent in the research the
-    CFPB cites [166].
+    The training is offered openly in the posting and paid for under a written section 127 plan up to $5,250 a year
+    tax-free [174]; where a repayment term is used at all, it takes the shape the strictest states permit: a separate
+    agreement for a transferable credential, at the firm's actual cost, prorated, without interest, never for required
+    training, and never enforced on a termination without misconduct [167] [168]. The retention effect of paying for
+    education came mostly (80 percent) through who chose to join [160]; repayment contracts cut quitting by about 15
+    percent in the research the CFPB cites [166].
   evidence:
     grade: quasi-experimental
     effect: '80% of the retention effect through sorting [160]; training contracts ≈ 15% less quitting (cited) [166]'
@@ -1260,10 +1265,10 @@
   name: Allocate mentoring hours and limit concurrent trainees
   stages: [develop, onboard]
   what: >
-    Put the mentoring hours in the plan and in the rates: name the senior, budget the hours as job-related training cost
-    [175], cap how many trainees one senior carries, and treat the time as the compensation it is, since learning from
-    knowledgeable coworkers is worth four to nine percent of pay [158]. The insider beside the newcomer is the strongest
-    onboarding tactic [152].
+    The mentoring hours are in the plan and in the rates: the senior is named, the hours are budgeted as job-related
+    training cost [175], the number of trainees one senior carries is capped, and the time is treated as the compensation
+    it is, since learning from knowledgeable coworkers is worth four to nine percent of pay [158]. The insider beside the
+    newcomer is the strongest onboarding tactic [152].
   evidence:
     grade: observational
     effect: 'learning 4–9% of total compensation [158]; social tactics r .29–.47 [152]'
@@ -1288,10 +1293,10 @@
   name: Train on representative tasks with the supervisor expecting the skill
   stages: [develop, onboard]
   what: >
-    Build training from sanitized tasks that look like the work, use behavioural modelling and error management, have the
-    supervisor state what will change, and schedule the first real use soon after the course. Those are the conditions the
-    transfer literature supports: realistic environments, supervisor support (ρ .31), transfer climate (.37) and opportunity
-    to perform [162]; motivation and self-efficacy matter most for open skills [163].
+    Training is built from sanitized tasks that look like the work, uses behavioural modelling and error management, has
+    the supervisor state what will change, and schedules the first real use soon after the course. Those are the
+    conditions the transfer literature supports: realistic environments, supervisor support (ρ .31), transfer climate
+    (.37) and opportunity to perform [162]; motivation and self-efficacy matter most for open skills [163].
   evidence:
     grade: meta-analysis
     effect: 'supervisor support ρ .31 (peers .14); transfer climate .37; motivation to transfer .43 [162]'
@@ -1372,7 +1377,7 @@
   name: Track each development cohort's cost, billed service and retention
   stages: [develop, plan]
   what: >
-    Measure development the way the economics does: cost against output over tenure. The industry evidence puts the
+    Development is measured the way the economics does: cost against output over tenure. The industry evidence puts the
     productivity gain from training at about twice the wage gain [159]; the ramp evidence shows output rising far faster
     than pay in the first eighteen months [157]; the apprenticeship study shows the method applied to participants and
     society but not to employers [171]; the tuition evidence shows most of the retention return arrives through sorting
@@ -1385,7 +1390,8 @@
     k_n: ''
   what_it_does_not_do: >
     It takes two years to say anything, and some individual investments will fail whatever the cohort returns (synthesis);
-    no template for small contractors was found.
+    the measured returns in the evidence are industry- or firm-level averages [159] [157], not predictions for one hire,
+    and no employer-side apprenticeship return was found [171].
   costs: 'Record-keeping by cohort; a two-year horizon (synthesis).'
   when_it_binds_elsewhere: []
   gates: []
@@ -1402,11 +1408,12 @@
   name: Review pay at capability milestones against the market and the peers
   stages: [retain, develop]
   what: >
-    Review each person's pay when their capability changes, against the OEWS and cleared-market figures and against the
-    peers doing substantially equal work, and keep raises similar across peers unless the difference can be explained.
-    Quits respond to own pay mostly through comparison with higher-paid peers and are insensitive when raises are similar
-    [182]; below-median earners who learn peer pay search for other jobs [92]; the Equal Pay Act requires curing a gap
-    upward [112]. Where the rate cannot carry the review, the rate-relief request is the next lever (l-rate-relief-request).
+    Each person's pay is reviewed when their capability changes, against the OEWS and cleared-market figures and against
+    the peers doing substantially equal work, and raises are kept similar across peers unless the difference can be
+    explained. Quits respond to own pay mostly through comparison with higher-paid peers and are insensitive when raises
+    are similar [182]; below-median earners who learn peer pay search for other jobs [92]; the Equal Pay Act requires
+    curing a gap upward [112]. Where the rate cannot carry the review, the rate-relief request is the next lever
+    (l-rate-relief-request).
   evidence:
     grade: quasi-experimental
     effect: 'peer-comparison driven quits; separations insensitive to similar raises [182]; pay ρ −.17 [178]'
@@ -1461,7 +1468,7 @@
   name: Regular check-ins by the firm's own manager, with the work on the table
   stages: [retain]
   what: >
-    Keep a manager of the firm's own in regular contact with each person at a customer site, talking about the work, the
+    A manager of the firm's own stays in regular contact with each person at a customer site, talking about the work, the
     supervision, the tools and the fit, and listening for the two strongest signals, wanting to leave and looking [178].
     Leadership quality predicts quitting at ρ −.24, commitment at −.29 and satisfaction at −.28 [178]; unit engagement
     relates to turnover across 7,939 business units [183]; an undermining supervisor tripled a newcomer's hazard of
@@ -1473,8 +1480,8 @@
     k_n: 'k = 42 (leadership), 129 (commitment), 174 (satisfaction) [178]'
   what_it_does_not_do: >
     Stay interviews and recognition programs as such have no evidence base found; the check-in works through the
-    relationship and what it changes, not through the meeting (synthesis). The customer's manager runs the day; the
-    firm's manager can only act on what is heard (synthesis).
+    relationship the leadership and engagement correlations describe [178] [183], and the correlations are not causal
+    estimates of any conversation practice. An undermining supervisor is a hazard the check-in cannot offset [156].
   costs: 'Management time; the meetings the row warns against if they bring the employee nothing (synthesis).'
   when_it_binds_elsewhere: []
   gates: []
@@ -1502,8 +1509,9 @@
     population: '316 turnover studies [178]'
     k_n: ''
   what_it_does_not_do: >
-    The customer may decline to reduce scope; the cover then continues with the strain it brings (synthesis). No study of
-    capacity negotiation itself was found.
+    The customer may decline to reduce scope; the cover then continues with the strain it brings (synthesis), and strain,
+    not hours, is what predicts quitting [178]. No study of capacity negotiation with a customer was found; the lever
+    rests on the contract's key-personnel and notice mechanics [188].
   costs: 'A harder conversation with the customer; possible reduced billing (synthesis).'
   when_it_binds_elsewhere: []
   gates: [key-personnel-substitution-clause, tm-labor-category-rates]
@@ -1613,7 +1621,9 @@
     k_n: ''
   what_it_does_not_do: >
     It spends current delivery time (the row's trade-off) and the senior hours the firm is short of
-    (c-mentoring-capacity-is-senior-billable-time); no study of handoff documentation itself was found.
+    (c-mentoring-capacity-is-senior-billable-time); the evidence is a unit-level correlation between firm-specific
+    training and lower turnover [181], not a study of handoff documentation, and the replacement-cost case rests on
+    administrative records of unexpected deaths [193].
   costs: 'Senior and second-person hours; indirect cost in the rates [148] (synthesis).'
   when_it_binds_elsewhere: [c-mentoring-capacity-is-senior-billable-time]
   gates: [key-personnel-substitution-clause, far-31-205-44-training-costs]
@@ -1629,11 +1639,11 @@
   name: A written departure protocol for named and cleared staff
   stages: [handover, retain]
   what: >
-    Write down what happens on the day a person gives notice: the contracting officer's notice and substitute request
-    within the clause's period [188]; the termination report and the removal from access for a cleared employee [189]
-    [119]; the agency notification where the person is named in a pending proposal [108]; the handoff and the successor
-    (l-cross-training-and-documented-handoffs); the WARN check where the firm has 100 or more employees [191]; and the
-    exit conversation that records why, for the cohort measure (l-cohort-return-tracking) (synthesis).
+    A written account of what happens on the day a person gives notice: the contracting officer's notice and substitute
+    request within the clause's period [188]; the termination report and the removal from access for a cleared employee
+    [189] [119]; the agency notification where the person is named in a pending proposal [108]; the handoff and the
+    successor (l-cross-training-and-documented-handoffs); the WARN check where the firm has 100 or more employees [191];
+    and the exit conversation that records why, for the cohort measure (l-cohort-return-tracking) (synthesis).
   evidence:
     grade: regulation
     effect: 'the clause, reporting and notification duties a departure triggers [188] [189] [108]'
@@ -1670,7 +1680,8 @@
     k_n: ''
   what_it_does_not_do: >
     It does not stop the prime from hiring the firm's people on their own initiative; the hold has to be in the job
-    (l-embeddedness-building) (synthesis).
+    (l-embeddedness-building), and the guidelines treat an agreement between competing employers not to hire each other's
+    people as a criminal matter whatever its label [187].
   costs: 'Counsel''s review of every teaming agreement (synthesis).'
   when_it_binds_elsewhere: []
   gates: [no-poach-and-non-solicitation, noncompete-agreements-federal-status, training-repayment-and-stay-or-pay]
@@ -1699,7 +1710,8 @@
     k_n: ''
   what_it_does_not_do: >
     It cannot make a proposal win or a task order arrive; it delays sourcing for work that later becomes real (the row's
-    trade-off) and has no effectiveness evidence of its own (synthesis).
+    trade-off), and a clearance cannot be requested ahead of the need in any case [119]. No study of requisition
+    confirmation practices was found; the lever rests on the rules [119] [203].
   costs: 'A conversation with the customer before the posting; slower starts on speculative openings (synthesis).'
   when_it_binds_elsewhere: [c-local-pool-thin]
   gates: [nispom-eligibility-and-sponsorship, proposal-staffing-representations]
@@ -1715,12 +1727,13 @@
   name: A short scorecard agreed with the customer, with every requirement traced to its source
   stages: [plan, select, attract]
   what: >
-    Write the requisition as a scorecard of a few deliverables and the competencies that produce them, label each
-    requirement as contractual (the labor category), customer-required in writing, or preferred, name the approval
-    authority, and review an example profile with the customer before posting; reconfirm scope, pay and urgency whenever
-    a requirement changes. The category line is the enforceable definition [99] and is what the audit checked [173]; a
-    requirement with adverse impact must be job-related [30] [32]; structured, scored criteria predict performance where
-    judgement does not [1] [7]; the title and pay set who applies [65]; the customer specifies the result, not the hire [197].
+    The requisition is written as a scorecard of a few deliverables and the competencies that produce them, each
+    requirement labelled as contractual (the labor category), customer-required in writing, or preferred, with the
+    approval authority named and an example profile reviewed with the customer before posting; scope, pay and urgency are
+    reconfirmed whenever a requirement changes. The category line is the enforceable definition [99] and is what the audit
+    checked [173]; a requirement with adverse impact must be job-related [30] [32]; structured, scored criteria predict
+    performance where judgement does not [1] [7]; the title and pay set who applies [65]; the customer specifies the
+    result, not the hire [197].
   evidence:
     grade: meta-analysis
     effect: 'structured interviews .42, work samples .33 vs unstructured .19 [1]; mechanical combination .44 vs .28 [7]'
@@ -1757,8 +1770,9 @@
     population: 'applicants in the speed and withdrawal studies [15] [16]'
     k_n: ''
   what_it_does_not_do: >
-    It cannot compel the customer's decision; the firm controls the asking and the telling, not the answer (synthesis).
-    No study of approval milestones with customers was found.
+    It cannot compel the customer's decision; the firm controls the asking and the telling, not the answer (synthesis). No
+    study of customer approval cycles was found (the ledger closes E5 as unstudied); the delay evidence is about the
+    firm's own process, where earlier offers are accepted more often [15].
   costs: 'A negotiation with the customer''s contracting and program staff (synthesis).'
   when_it_binds_elsewhere: []
   gates: [key-personnel-substitution-clause, far-37-104-personal-services]
@@ -1774,11 +1788,11 @@
   name: An all-in acquisition budget per role, set against the vacancy's cost
   stages: [plan, attract, offer]
   what: >
-    Set a budget per requisition that covers agency fees, boards, referral payments, travel, relocation, recruiter time
-    and any sign-on bonus, and set it against what the vacancy costs in contribution and delivery. The 2025 medians were
-    $1,200 per nonexecutive hire and $10,625 per executive hire, with those components in the definition [196]; sign-on
-    bonuses are used by 80 percent of organisations and evaluated by 12 percent [118], and on cost-type work are
-    allowable only under an established plan [100]; the replacement-cost median is about a fifth of salary [180].
+    A budget per requisition that covers agency fees, boards, referral payments, travel, relocation, recruiter time and
+    any sign-on bonus, set against what the vacancy costs in contribution and delivery. The 2025 medians were $1,200 per
+    nonexecutive hire and $10,625 per executive hire, with those components in the definition [196]; sign-on bonuses are
+    used by 80 percent of organisations and evaluated by 12 percent [118], and on cost-type work are allowable only under
+    an established plan [100]; the replacement-cost median is about a fifth of salary [180].
   evidence:
     grade: practitioner-survey
     effect: 'median cost-per-hire $1,200 / $10,625 (2025) [196]; replacement cost ≈ 21% of salary [180]'
@@ -1803,18 +1817,19 @@
   name: Cap the payroll carried ahead of funded work
   stages: [plan, clear-start, develop]
   what: >
-    Set a limit on the number of people and the months of payroll the firm will carry before the first invoice on the
-    work they were hired for, and stage developmental and sponsored hires against that cap. A proper invoice is paid in
-    30 days by default [202] and with a 15-day goal for small business contractors [201]; payroll before billing is
-    indirect cost in the pools [148]; a clearance cannot be requested ahead of the need in any case [119].
+    A limit on the number of people and the months of payroll the firm will carry before the first invoice on the work
+    they were hired for, with developmental and sponsored hires staged against that cap. A proper invoice is paid in 30
+    days by default [202] and with a 15-day goal for small business contractors [201]; payroll before billing is indirect
+    cost in the pools [148]; a clearance cannot be requested ahead of the need in any case [119].
   evidence:
     grade: regulation
     effect: 'the 30-day default and 15-day goal for payment [202] [201]; indirect-cost treatment of unbilled payroll [148]'
     population: 'small business federal contractors'
     k_n: ''
   what_it_does_not_do: >
-    A low cap slows the response when work arrives (the row's trade-off); it does not shorten the clearance clock or
-    make a task order come sooner (synthesis).
+    A low cap slows the response when work arrives (the row's trade-off); it does not shorten the clearance clock or make
+    a clearance requestable before the need [119], and the payment clock it is set against is a default, not a guarantee
+    [202].
   costs: 'Opportunities declined or delayed when the cap is reached (synthesis).'
   when_it_binds_elsewhere: [c-clearance-clock-exceeds-vacancy-window]
   gates: [prompt-payment-and-accelerated-payment, nispom-eligibility-and-sponsorship]
@@ -1842,7 +1857,8 @@
     k_n: ''
   what_it_does_not_do: >
     Estimates need assumptions and unbilled revenue is not lost profit (the row's trade-off); ranking means some openings
-    get less attention, a choice leaders have to own; no study of vacancy prioritisation was found (synthesis).
+    get less attention. The measured figures are a case-study median [180] and unit-level correlations [181], not the
+    firm's own numbers, and the larger multiples in circulation rest on no named study [195].
   costs: 'Analysis time; an uncomfortable ranking (synthesis).'
   when_it_binds_elsewhere: []
   gates: []
@@ -1870,7 +1886,7 @@
     k_n: ''
   what_it_does_not_do: >
     It does not change the rate; existing contract terms may bar the preferred change (the row's trade-off); the test is
-    synthesis from the cost rules and no source states it as such (synthesis).
+    synthesis from the rate build-up [206] and the category rule [98], and no source states it as such.
   costs: 'A rate calculation per requisition; a hard conversation where the answer is no (synthesis).'
   when_it_binds_elsewhere: []
   gates: [tm-labor-category-rates, contract-price-adjustment-limits]
@@ -1886,9 +1902,9 @@
   name: A rolling forecast of openings by category, with the pipelines it implies
   stages: [plan, attract]
   what: >
-    Keep a dated list of expected openings by labor category, contract and probability, and maintain the pipelines for
-    recurring skills before the vacancies open. The planning principles ask for the critical skills, the gaps, the
-    capability and the measure [205]; the clocks the forecast buys time against are the 45-day median fill [43] and the
+    A dated list of expected openings by labor category, contract and probability, with the pipelines for recurring skills
+    maintained before the vacancies open. The planning principles ask for the critical skills, the gaps, the capability
+    and the measure [205]; the clocks the forecast buys time against are the 45-day median fill [43] and the
     197-to-243-day clearance [126]; the signals are the firm's own pipeline and the public series on openings and
     shortages [57] [71].
   evidence:
@@ -1914,10 +1930,10 @@
   name: Customer-consented partner support for specific gaps, inside the subcontracting limits
   stages: [plan, attract]
   what: >
-    Fill a gap the firm cannot staff with a teammate's or subcontractor's people, with the contracting officer's advance
-    consent where the clause requires it [199], inside the limit of half the amount paid on a set-aside services contract
-    for partners that are not similarly situated [198], at the subcontractor's own category rates [98], and with no
-    agreement not to hire each other's people [187].
+    A gap the firm cannot staff is filled with a teammate's or subcontractor's people, with the contracting officer's
+    advance consent where the clause requires it [199], inside the limit of half the amount paid on a set-aside services
+    contract for partners that are not similarly situated [198], at the subcontractor's own category rates [98], and with
+    no agreement not to hire each other's people [187].
   evidence:
     grade: regulation
     effect: 'the consent, limitation and antitrust rules [199] [198] [187]'
@@ -1942,10 +1958,10 @@
   name: A pipeline record of where candidates stop and why, reviewed against the evidence
   stages: [plan, select, attract]
   what: >
-    Keep one record per requisition of every candidate, the stage at which they left and the reason, with the records
-    the law already requires, application and selection records for a year [200], applicant-flow records for the
-    adverse-impact computation [31], and the longer periods the state automated-decision rules set [40]; review the
-    stage losses and the source performance against the evidence rather than the last case. HR practitioners' beliefs
+    One record per requisition of every candidate, the stage at which they left and the reason, kept with the records the
+    law already requires, application and selection records for a year [200], applicant-flow records for the
+    adverse-impact computation [31], and the longer periods the state automated-decision rules set [40]; the stage losses
+    and the source performance are reviewed against the evidence rather than the last case. HR practitioners' beliefs
     diverge from the research most on selection [204]; the human-capital standard names the metrics [46].
   evidence:
     grade: observational
@@ -1970,18 +1986,19 @@
   name: One accountable owner per requisition, with the calendar
   stages: [plan, select, clear-start]
   what: >
-    Name one person who owns the requisition from opening to first productive day, with the authority to decide and the
-    calendar of every clock on it: the posting, the screen, the interview, the offer, the customer's review, the
-    sponsorship, the credential and the start. Earlier offers are accepted more often [15], withdrawal follows a badly
-    perceived process [16], and each week between acceptance and start raises the odds the hire never arrives [144].
+    One person owns the requisition from opening to first productive day, with the authority to decide and the calendar of
+    every clock on it: the posting, the screen, the interview, the offer, the customer's review, the sponsorship, the
+    credential and the start. Earlier offers are accepted more often [15], withdrawal follows a badly perceived process
+    [16], and each week between acceptance and start raises the odds the hire never arrives [144].
   evidence:
     grade: observational
     effect: 'speed of offer → acceptance [15]; process perceptions → withdrawal [16]; interval → no-shows [144]'
     population: 'applicants and new hires in the cited studies'
     k_n: ''
   what_it_does_not_do: >
-    The owner needs protected time and decision authority (the row's trade-off); no study of requisition ownership
-    itself was found, so the lever rests on the delays it is meant to prevent (synthesis).
+    The owner needs protected time and decision authority (the row's trade-off); no study of requisition ownership itself
+    was found (the ledger closes E1 as unstudied), and the speed evidence the lever rests on is about offer timing and
+    process perceptions [15] [16], not about who owns the process.
   costs: 'Protected time for the owner; decision authority delegated to them (synthesis).'
   when_it_binds_elsewhere: []
   gates: []

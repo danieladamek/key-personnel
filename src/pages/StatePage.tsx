@@ -25,6 +25,13 @@ export default function StatePage() {
     <article className="mx-auto max-w-3xl px-4 py-8" data-testid="state-page">
       <p className="text-xs bx-muted uppercase tracking-[0.12em] font-semibold">State overlay · {s.abbr}</p>
       <RecordHeader title={s.state} anchor={{ type: 'states', id: s.id }}><AsOf date={s.as_of} />{s.recheck && <span className="bx-chip border border-dashed border-[color:var(--bx-line)] bx-muted">not yet re-read against the live pages</span>}</RecordHeader>
+      {(s.state_gates ?? []).length > 0 && (
+        <section className="mt-5" aria-labelledby="state-rules-h" data-testid="state-rules">
+          <h2 id="state-rules-h" className="text-xl">State rules</h2>
+          <p className="text-xs bx-muted mt-0.5">The {s.state} gates in the pack, each with its own page.</p>
+          <ul className="mt-2 grid gap-1">{s.state_gates.map((g) => <li key={g}><RecordLinks type="gates" ids={[g]} /></li>)}</ul>
+        </section>
+      )}
       <p className="mt-3 text-sm" data-testid="tag-count"><strong>{tagged} of 9</strong> overlays are {PENDING_TAG}; {9 - tagged} rest on a primary source read in the sweep.</p>
       <ol className="mt-4 grid gap-3">
         {OVERLAYS.map((o) => {

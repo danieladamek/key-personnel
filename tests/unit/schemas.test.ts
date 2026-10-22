@@ -32,6 +32,19 @@ describe('content build on the fixture pack', () => {
     expect(r.code).toBe(1);
   });
 
+  it('a status word outside the header vocabulary is reported, and the record still ships', () => {
+    const r = runBuild((d) => editYaml<Rec[]>(d, 'states.yaml', (x) => { (x[0].noncompete as Rec).status = 'statute'; }));
+    expect(has(r.errors, /^states\/us-wa\/noncompete\/status$/, /status statute is not in the noncompete vocabulary/)).toBe(true);
+    const r2 = runBuild((d) => editYaml<Rec[]>(d, 'changes.yaml', (x) => { x[0].status = 'expired'; }));
+    expect(has(r2.errors, /^changes\/ch-001\/status$/, /status expired is not in the changes\.yaml header vocabulary/)).toBe(true);
+    expect(has(r2.errors, /^pathfinder/, /names no state record/)).toBe(false);
+  });
+
+  it('a state_gates id that is not a gate fails', () => {
+    const r = runBuild((d) => editYaml<Rec[]>(d, 'states.yaml', (x) => { x[0].state_gates = ['g-one', 'g-missing']; }));
+    expect(has(r.errors, /^states\/us-wa$/, /state_gates\[\] -> g-missing is not a gate record/)).toBe(true);
+  });
+
   it('a state overlay missing primary_pending fails', () => {
     const r = runBuild((d) => editYaml<Rec[]>(d, 'states.yaml', (x) => { delete (x[0].noncompete as Rec).primary_pending; }));
     expect(has(r.errors, /^states\/us-wa\/noncompete\/primary_pending$/, /primary_pending/)).toBe(true);

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { loadIndicators, loadMap } from '@/lib/heavy';
 import type { Indicator, Lever } from '@/types';
 import type { MapData, MapEdge } from '@/lib/map-layout';
-import { RELATION_MEANING } from '@/lib/data';
+import { GEO_LABEL, RELATION_MEANING } from '@/lib/data';
 import { BlockLabel, GradeChip, SynProse, synId } from './Bits';
 import Prose from './Prose';
 import CiteList from './CiteList';
@@ -49,7 +49,7 @@ export function IndicatorTable({ ids }: { ids: string[] }) {
             return (
               <tr key={id} className="align-top">
                 <td><Link className="underline" to={`/benchmarks#${i.id}`}>{i.name}</Link>{i.note && <span className="block text-xs bx-muted"><Prose md={i.note} /></span>}</td>
-                <td className="font-semibold">{i.value}</td>
+                <td className="font-semibold">{i.value}{(() => { const t = i.counterpart ? all.find((x) => x.id === i.counterpart) : undefined; return t ? <span className="block text-xs font-normal bx-muted" data-testid="counterpart">{GEO_LABEL[i.geo ?? 'us']} · beside {GEO_LABEL[t.geo ?? 'us']} {t.value} ({t.reference_period})</span> : null; })()}</td>
                 <td>{i.reference_period}</td>
                 <td>{i.publisher}</td>
                 <td className="whitespace-nowrap">{i.published}</td>

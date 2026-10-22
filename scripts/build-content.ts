@@ -104,9 +104,15 @@ for (const a of ambiguous) E('glossary', `ambiguous variant ${JSON.stringify(a.v
 const matcher = buildMatcher(glossary);
 const everyOccurrence = manifest?.link_every_occurrence ?? false;
 
-const referencesParsed = ReferencesSchema.safeParse(readYaml('references.yaml') ?? []);
-if (!referencesParsed.success) errors.push(...zodErrors('references', referencesParsed.error));
-const references: Reference[] = referencesParsed.success ? referencesParsed.data : [];
+// one entry at a time, so a single bad reference is reported without dropping the other 300
+const referencesRaw = readYaml('references.yaml') ?? [];
+const references: Reference[] = [];
+for (const [i, r] of (Array.isArray(referencesRaw) ? referencesRaw : []).entries()) {
+  const p = ReferencesSchema.element.safeParse(r);
+  if (p.success) references.push(p.data);
+  else errors.push(...zodErrors(`references/${(r as { n?: number })?.n ?? `#${i}`}`, p.error));
+}
+if (!Array.isArray(referencesRaw)) E('references.yaml', 'must be a list');
 const refByN = new Map<number, Reference>();
 for (const r of references) { if (refByN.has(r.n)) E(`references/${r.n}`, 'duplicate n'); refByN.set(r.n, r); }
 const refNs = new Set(refByN.keys());
@@ -202,7 +208,7 @@ if (TOPIC) for (const f of figures) {
   if (f.kind === 'image' && !/permission/i.test(manifest?.permissions.figures ?? '')) E(`figures/${f.id}`, 'kind image in topic mode needs explicit permission in manifest.permissions.figures');
 }
 
-const todoParsed = TodoSchema.safeParse(readYaml('todo.yaml', false) ?? []);
+const todoParsed = TodoSchema.safeParse(readYaml('todo.yaml', false) ?? []); // reported whole; see BUILD-ERRORS
 if (!todoParsed.success) errors.push(...zodErrors('todo', todoParsed.error));
 const todo = todoParsed.success ? todoParsed.data : [];
 
@@ -391,9 +397,9 @@ const voiceCheck = (where: string, s: string) => {
  * taken from cited guidance and are counted separately rather than listed.
  */
 /** Verbs that open an instruction whatever follows them. */
-const IMPERATIVE_VERBS = new Set(['expect', 'treat', 'ask', 'check', 'avoid', 'make', 'keep', 'document', "don't", 'consider', 'try', 'budget', 'assume', 'require', 'build', 'track', 'measure', 'write', 'tell', 'give', 'get', 'put', 'choose', 'decide', 'negotiate', 'confirm', 'verify', 'ensure', 'run', 'pull', 'stop', 'drop', 'add', 'look', 'find', 'compare', 'estimate', 'recover', 'prefer', 'favour', 'favor', 'apply', 'validate', 'mentor', 'schedule', 'escalate', 'sponsor', 'submit', 'send', 'never', 'always', 'calibrate', 'say', 'protect']);
+const IMPERATIVE_VERBS = new Set(['expect', 'treat', 'ask', 'check', 'avoid', 'make', 'keep', 'document', "don't", 'consider', 'try', 'budget', 'assume', 'require', 'build', 'track', 'measure', 'write', 'tell', 'give', 'get', 'put', 'choose', 'decide', 'negotiate', 'confirm', 'verify', 'ensure', 'run', 'pull', 'stop', 'drop', 'add', 'look', 'find', 'compare', 'estimate', 'recover', 'prefer', 'favour', 'favor', 'apply', 'validate', 'mentor', 'escalate', 'sponsor', 'submit', 'send', 'never', 'always', 'calibrate', 'say', 'protect']);
 /** Words that are nouns as often as verbs: an instruction only when an object follows (`Plan on…`, `Use the…`). */
-const AMBIGUOUS_VERB = /^(plan|count|use|read|pay|record|review|set|list|name|post|start|train|hire|score|rank|cap|file|call|test|screen|interview|share|limit|close|open|fill|staff|state|show|label|separate|sequence|tie|link|offer|drop)\s+(on|with|for|the|a|an|every|each|it|them|this|that|these|those|whoever|all|one|candidates|employees|people|anyone|everyone|its|their|your)\b/i;
+const AMBIGUOUS_VERB = /^(plan|count|use|read|pay|record|review|set|list|name|post|start|train|hire|score|rank|cap|file|call|test|screen|interview|share|limit|close|open|fill|staff|state|show|label|separate|sequence|tie|link|offer|drop|schedule)\s+(on|with|for|the|a|an|every|each|it|them|this|that|these|those|whoever|all|one|candidates|employees|people|anyone|everyone|its|their|your)\b/i;
 /** Fields that hold prose sentences (names, labels, tags and stage lists are not scanned). */
 const IMPERATIVE_FIELDS = /\/(what|mechanism|how_to_tell|what_it_does_not_do|costs|cost|conditions|text|why|evidence|what_a_recruiter_can_rely_on|claim|note|decided_by|applies_when|definition|how_to|steps|conflicts)(\/\d+)?(\/|$)/;
 const imperatives: { where: string; excerpt: string }[] = [];
@@ -404,7 +410,7 @@ const imperativeCheck = (where: string, s: string) => {
   for (const sentence of plainText(s).split(/(?<=[.!?;])\s+/)) {
     const lead = sentence.replace(/^[\s"“'‘(\[*_-]+/, '');
     const first = lead.split(/[\s,:]+/)[0]?.toLowerCase() ?? '';
-    if (/^\S+,/.test(lead) || /^(put together|run backward)/i.test(lead)) continue;
+    if (/^\S+,/.test(lead) || /^(put together|run backward|read on)\b/i.test(lead)) continue;
     if (!IMPERATIVE_VERBS.has(first) && !AMBIGUOUS_VERB.test(lead)) continue;
     if (procedure) procedureImperatives++;
     else imperatives.push({ where, excerpt: sentence.trim().slice(0, 220) });

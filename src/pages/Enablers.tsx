@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 import { loadEnablers, useAsync } from '@/lib/heavy';
-import { AsOf, BlockLabel, OfficialLink, PendingChanges, RecordHeader, RecordLinks, Sources, SynProse, synId } from '@/components/records/Bits';
+import { AsOf, BlockLabel, GeoChips, OfficialLink, PendingChanges, RecordHeader, RecordLinks, Sources, SynProse, synId } from '@/components/records/Bits';
 import Prose from '@/components/records/Prose';
 
 const KINDS = ['data-source', 'program', 'reference', 'tooling', 'standard'] as const;
@@ -28,7 +28,7 @@ export default function Enablers() {
       <ul className="mt-4 grid gap-4">
         {shown.map((e) => (
           <li key={e.id} id={e.id} className="bx-card p-4 scroll-mt-28" data-testid={`enabler-${e.id}`}>
-            <RecordHeader title={e.name} anchor={{ type: 'enablers', id: e.id }} level={2}><span className="bx-status">{e.kind}</span><AsOf date={e.as_of} /></RecordHeader>
+            <RecordHeader title={e.name} anchor={{ type: 'enablers', id: e.id }} level={2}><span className="bx-status">{e.kind}</span><GeoChips geo={e.geo} sector={e.sector} /><AsOf date={e.as_of} /></RecordHeader>
             <BlockLabel>What it is</BlockLabel><SynProse md={e.what} synId={synId('enablers', e.id, 'what')} />
             <div className="grid gap-2 sm:grid-cols-2">
               <div><BlockLabel>Cost, as stated</BlockLabel>{e.cost ? <SynProse md={e.cost} synId={synId('enablers', e.id, 'cost')} /> : <p className="text-sm bx-muted">not stated</p>}</div>

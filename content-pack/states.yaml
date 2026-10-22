@@ -25,99 +25,99 @@
   abbr: AL
   pay_transparency:
     status: none-found
-    text: No statewide posting or disclosure law listed in the 2025–26 compilations [207] [76] [224].
+    text: 'No Alabama pay-range or salary-range posting requirement was found: § 25-1-30 (Clarke-Figures Equal Pay Act), read in full, contains none, and searches of the 2026 Regular Session instruments for pay transparency, salary range, pay range and job posting returned no Alabama bill [236]. The only Alabama hit was a 2021 minimum-wage bill (synthesis).'
     sources:
-    - 76
-    - 207
-    - 224
-    primary_pending: true
+    - 236
+    primary_pending: false
     gates:
     - pay-transparency-posting-laws
   salary_history_ban:
-    status: statewide
-    text: Salary-history protections under the Clark-Figures Equal Pay Act (Act 2019-519), effective 2019-09-01 [207] [106].
+    status: statute
+    text: Code of Alabama § 25-1-30(c) (Act 2019-519) bars an employer from refusing to interview, hire, promote or employ an applicant, or retaliating, because the applicant does not provide wage history; it does not bar requesting wage history and has no voluntary-disclosure clause [236]. The enrolled act carries identical wage-history text and an effective date on the first day of the third month after approval [237]. HB331 (2023), which would have added an inquiry ban, died in committee after referral on 2023-04-18 [238]. Codified text read on a mirror of the Code; official text pending.
     sources:
-    - 106
-    - 207
+    - 236
+    - 237
+    - 238
     primary_pending: true
     gates:
     - salary-history-bans
   noncompete:
-    status: common-law
-    text: Common-law reasonableness under Ala. Code 8-1-190 [209].
+    status: statute
+    text: Code of Alabama §§ 8-1-190 to 8-1-197 (Act 2015-465, effective January 1, 2016) permit an employee to agree not to carry on a like business in a specified area, with restraints of two years or less presumed reasonable, and customer non-solicitation restraints of 18 months, or as long as post-separation consideration is paid, presumed reasonable [239] [240]. Job skills alone are not a protectable interest, the enforcing party bears the burden of proof on every element, and a court may void a restraint in part and reform it [239] [240]. The statute sets no wage threshold, notice period or income floor [239].
     sources:
-    - 209
-    primary_pending: true
+    - 239
+    - 240
+    primary_pending: false
     gates:
     - noncompete-agreements-federal-status
     - no-poach-and-non-solicitation
   stay_or_pay:
     status: none-found
-    text: No statewide restriction listed in the March 2026 map [211].
+    text: No Alabama statute or bill restricting training-repayment or stay-or-pay agreements was found; searches returned only other states' measures. § 8-1-191(a)(5) treats specialized training involving substantial expenditure, set out in writing as consideration, as a protectable interest for a restrictive covenant [239].
     sources:
-    - 211
-    primary_pending: true
+    - 239
+    primary_pending: false
     gates:
     - training-repayment-and-stay-or-pay
   ai_hiring:
     status: none-found
-    text: No enacted employer-AI law listed in the October 2026 chart [220].
-    sources:
-    - 220
-    primary_pending: true
+    text: No Alabama statute regulating automated or AI-assisted hiring decisions was found. The 2026 Regular Session AI bills located (HB524, HB324, SB63) address state-agency rule review, chatbot age verification and health-plan coverage determinations, and none covers employment or hiring (synthesis from the researcher's bill-text searches).
+    sources: []
+    primary_pending: false
     gates:
     - ai-screening-laws
     - applicant-record-retention
   cannabis_testing:
-    status: none-found
-    text: No employment protection listed [219].
+    status: statute
+    text: Code of Alabama § 20-2A-6(a) (Act 2021-450, medical cannabis) states the chapter does not require any employer to permit, accommodate or allow medical cannabis use, does not prohibit or limit an employer from establishing or enforcing a drug testing policy, and establishes no right of action against an employer [253]. Alabama has no adult-use cannabis statute and no 2026 bill adding employment protection was located [253]. Read on a mirror of the Code; official text pending.
     sources:
-    - 219
+    - 253
     primary_pending: true
     gates:
     - drug-free-workplace
   ban_the_box:
     status: none-found
-    text: No statewide law [217].
+    text: No Alabama ban-the-box statute for private employers was found. The most recent bill, SB49 (2025), would have barred only the State, its agencies and political subdivisions from inquiring into arrest or conviction history before a conditional offer; it was indefinitely postponed 2025-05-06 and no 2026 successor was located [254]. No gubernatorial executive order for state agencies was located; a 2016 City of Birmingham executive order appeared as a municipal measure only [254].
     sources:
-    - 216
-    - 217
-    primary_pending: true
+    - 254
+    primary_pending: false
     gates:
     - fair-chance-act-contractors
   credit_check:
     status: none-found
-    text: No statewide restriction listed; the federal FCRA notice sequence applies [218].
-    sources:
-    - 218
-    primary_pending: true
+    text: No Alabama statute or 2025–2026 bill restricting employer use of credit reports or credit history in employment was found; searches of the Legislature's instruments returned only other states' bills (synthesis from the researcher's searches).
+    sources: []
+    primary_pending: false
     gates:
     - fcra-background-checks
   mini_warn:
     status: none-found
-    text: No mini-WARN law listed; the federal WARN Act thresholds (100 employees; 60 days) apply alone [213] [214].
+    text: No Alabama plant-closing or mass-layoff notice statute was found; searches for 2024–2026 bills returned none, and the state's WARN list, hosted by the Department of Commerce, carries no statutory text and cites no state statute [247]. The federal directory places the state Rapid Response Coordinator in the Alabama Department of Workforce [248].
     sources:
-    - 213
-    - 214
-    primary_pending: true
+    - 247
+    - 248
+    primary_pending: false
     gates:
     - warn-act
   sources:
-  - 76
-  - 106
-  - 207
-  - 209
-  - 211
-  - 213
-  - 214
-  - 216
-  - 217
-  - 218
-  - 219
-  - 220
-  - 224
+  - 236
+  - 237
+  - 238
+  - 239
+  - 240
+  - 247
+  - 248
+  - 253
+  - 254
   as_of: '2026-10-22'
   recheck: true
+  state_gates:
+  - al-e-verify-beason-hammon
+  - al-drug-free-workplace-program
+  - al-right-to-work
+  - al-new-hire-reporting
+  - al-child-labor-certificates
+  - al-warn-federal-only
 - id: us-ak
   state: Alaska
   abbr: AK

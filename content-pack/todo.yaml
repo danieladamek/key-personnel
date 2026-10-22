@@ -757,3 +757,298 @@
   owner: author
   where: KICKOFF
   what: rendering of superseded changes
+# sweep 9 (2026-10-22): mirrors to spot-check, series to prove by refresh, sources not found
+- id: t-9001
+  kind: recheck
+  about: al-e-verify-beason-hammon
+  text: 'Spot-check every mirror-read section in the official ALISON Code viewer before publication: §§ 25-1-30, 8-1-190 to 8-1-197, 25-5-330 to 25-5-340, 25-7-30 and 25-7-31, 31-13-15 and 31-13-9, 25-11-5, 25-8-45, 20-2A-6. The viewer served no statute text to fetches and curl was blocked by the session proxy.'
+  owner: author
+  where: al-e-verify-beason-hammon, al-drug-free-workplace-program, al-right-to-work, al-new-hire-reporting, al-child-labor-certificates, al-drug-free-workplace-discount
+  what: recheck
+- id: t-9002
+  kind: source
+  about: al-child-labor-certificates
+  text: Read Act 2026-539 (2026 Regular Session) amending § 25-8-45 for its content and effective date; the mirror flags the amendment but its text was not read. Convert to a dated `changes` entry once dated.
+  owner: author
+  where: al-child-labor-certificates
+  what: source
+- id: t-9003
+  kind: source
+  about: al-right-to-work
+  text: Confirm the act number of the 2016 right-to-work proposing act (HB37, 2016; the enrolled PDF leaves it blank) and the Secretary of State ratification record for Statewide Amendment 8 (reported as 2016-11-08 by secondary trackers only).
+  owner: author
+  where: al-right-to-work
+  what: source
+- id: t-9004
+  kind: source
+  about: sweep-9
+  text: Confirm the Governor's approval date of HB225 (Act 2019-519); only the effective-date formula was read from the enrolled act, and the 2019-09-01 effective date rests on a secondary trade-association page. Also locate the enrolled PDF on alison itself (the LegiScan copy was used).
+  owner: author
+  where: sweep 9
+  what: source
+- id: t-9005
+  kind: source
+  about: al-warn-federal-only
+  text: Locate an official Alabama Department of Workforce WARN or Rapid Response page, if one exists; none was found on workforce.alabama.gov, and the USDOL directory entry for Alabama lists no URL.
+  owner: author
+  where: al-warn-federal-only
+  what: source
+- id: t-9006
+  kind: series
+  about: ind-huntsville-oews-software-developers-may2024
+  text: Pair ind-huntsville-oews-software-developers-may2024 with the national OEWS median for SOC 15-1252 (another writer supplies it); the Huntsville figure is a mean, so the note needs the mean/median caveat when the twin lands. BLS's own Huntsville OEWS page (area 26620, bls.gov/oes/current/oes_26620.htm) was seen in search results but not fetched.
+  owner: author
+  where: ind-huntsville-oews-software-developers-may2024
+  what: series
+- id: t-9007
+  kind: source
+  about: al-department-of-workforce
+  text: 'Secondary-only act numbers, not carried in records: SB247 = Act 2024-115, SB252 = Act 2024-309, SB253 = Act 2024-126, SB336 = Act 2024-308 (ALAHA handout); HB241 (2023) = Act 2023-34 (Justia history line). Confirm on a state site (ALISON code viewer or arc-sos.state.al.us, both blocked on 2026-10-22). HB554 (2015) act number also unprinted.'
+  owner: author
+  where: al-department-of-workforce, al-jobs-act, al-aidt
+  what: source
+- id: t-9008
+  kind: recheck
+  about: al-dow-lmi
+  text: 'Huntsville OEWS current edition: the LMI home page says wages were updated to 2nd Quarter 2026 on 2026-08-13 but the static Huntsville.pdf was the June 2025 edition; check the OES_Default.aspx interface for the current-quarter table and the MSA county definition.'
+  owner: author
+  where: al-dow-lmi, ind-huntsville-oews-software-developers-may2024
+  what: recheck
+- id: t-9009
+  kind: recheck
+  about: al-apprenticeship-credit
+  text: Effect of Act 2023-539 ('Repealing Apprenticeship' file on the ADOR page) not read; confirm whether any 2025 or 2026 act revived or replaced the apprenticeship credit. apprenticeshipalabama.org was robots-blocked.
+  owner: author
+  where: al-apprenticeship-credit
+  what: recheck
+- id: t-9010
+  kind: recheck
+  about: al-aidt
+  text: AIDT formal eligibility (minimum jobs, wage floor, industry restrictions) is not stated on aidt.edu or madeinalabama.com; aidt.edu/training/ returned a client error.
+  owner: author
+  where: al-aidt
+  what: recheck
+- id: t-9011
+  kind: recheck
+  about: al-dow-employer-services
+  text: 'A current Department of Workforce page for Rapid Response and for LVER employer referrals: only the legacy labor.alabama.gov Career Centers page describes them. joblink.alabama.gov, alabamaworks.alabama.gov and va.alabama.gov/employers/ could not be fetched.'
+  owner: author
+  where: al-dow-employer-services
+  what: recheck
+- id: t-9012
+  kind: recheck
+  about: al-innovate-alabama-sbir-match
+  text: 'Innovate Alabama Supplemental Grant: Alabama-location requirement, application dates and statutory basis are not stated on the program page; recheck when a new round opens.'
+  owner: author
+  where: al-innovate-alabama-sbir-match
+  what: recheck
+- id: t-9013
+  kind: recheck
+  about: al-accs-atn
+  text: ACCS's own employer-training page (accs.edu/workforce-development/) returned a client error; ATN publishes no fee schedule.
+  owner: author
+  where: al-accs-atn
+  what: recheck
+- id: t-9014
+  kind: recheck
+  about: al-dow-employer-services
+  text: 'Folded researcher feeds: al-career-centers and al-veteran-hiring into al-dow-employer-services; al-office-of-apprenticeship into al-apprenticeship-credit and al-department-of-workforce; al-working-for-alabama-2024 into al-department-of-workforce (the workforce housing credit is carried there as context only).'
+  owner: author
+  where: al-dow-employer-services, al-apprenticeship-credit, al-department-of-workforce
+  what: recheck
+- id: t-9015
+  kind: source
+  about: al-department-of-workforce
+  text: Primary date for the Governor's signing of the 2024 Working for Alabama package (2024-05-09) rests on secondary pages only; the 2025-01-31 release confirms signing during the 2024 Regular Session without a date.
+  owner: author
+  where: al-department-of-workforce
+  what: source
+- id: t-9016
+  kind: series
+  about: ind-al-unemployment-sep2026
+  text: Confirm every mirror-echoed BLS series ID through api.bls.gov (LASST010000000000003, LAUMT012662000000003, SMS01000000000000001, SMS01266200000000001, SMS01000006000000001, SMU01266206000000001, JTS000000SO0000000JOR); the researcher confirmed each only on the DBnomics mirror, whose data ends 2024-12, with values taken from BLS pages or FRED.
+  owner: author
+  where: ind-al-unemployment-sep2026, ind-huntsville-unemployment-aug2026, ind-al-nonfarm-sep2026, ind-huntsville-nonfarm-sep2026, ind-al-pbs-employment-sep2026, ind-huntsville-pbs-employment-sep2026, ind-jolts-south-openings-aug2026
+  what: series
+- id: t-9017
+  kind: series
+  about: ind-us-unemployment-sep2026
+  text: Confirm the standard national IDs LNS14000000 and CES0000000001 and the derived JOLTS national IDs JTS000000000000000JOR and JTS000000000000000QUR through api.bls.gov; values were read from FRED's copies (UNRATE, PAYEMS, JTSJOR, JTSQUR).
+  owner: author
+  where: ind-us-unemployment-sep2026, ind-us-unemployment-aug2026, ind-us-nonfarm-sep2026, ind-jolts-us-openings-aug2026, ind-jolts-us-quits-aug2026
+  what: series
+- id: t-9018
+  kind: series
+  about: ind-jolts-south-quits-aug2026
+  text: Prove the JOLTS South quits-rate ID JTS000000SO0000000QUR; it was derived from the confirmed openings ID by substituting data element QU and not itself opened on DBnomics.
+  owner: author
+  where: ind-jolts-south-quits-aug2026
+  what: series
+- id: t-9019
+  kind: series
+  about: ind-huntsville-unemployment-aug2026
+  text: Prove the smoothed seasonally adjusted Huntsville MSA unemployment-rate ID (candidate LASMT012662000000003); not found on DBnomics, and the 2.9% August 2026 value came from FRED HUNT601UR.
+  owner: author
+  where: ind-huntsville-unemployment-aug2026
+  what: series
+- id: t-9020
+  kind: series
+  about: ind-huntsville-pbs-employment-sep2026
+  text: Confirm that no BLS seasonally adjusted Huntsville professional and business services series exists (candidate SMS01266206000000001 absent from DBnomics; FRED HUNT601PBSV is St. Louis Fed-adjusted); the NSA series SMU01266206000000001 stands until then.
+  owner: author
+  where: ind-huntsville-pbs-employment-sep2026
+  what: series
+- id: t-9021
+  kind: series
+  about: ind-madison-county-qcew-employment-2026q1
+  text: 'Prove the QCEW candidate IDs built from the BLS format rule (EN + U + area + datatype + size + ownership + industry; datatype 1 = all employees, 4 = average weekly wage, ownership 5 = private): Alabama private 5413 ENU010001055413 / ENU010004055413; 5415 ENU010001055415 / ENU010004055415; 5417 ENU010001055417 / ENU010004055417; 3364 ENU010001053364 / ENU010004053364; Madison County 5413 ENU010891055413 / ENU010894055413; 5415 ENU010891055415 / ENU010894055415; 5417 ENU010891055417 / ENU010894055417; 3364 ENU010891053364 / ENU010894053364. None was confirmed and no NAICS-level values were obtained; the caller''s example ENU0100000510541 does not match the documented layout.'
+  owner: author
+  where: ind-madison-county-qcew-employment-2026q1, ind-madison-county-qcew-weekly-wage-2026q1, ind-al-qcew-employment-2026q1, ind-al-qcew-weekly-wage-2026q1
+  what: series
+- id: t-9022
+  kind: series
+  about: ind-madison-county-qcew-employment-2026q1
+  text: Identify the county-total and statewide QCEW series IDs (area 01089 and 01000, all industries) for the Madison County and Alabama employment and weekly-wage indicators; none was verified.
+  owner: author
+  where: ind-madison-county-qcew-employment-2026q1, ind-madison-county-qcew-weekly-wage-2026q1, ind-al-qcew-employment-2026q1, ind-al-qcew-weekly-wage-2026q1, ind-us-qcew-employment-2026q1, ind-us-qcew-weekly-wage-2026q1
+  what: series
+- id: t-9023
+  kind: series
+  about: ind-huntsville-oews-aerospace-engineers-may2025
+  text: Prove the OEWS series-ID format (OEU + M/N + area + industry + occupation + datatype) and the candidate IDs OEUM002662000000017201104, OEUM002662000000017207104 (Huntsville aerospace and electrical engineers, annual mean) and OEUN000000000000015125213, OEUN000000000000017201113, OEUN000000000000017207113, OEUN000000000000011904113, OEUN000000000000013107113, OEUN000000000000015121213 (national annual medians); the format is undocumented on the BLS help page and absent from DBnomics.
+  owner: author
+  where: ind-huntsville-oews-aerospace-engineers-may2025, ind-huntsville-oews-electrical-engineers-may2025, ind-us-oews-aerospace-engineers-may2025, ind-us-oews-electrical-engineers-may2025, ind-us-oews-software-developers-may2025, ind-us-oews-ae-managers-may2025, ind-us-oews-hr-specialists-may2025, ind-us-oews-infosec-analysts-may2025
+  what: series
+- id: t-9024
+  kind: source
+  about: ind-us-oews-software-developers-may2025
+  text: Obtain Huntsville MSA (OEWS area 26620) May 2025 employment, mean and median annual wage for 15-1252, 11-9041, 13-1071, 15-1212 and 15-1299 from the data.bls.gov OEWS app (area/0026620), unreachable in the research session, and create the Huntsville twins for the four national OOH median-wage indicators.
+  owner: author
+  where: ind-us-oews-software-developers-may2025, ind-us-oews-ae-managers-may2025, ind-us-oews-hr-specialists-may2025, ind-us-oews-infosec-analysts-may2025
+  what: source
+- id: t-9025
+  kind: source
+  about: ind-huntsville-oews-aerospace-engineers-may2025
+  text: Obtain national OEWS mean (not median) annual or hourly wages for 17-2011 and 17-2071 so the Huntsville mean-hourly figures can be paired like for like; OOH gives medians and 10th/90th percentiles only.
+  owner: author
+  where: ind-huntsville-oews-aerospace-engineers-may2025, ind-huntsville-oews-electrical-engineers-may2025
+  what: source
+- id: t-9026
+  kind: source
+  about: ind-al-pbs-employment-sep2026
+  text: Obtain a national professional and business services employment figure for September 2026 (CES supersector 60, seasonally adjusted) to serve as the counterpart for the Alabama and Huntsville PBS indicators.
+  owner: author
+  where: ind-al-pbs-employment-sep2026, ind-huntsville-pbs-employment-sep2026
+  what: source
+- id: t-9027
+  kind: source
+  about: ind-madison-county-pst-services-share-2024
+  text: Obtain a national share of jobs in professional, scientific and technical services (LEHD or QCEW) as the counterpart for the Madison County 23.1% figure.
+  owner: author
+  where: ind-madison-county-pst-services-share-2024
+  what: source
+- id: t-9028
+  kind: recheck
+  about: ind-huntsville-unemployment-aug2026
+  text: 'Re-check the Alabama Department of Workforce CurrentYTD.pdf after the BLS metro release for September 2026: the fetched text showed an ''October'' column (Huntsville 2.8%, statewide NSA 3.3%) on a document dated 10/14/2026, most likely a PDF-to-text artifact; and the state-released Huntsville September 2026 rate (3.1% NSA) is ahead of the BLS Huntsville page, which stops at August 2026.'
+  owner: author
+  where: ind-huntsville-unemployment-aug2026, ind-al-unemployment-sep2026
+  what: recheck
+- id: t-9029
+  kind: recheck
+  about: ind-huntsville-unemployment-aug2026
+  text: Confirm the publication date of the BLS Huntsville area page figures (recorded here as 2026-10-20, the state and metro CES release date reflected in FRED's HUNT601NA update); the researcher recorded only '2026-10'.
+  owner: author
+  where: ind-huntsville-unemployment-aug2026, ind-huntsville-nonfarm-sep2026, ind-huntsville-pbs-employment-sep2026
+  what: recheck
+- id: t-9030
+  kind: source
+  about: al-dow-projections-2022-2032
+  text: Locate a dated primary notice of the Alabama Department of Labor's renaming to the Alabama Department of Workforce; the researcher noted the rename from page links (workforce.alabama.gov, adol.alabama.gov) without a date or source, so no change record was written.
+  owner: author
+  where: al-dow-projections-2022-2032, al-dow-qcew-products
+  what: source
+- id: t-9031
+  kind: recheck
+  about: al-dow-projections-2022-2032
+  text: Check for a 2024–2034 edition of the Alabama long-term occupational projections; only the 2022–2032 edition (November 2024) was found, and its Highlights section cites a 2020–2030 period with different totals.
+  owner: author
+  where: al-dow-projections-2022-2032
+  what: recheck
+- id: t-9032
+  kind: recheck
+  about: ind-jolts-us-openings-aug2026
+  text: 'Dedupe against existing pack indicators: ind-jolts-us-openings-aug2026 and ind-jolts-us-quits-aug2026 overlap the pack''s national JOLTS openings and quits records (ind-jolts-quits-rate-aug2026 and the PBS openings indicator); the South-region records point to the new ids and need repointing if the integrator keeps the existing ones.'
+  owner: author
+  where: ind-jolts-us-openings-aug2026, ind-jolts-us-quits-aug2026, ind-jolts-south-openings-aug2026, ind-jolts-south-quits-aug2026
+  what: recheck
+- id: t-9033
+  kind: source
+  about: ind-continuous-vetting-enrollment-fy26q3
+  text: 'ODNI/NCSC ''Security Clearance Determinations'' annual report: no edition after FY2019 was found on dni.gov; the FY2019 PDF mirror returned no readable text, so any cleared-population headcount (secondary pointer: 4.2 million eligible, 2.9 million in access, as of 2019) is unconfirmed.'
+  owner: author
+  where: ind-continuous-vetting-enrollment-fy26q3
+  what: source
+- id: t-9034
+  kind: source
+  about: ind-dib-transitioning-service-members
+  text: 'NDIA Vital Signs 2025/2026 primary figures for total defense-industrial-base employment: ndia.org/vitalsigns returned empty content; no DoD page with a DIB total was located (businessdefense.gov robots-blocked; NDIS-IP FY2025 gives no total).'
+  owner: author
+  where: ind-dib-transitioning-service-members
+  what: source
+- id: t-9035
+  kind: series
+  about: ind-ces-aerospace-3364-aug2026
+  text: 'CES series ids CES3133640001, CES6054130001, CES6054150001 and CES6054170001 are not API-confirmed: api.bls.gov and data.bls.gov were unreachable from the research session, and the values were read from Table B-1/B-1a instead. The reason Table B-1a prints ''-'' for NAICS 3364 September 2026 is unknown.'
+  owner: author
+  where: ind-ces-aerospace-3364-aug2026, ind-ces-engineering-5413-sep2026, ind-ces-computer-systems-5415-sep2026, ind-ces-scientific-rd-5417-sep2026
+  what: series
+- id: t-9036
+  kind: recheck
+  about: ind-redstone-arsenal-workforce
+  text: 'army.mil garrison workforce page for Redstone Arsenal: no current page stating a workforce total or a count of federal agencies was found (home.army.mil/redstone/about robots-blocked); the 78-organization figure rests on a 2020 article. A national counterpart indicator for the Redstone workforce was not supplied.'
+  owner: author
+  where: ind-redstone-arsenal-workforce
+  what: recheck
+- id: t-9037
+  kind: recheck
+  about: ind-continuous-vetting-enrollment-fy26q3
+  text: 'Terminology: the FY26-Q3 PAC QPR and smartscholarship.org metadata use ''Department of War''; GAO 2026 reports and the Federal Register rules use ''DoD''. Records here say ''Department of Defense''; quotes keep the published wording.'
+  owner: author
+  where: ind-continuous-vetting-enrollment-fy26q3, dod-smart-scholarship
+  what: recheck
+- id: t-9038
+  kind: recheck
+  about: vevraa-section-503-aaps
+  text: VEVRAA correction notice FR Doc. 2026-17757 (2026-08-31) listed by the Federal Register API but not read; whether veteran self-identification, hiring benchmarks and VETS-4212 reporting are retained in the rule text is unconfirmed.
+  owner: author
+  where: vevraa-section-503-aaps
+  what: recheck
+- id: t-9039
+  kind: source
+  about: skillbridge
+  text: SkillBridge statutory and directive basis (10 U.S.C. 1143(e), DoDI 1322.29) and any no-displacement clause are not on the official pages; the DoDI text was not fetched.
+  owner: author
+  where: skillbridge
+  what: source
+- id: t-9040
+  kind: recheck
+  about: hire-vets-medallion
+  text: HIRE Vets 2026-cycle criteria text and 2025/2026 awardee counts were not shown on hirevets.gov; the DOL VETS program page returned a client error.
+  owner: author
+  where: hire-vets-medallion
+  what: recheck
+- id: t-9041
+  kind: recheck
+  about: cmmc-2-0
+  text: 32 CFR 170.4 definitions of 'Affirming Official', CCP and CCA were not captured verbatim; assessor-personnel statements come from the rule preamble.
+  owner: author
+  where: cmmc-2-0
+  what: recheck
+- id: t-9042
+  kind: source
+  about: sweep-9
+  text: 'DoD Cyber Service Academy: no official DoD page retrieved and service-obligation terms unconfirmed; no enabler proposed.'
+  owner: author
+  where: sweep 9
+  what: source

@@ -1,4 +1,4 @@
-# Key Personnel content pack — extension schema (draft v0.2, 2026-10-22; v0.1 of 2026-10-21 plus the states.yaml overlay schema)
+# Key Personnel content pack — extension schema (draft v0.3, 2026-10-22; v0.2 plus the geo / sector / counterpart tags of sweep 9)
 
 Key Personnel is `mode: topic` with extension files, the pattern FAR Out and Token for Granted established. Standard files follow `docs/CONTENT-PACK.md` (`manifest.yaml`, `scope.yaml`, `review.md`, `references.yaml`, `glossary.yaml`, `concepts/`, `figures.yaml`, `todo.yaml`, `queries.yaml`). The extension files below are specific to this app. Every field that carries a fact carries a `[n]`; a record with no `[n]` fails the pack's own build.
 
@@ -132,9 +132,15 @@ Tooling records name a category and list examples as the vendors describe themse
   published: '2026-09-29'
   publisher: U.S. Bureau of Labor Statistics
   series: JTS540099000000000JOR       # for the refresh routine
+  series_confirmed: api               # api | mirror | none — how the series ID was proven (sweep 9: mirror = echoed by the DBnomics BLS mirror; the app's refresh routine upgrades it to api)
+  counterpart: ind-jolts-south-openings-aug2026   # the indicator shown beside this one (an Alabama figure's national twin, and back); '' if none
+  geo: us                             # us | al | huntsville-msa (sweep 9)
+  sector: all                         # all | defense (sweep 9)
   stages: [plan, attract]
   sources: [n]
 ```
+
+`geo` and `sector` (v0.3, sweep 9) also appear on `enablers.yaml` and `gates.yaml` records; records written before sweep 9 carry no tag and are read as `geo: us`, `sector: all`. The app's Numbers view groups indicators by `geo` and `sector` and shows each `counterpart` beside its twin; an Alabama or Huntsville figure is never shown without its national counterpart where one exists.
 
 ## links.yaml — the dependency graph (drawn exactly; nothing inferred)
 
@@ -154,7 +160,7 @@ Tooling records name a category and list examples as the vendors describe themse
 
 ## states.yaml — state-by-state employment-law records a recruiter must check (schema v0.2, sweep 8)
 
-One record per state and DC: `id (us-xx), state, abbr`, nine overlays, an optional `localities` line, the union `sources`, `as_of`, `recheck`. Each overlay is an object:
+One record per state and DC: `id (us-xx), state, abbr`, nine overlays, an optional `localities` line, an optional `state_gates` list (v0.3: the ids of `gates.yaml` records with `geo` equal to that state, the Alabama row carries six), the union `sources`, `as_of`, `recheck`. Each overlay is an object:
 
 ```yaml
   noncompete:

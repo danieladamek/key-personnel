@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { loadGates, loadStates, useAsync } from '@/lib/heavy';
 import { GATE_COLOUR, OVERLAY_LABEL, PENDING_TAG } from '@/lib/data';
 import type { Gate } from '@/types';
-import { AsOf, BlockLabel, Conflicts, Field, LegacyLine, OfficialLink, PendingChanges, RecordHeader, RecordLinks, Sources, StageChip, SynProse, synId } from '@/components/records/Bits';
+import { AsOf, BlockLabel, Conflicts, Field, GeoChips, LegacyLine, OfficialLink, PendingChanges, RecordHeader, RecordLinks, Sources, StageChip, SynProse, synId } from '@/components/records/Bits';
 import Prose from '@/components/records/Prose';
 import NotFound from './NotFound';
 
@@ -13,9 +13,10 @@ export function GateBody({ g, level = 2 }: { g: Gate; level?: 1 | 2 | 3 }) {
       {level === 1 && (
         <RecordHeader title={g.name} anchor={{ type: 'gates', id: g.id }}>
           <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: GATE_COLOUR }} />
-          {g.binds.map((s) => <StageChip key={s} stage={s} />)}<AsOf date={g.as_of} />
+          {g.binds.map((s) => <StageChip key={s} stage={s} />)}<GeoChips geo={g.geo} sector={g.sector} /><AsOf date={g.as_of} />
         </RecordHeader>
       )}
+      {level !== 1 && (g.geo !== 'us' || g.sector !== 'all') && <p className="mt-2 flex gap-1.5 text-xs"><GeoChips geo={g.geo} sector={g.sector} /></p>}
       <BlockLabel>What it is</BlockLabel><SynProse md={g.what} synId={synId('gates', g.id, 'what')} />
       <BlockLabel>Governing text</BlockLabel>{g.governing_text ? <Prose md={g.governing_text} /> : <p className="text-sm bx-muted">— (empty in the pack)</p>}
       <Field label="Applies when" value={g.applies_when} syn={{ file: 'gates', id: g.id, field: 'applies_when' }} />

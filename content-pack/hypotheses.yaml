@@ -1171,7 +1171,7 @@ entries:
   original_rows: [A1, A2, A3, A4, A5, A6, A7, A8, B2, B3, D1]
   status: partly-supported
   mapped_to: [few-plausible-candidates]
-  evidence: "The pattern is re-derived with eight constraints; of the original pointers, A1-A8 are adjudicated above (A7 deferred), B2 waits on sweep 7 and B3 is partly supported; D1 (salary feasibility) waits on sweep 3."
+  evidence: "The pattern is re-derived with eight constraints, the keyword screen first [44] [1]; of the original pointers, A1-A8 are adjudicated above (A7 deferred), B2 waits on sweep 7 and B3 is partly supported; D1 (salary feasibility) waits on sweep 3."
   adjudicated: "2026-10-21"
   sweep: 2
 - id: h-pattern-p2
@@ -1189,7 +1189,7 @@ entries:
   original_rows: [B5, B6, B7]
   status: partly-supported
   mapped_to: [customer-rejects]
-  evidence: "Re-derived with five plan-stage constraints, the onboard stage's junior-rejection constraint and the select stage's unvalidated screen. Of the original pointers, B5 and B7 are partly supported and B6 is unstudied; the rules add two causes the matrix did not list in the pattern, the customer's clockless review and the proposal misrepresentation standard."
+  evidence: "Re-derived with five plan-stage constraints, the onboard stage's junior-rejection constraint and the select stage's unvalidated screen [173] [197] [203]. Of the original pointers, B5 and B7 are partly supported and B6 is unstudied; the rules add two causes the matrix did not list in the pattern, the customer's clockless review [188] and the proposal misrepresentation standard [203]."
   adjudicated: "2026-10-22"
   sweep: 7
 
@@ -1218,7 +1218,7 @@ entries:
   original_rows: [E3, B4, F1, F2, F3]
   status: partly-supported
   mapped_to: [start-then-struggle]
-  evidence: "Re-derived with the three onboard constraints, two develop constraints, one clear-start constraint and two select constraints. Of the original pointers, E3 (structured evaluation) was adjudicated in sweep 1, F1 to F3 here, and B4 (customer ramp agreement) waits for sweep 7."
+  evidence: "Re-derived with the three onboard constraints, two develop constraints, one clear-start constraint and two select constraints [152] [155] [157]. Of the original pointers, E3 (structured evaluation) was adjudicated in sweep 1, F1 to F3 here, and B4 (customer ramp agreement) waits for sweep 7."
   adjudicated: "2026-10-21"
   sweep: 5
 
