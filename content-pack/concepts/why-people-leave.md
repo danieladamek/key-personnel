@@ -1,0 +1,42 @@
+---
+id: why-people-leave
+title: Why people leave
+one_liner: "Wanting to leave and looking are the strongest signals, then commitment, fit, satisfaction, embeddedness and the supervisor; pay is modest and works through comparison; hours as such barely register, strain does."
+why_here: "At a customer-governed small firm the person works under the customer's manager, at the customer's site, on a rate the firm cannot move freely; the ranked predictors tell a recruiter or hiring lead which of the things the firm still controls deserve its attention."
+prerequisites: [reading-an-effect-size]
+terms: [withdrawal-cognitions, job-embeddedness, collective-turnover, replacement-cost, cost-of-turnover, pay-compression, external-hire-premium, peter-principle, quits-rate, poaching, meta-analysis, correlation-coefficient]
+figures: [turnover-predictors]
+further_reading:
+  - { title: "Surveying the forest: A meta-analysis, moderator investigation, and future-oriented discussion of the antecedents of voluntary employee turnover", url: "https://www.Gwern.net/doc/economics/2017-rubenstein.pdf", kind: review }
+  - { title: "Causes and consequences of collective turnover: A meta-analytic review", url: "https://ecommons.cornell.edu/bitstream/1813/75344/1/Hausknecht9_Causes_and_consequences.pdf", kind: review }
+  - { title: "Fairness and frictions: The impact of unequal raises on quit behavior", url: "https://www.aeaweb.org/doi/10.1257/aer.20160232", kind: report }
+  - { title: "There are significant business costs to replacing employees", url: "https://www.americanprogress.org/article/there-are-significant-business-costs-to-replacing-employees/", kind: report }
+---
+
+## What it is
+
+The current map of why people quit is a meta-analysis of 316 articles and 57 predictors, about 1,800 effect sizes with a mean lag of about 16 months between the predictor and the leaving [178]. Its ranking, as corrected correlations with voluntary turnover, runs: withdrawal cognitions, wanting to leave, .56; job search .40; organizational commitment −.29; person–job and person–organization fit −.29; job satisfaction −.28; job embeddedness −.26; leadership −.24; climate −.24; perceived alternatives .23; stress and exhaustion .21; age −.21; tenure −.20; work–life conflict .19; pay −.17; role ambiguity and role conflict .15 each; coworker support −.14; workload −.10; performance −.08, or −.21 with an outlier removed [178]. Two moderators matter to a small firm: age and satisfaction matter more where base rates of leaving are higher, and alternatives matter more where withdrawal cognitions are high [178]. The samples are 78.9 percent U.S., with healthcare at 25.9 percent and banking at 12.6 percent, so the ordering is what carries [178].
+
+Embeddedness is the web of links, fit and sacrifice, on and off the job, that makes leaving costly. The plain-language summary the guide carries calls it moderately predictive of turnover and minimally predictive of performance, finds on-the-job embeddedness more predictive than off-the-job, and says the practices suggested to build it, teams, gatherings, fit and flexible scheduling, are untested [192]. In a one-firm study of 222 newcomers, on-the-job embeddedness carried an odds ratio of 0.42 for leaving within the year and partly mediated the effect of investiture, the tactic that affirms who the newcomer already is [155]. The levers the guide builds on this are `l-embeddedness-building`, which gives a person at a customer site a firm-side team, a mentor and a role in something the firm owns, and `l-manager-check-ins-and-stay-conversations`, which listens for the two strongest signals [178] [192].
+
+Pay sits at −.17, below the supervisor and the alternatives, and the causal evidence says it moves people through comparison [178]. At a large U.S. retailer, in a regression-discontinuity design on arbitrary differences in own and peer wages, the quit response to own pay mostly reflected comparisons with higher-paid peers, and separations were fairly insensitive when raises were similar across peers [182]. When University of California employees were randomly informed of a public salary database, those paid below their unit's median reported lower satisfaction and were significantly more likely to look for a new job, and those above gained nothing [92]. External hires into comparable jobs started about 18 percent higher than workers promoted into them at one financial-services firm [93].
+
+<!-- synthesis -->
+
+Each market-rate hire therefore resets the incumbents' comparison point, which is the constraint `c-new-hire-pay-compresses-incumbents` and the reason the lever `l-pay-review-against-market-and-peers` keeps raises similar across peers unless the difference can be explained [93] [182] [92].
+
+The workload row is the one a firm covering a vacancy should read twice. Hours of workload as such correlate −.10 with leaving, while stress and exhaustion run .21, work–life conflict .19 and role ambiguity and role conflict .15 each [178]; at the unit level, staffing levels were not significantly related to turnover rates [181].
+
+<!-- synthesis -->
+
+The constraint `c-vacancy-overload-cascade` reads this to mean that covering a vacancy with the people who remain shows up as strain, conflict between roles and a lost boundary with home, not as hours on a utilization report, and `l-capacity-signalling-and-scope-negotiation` is the lever it carries [178] [181].
+
+What turnover does to a unit, and what holds a unit together, is a second meta-analysis of 694 effect sizes from 82 studies [181]. Turnover rates correlate about −.22 with customer satisfaction and production efficiency, −.15 with profit margin and +.14 with error and loss rates, the same for voluntary and total turnover; among the practices, firm-specific training (−.40), internal mobility (−.25), staffing selectivity (−.24) and high-commitment HR systems (−.23) go with lower turnover, while straight pay, variable pay, staffing levels and general training were not significant [181]. The cost of one departure is disputed. Across 27 case studies excluding executives and physicians, the median replacement cost was about 21 percent of annual salary, 16 percent for jobs paying $30,000 or less and up to 213 percent for very highly paid roles, with only 2 of 11 papers counting indirect costs [180]; the practitioner literature's total cost of 90 to 200 percent of salary names no study [195]. The controversy `cost-of-turnover` holds both, with a natural experiment on worker deaths as a third position: replacement costs are substantial and largest for specialized skills and in thin labor markets, where the firm also pays the remaining specialists more [193].
+
+## The key idea in one picture
+
+A horizontal bar chart of the turnover predictors from the meta-analysis, ordered by the size of the corrected correlation and signed: withdrawal cognitions (.56) and job search (.40) at the top, then the cluster of commitment, fit and satisfaction near −.3, embeddedness (−.26), leadership (−.24) and alternatives (.23), down through stress (.21), work–life conflict (.19) and pay (−.17) to workload (−.10) at the bottom [178]. Shaded bands mark the three groups the records use, the signals, the attachments and the pressures, and a note beside the pay bar points to the comparison evidence, since the bar's length says how much pay predicts and not how it works [182].
+
+## How this guide uses it
+
+The retain stage's description is this ranking, and its failure pattern `productive-employees-leave` orders the constraints by it: `c-disconnection-from-the-firm-and-the-work` for commitment, fit, satisfaction, embeddedness and the supervisor; `c-pay-lags-capability-and-peers`; `c-few-steps-up-in-a-small-firm`, where internal mobility at −.25 meets the promotion evidence that a doubling of a manager's pre-promotion sales goes with a 7.5 percent decline in manager value added; `c-vacancy-overload-cascade`; `c-onsite-schedule-and-commute`; `c-contract-discontinuity-fear`, a visible contract end read as a withdrawal cognition; and `c-poaching-by-prime-or-customer` [178] [181] [185]. The indicators `ind-turnover-predictors-rubenstein2018`, `ind-collective-turnover-performance-2013` and `ind-turnover-cost-share-of-salary` carry the three tables with their populations and dates [178] [181] [180], and the plan-stage lever `l-vacancy-cost-estimate` takes the measured fifth of salary and the unit-level −.22 as its terms [180] [181].

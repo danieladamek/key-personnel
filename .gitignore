@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+probe-results.json
+probe-results.md
+.DS_Store
+public/data/benchmarks/
+scripts/.cache/
+tsconfig.tsbuildinfo

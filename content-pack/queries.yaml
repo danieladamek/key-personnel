@@ -1,0 +1,2667 @@
+# queries.yaml — Key Personnel content pack · every search run and every page fetched; renders on /methods
+# slice P = the orienting pre-sweep of 2026-10-21 (T1). Sweep slices follow the order in scope.yaml (1 select … 9 recheck).
+- text: Sackett Zhang Berry Lievens 2022 revisiting meta-analytic estimates of validity in personnel selection structured interviews
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: Hom Lee Shaw Hausknecht 2017 one hundred years of employee turnover theory and research; Rubenstein 2018 meta-analysis turnover predictors
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: Burks Cowgill Hoffman Housman 2015 value of hiring through employee referrals QJE findings
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: Burning Glass Institute Harvard skills-based hiring long road from promise to practice 2024 degree requirements findings
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: DCSA security clearance processing timelines 2026 Trusted Workforce 2.0 continuous vetting status
+  engine: WebSearch (extended)
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: Executive Order 14173 revoked EO 11246 OFCCP federal contractors affirmative action VEVRAA Section 503 status 2026
+  engine: WebSearch (extended)
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: cost of employee turnover estimates range 20% to 200% of salary evidence Boushey Glynn critique SHRM cost per hire 2025
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+  note: all nine hits were vendor blogs; no primary source returned
+- text: FTC non-compete rule vacated Ryan v FTC appeal dismissed 2025 state noncompete laws 2026 training repayment agreements TRAP
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: state pay transparency laws 2026 salary range in job postings list Illinois Massachusetts Minnesota New Jersey Vermont effective dates
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: AI hiring tools laws 2026 Illinois HB 3773 Colorado AI Act delay NYC Local Law 144 EEOC guidance removed
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: ClearanceJobs compensation survey 2025 cleared workforce salary shortage cleared talent report
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: realistic job preview meta-analysis Phillips 1998 Earnest Allen Landis 2011 turnover reduction
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: Acemoglu Pischke why do firms train general training imperfect labor markets apprenticeship ROI Mathematica Reed 2012 registered apprenticeship evaluation
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: FAR 31.205-6 compensation reasonableness DCAA executive compensation cap 2026 contractor employee compensation allowability
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: Bauer onboarding new employees maximizing success SHRM foundation; Saks Gruman socialization meta-analysis; mentoring meta-analysis Allen Eby 2004 2008 outcomes
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: SHRM 2025 talent trends time to fill average days cost per hire small business survey recruiting difficulty
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+  note: one SHRM page returned; the rest aggregator blogs
+- text: BLS JOLTS September 2026 job openings hires quits rate; BLS employee tenure 2026 release
+  engine: WebSearch (extended)
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: ITAR "U.S. person" hiring foreign nationals deemed export EAR employer screening; FAR 52.222-54 E-Verify federal contractors requirement
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: DoD SkillBridge program changes 2025 2026 eligibility restrictions employer participation
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: ODNI security clearance determinations annual report number of clearance holders 2025; GAO personnel vetting report 2025 2026 continuous vetting backlog
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: federal contractor key personnel clause substitution labor category qualification waiver contracting officer approval FAR DFARS best practice
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: P
+- text: H-1B $100,000 fee proclamation 2025 status 2026 small employers; OPM workforce planning model five steps succession planning guide
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: P
+- text: fetch https://assets.performance.gov/files/Personnel_Vetting_QPR_(FY26-Q3).pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+  note: chart values extracted without quarter labels; re-read the PDF directly in sweep 4
+- text: fetch https://www.crowell.com/en/insights/client-alerts/ofccp-completes-overhaul-of-federal-contractor-compliance-framework-three-final-rules-rescind-eo-11246-regulations-narrow-section-503-affirmative-action
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+  note: secondary; the three Federal Register notices of 2026-08-21 must be fetched in sweep 8
+- text: fetch https://files.gao.gov/reports/GAO-26-107100/index.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+- text: fetch https://www.humrro.org/blog/is-cognitive-ability-the-best-predictor-of-job-performance-new-research-says-its-time-to-think-again/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+  note: secondary summary of Sackett et al. 2022; the article itself is read in sweep 1
+- text: fetch https://www.bls.gov/news.release/pdf/jolts.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+- text: fetch https://burningglassinstitute.org/research/skills-based-hiring-2024
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+  note: landing page only; the report PDF is read in sweep 2
+- text: fetch https://www.littler.com/news-analysis/asap/dod-imposes-new-requirements-employers-participating-skillbridge-military
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: P
+  note: secondary; the August 2024 DoD memorandum must be fetched in sweep 5
+
+# ---- slice 1: the select sweep, 2026-10-21 ----
+- text: "Sackett Zhang Berry Lievens 2022 \"Revisiting meta-analytic estimates of validity in personnel selection\" Journal of Applied Psychology doi"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Oh Le Roth 2023 \"Revisiting Sackett et al.'s (2022) rationale\" range restriction concurrent validation Journal of Applied Psychology"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Sackett Zhang Berry Lievens 2023 \"Revisiting the design of selection systems in light of new findings\" Industrial and Organizational Psychology"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Levashina Hartwell Morgeson Campion 2014 \"The structured employment interview: Narrative and quantitative review\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Schmidt Hunter 1998 \"The validity and utility of selection methods in personnel psychology\" Psychological Bulletin 85 years"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Kuncel Klieger Connelly Ones 2013 \"Mechanical versus clinical data combination in selection and admissions decisions\" meta-analysis"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Hoffman Kahn Li 2018 \"Discretion in Hiring\" Quarterly Journal of Economics job testing managers override"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Autor Scarborough 2008 \"Does job testing harm minority workers\" Quarterly Journal of Economics retail"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Phillips 1998 \"Effects of realistic job previews on multiple organizational outcomes\" Academy of Management Journal meta-analysis"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Earnest Allen Landis 2011 \"Mechanisms linking realistic job previews with turnover\" Personnel Psychology meta-analytic path analysis"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Hausknecht Day Thomas 2004 \"Applicant reactions to selection procedures\" meta-analysis Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Becker Connolly Slaughter 2010 \"The effect of job offer timing on offer acceptance\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Ryan Sacco McFarland Kriska 2000 \"Applicant self-selection: Correlates of withdrawal from a multiple hurdle process\" Journal of Applied Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Roth Bobko McFarland 2005 \"A meta-analysis of work sample test validity\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "primary not found open; QIC-WD summary read instead"
+- text: "Rynes Colbert Brown 2002 \"HR professionals' beliefs about effective human resource practices: Correspondence between research and practice\""
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Behroozi Shirolkar Barik Parnin 2020 \"Does stress impact technical interview performance\" ESEC/FSE whiteboard"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "29 CFR Part 1607 Uniform Guidelines on Employee Selection Procedures eCFR four-fifths rule validation"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "EEOC \"Employment Tests and Selection Procedures\" fact sheet Title VII ADA ADEA"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "EEOC enforcement guidance preemployment disability-related questions and medical examinations ADA conditional offer"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "EEOC removes AI guidance January 2025 \"Select Issues: Assessing Adverse Impact in Software, Algorithms\" Executive Order 14179"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "NYC Local Law 144 automated employment decision tools bias audit requirements DCWP enforcement 2025 2026"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Illinois Public Act 103-0804 HB 3773 Human Rights Act artificial intelligence employment notice effective January 1 2026 IDHR rules"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Colorado AI Act SB 24-205 effective date delayed June 30 2026 employers high-risk hiring obligations"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "California Civil Rights Council automated decision systems employment regulations effective October 1 2025 FEHA"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Google re:Work \"use structured interviewing\" guide four interviews 86% confidence hiring"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "no primary for the 'four interviews' claim; not carried"
+- text: "EEOC removed artificial intelligence guidance from website January 2025 after Executive Order 14179 Title VII AI technical assistance withdrawn"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "Huffcutt Culbertson Weyhrauch 2014 \"Moving forward indirectly\" reanalyzing validity of employment interviews indirect range restriction International Journal of Selection and Assessment"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "target paper not found; two other Huffcutt/Roth pages read"
+- text: "Dana Dawes Peterson 2013 \"Belief in the unstructured interview: The persistence of an illusion\" Judgment and Decision Making"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Lukacik Bourdage Roulin 2022 asynchronous video interviews review; Campion Palmer Campion 1997 \"A review of structure in the selection interview\" 15 components"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "neither primary found open; Roulin 2019 read instead"
+- text: "rework.withgoogle.com guides hiring \"structured interviewing\" rubric interviewer training"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "ANSI/SHRM 06001.2012 cost-per-hire standard; ISO 30414 human capital reporting time to fill definition; ISO 30405 recruitment guidelines"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Fuller Raman \"Hidden Workers: Untapped Talent\" Harvard Business School Accenture 2021 applicant tracking systems filter out qualified candidates 88%"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "report PDF not fetched; HR Dive coverage read"
+- text: "Ployhart Holtz 2008 \"The diversity-validity dilemma: Strategies for reducing racioethnic and sex subgroup differences and adverse impact in selection\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "primary not found open; De Soete et al. 2013 review read instead"
+- text: "Highhouse 2008 \"Stubborn reliance on intuition and subjectivity in employee selection\" Industrial and Organizational Psychology; Kausel Culbertson Madrid 2016 overconfidence personnel selection unstructured interviews"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "Highhouse not fetched"
+- text: "Behroozi Parnin 2019 \"Hiring is broken: What do developers say about technical interviews\" VL/HCC"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Roth Bobko McFarland Buster 2008 \"Work sample tests in personnel selection: A meta-analysis of Black-White differences in overall and exercise scores\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "not found; Purdue link was a different paper"
+- text: "Sackett Lievens 2008 \"Personnel selection\" Annual Review of Psychology; Ployhart Schmitt Tippins 2017 \"Solving the Supreme Problem\" 100 years of selection and recruitment Journal of Applied Psychology"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "McDaniel Whetzel Schmidt Maurer 1994 \"The validity of employment interviews: A comprehensive review and meta-analysis\" Journal of Applied Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Ployhart Holtz 2008 diversity-validity dilemma Personnel Psychology 61 153-172 abstract sixteen strategies"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "\"Work sample tests in personnel selection\" \"Black-White differences\" Roth 2008 Personnel Psychology 61 abstract d = .73"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "not found"
+- text: "Society for Industrial and Organizational Psychology \"Principles for the Validation and Use of Personnel Selection Procedures\" fifth edition 2018 PDF"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "DOJ Immigration and Employer Rights Section export control ITAR citizenship status discrimination job postings \"U.S. citizens only\" settlement 2024 2025 guidance"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+- text: "Title VII national security exception 42 U.S.C. 2000e-2(g) security clearance employment decisions EEOC"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "statute and EEOC decisions not read this sweep (sweep 4)"
+- text: "Fair Chance to Compete for Jobs Act federal contractors FAR 52.222-26 criminal history inquiries conditional offer FAR subpart 22.17 effective December 20 2021"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+- text: "EEOC Enforcement Guidance consideration of arrest and conviction records 2012 individualized assessment Green factors; FCRA pre-adverse action background check requirements employers"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "FCRA not read this sweep"
+- text: "asynchronous video interview validity reliability meta-analysis 2023 2024 Personnel Psychology Journal of Applied Psychology \"asynchronous video interviews\""
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '1'
+  note: "theses and preprints only; no meta-analysis found; gap logged"
+- text: "number of interview rounds candidate drop-off survey 2024 2025 interview process length applicants withdraw Greenhouse LinkedIn Talent Board data"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '1'
+  note: "vendor blogs only; no primary; not carried"
+- text: fetch https://www.Gwern.net/doc/statistics/meta-analysis/2021-sackett.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/368915
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://ideas.repec.org/a/cup/inorps/v16y2023i3p283-300_1.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://digitalcommons.usu.edu/manage_facpub/423/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://raw-files.adaface.com/adaface-lp/The_Validity_and_Utility_of_Selection_Methods_in_P.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://Www.Gwern.net/doc/statistics/prediction/2013-kuncel.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.nber.org/papers/w21709
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.nber.org/papers/w10763
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://pure.psu.edu/en/publications/effects-of-realistic-job-previews-on-multiple-organizational-outc/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://wrap.warwick.ac.uk/57084/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://ecommons.cornell.edu/server/api/core/bitstreams/5ac4063d-154a-4a1d-ad93-6cf84fe5defe/content
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "Table 3 beyond the fetch window"
+- text: fetch https://experts.arizona.edu/en/publications/the-effect-of-job-offer-timing-on-offer-acceptance-performance-an/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/372769
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Work%20Sample%20Tests%20101921.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://iro.uiowa.edu/esploro/outputs/journalArticle/HR-professionals-beliefs-about-effective-human/9983557549702771
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://news.ncsu.edu/?p=509799
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.law.cornell.edu/cfr/text/29/part-1607
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "section titles only; 1607.4 and 1607.5 fetched separately"
+- text: fetch https://eeoc.gov/laws/guidance/employment-tests-and-selection-procedures
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.eeoc.gov/laws/guidance/enforcement-guidance-preemployment-disability-related-questions-and-medical
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://data.aclum.org/storage/2025/01/EOCC_www_eeoc_gov_laws_guidance_select-issues-assessing-adverse-impact-software-algorithms-and-artificial.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://natlawreview.com/article/illinois-postpones-proposed-regulations-ai-employment
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.gtlaw.com/en/insights/2025/9/colorado-delays-comprehensive-ai-law-with-further-changes-anticipated
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.mayerbrown.com/en/insights/publications/2025/08/california-adopts-new-employment-ai-regulations-effective-october-1-2025
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.law.cornell.edu/cfr/text/29/1607.4
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.law.cornell.edu/cfr/text/29/1607.5
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://dlab.sauder.ubc.ca/sjdm/journal/12/121130a/jdm121130a.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://iro.uiowa.edu/esploro/outputs/journalArticle/Corrections-for-Range-Restriction-in-Structured/9984380384102771
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "Roth et al. 2002, not Huffcutt 2014"
+- text: fetch https://business.oregonstate.edu/faculty-and-research/research/publications-list/employment-interview-reliability-new-meta-analytic
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "citation only; not carried"
+- text: fetch https://scholarworks.bgsu.edu/pad/vol5/iss1/2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.klgates.com/The-Changing-Landscape-of-AI-Federal-Guidance-for-Employers-Reverses-Course-with-New-Administration-1-31-2025
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.shrm.org/executive-network/insights/people-strategy/state-of-recruiting-2025-insights-to-maximize-recruitment
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://rework.withgoogle.com/en/guides/hiring-use-structured-interviewing
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "404"
+- text: fetch https://webstore.ansi.org/preview-pages/ISO/preview_ISO+30405-2023.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://committee.iso.org/news/ref2689.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://rework.withgoogle.com/intl/en/guides/a-guide-to-structured-interviewing-for-better-hiring-practices
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.hrdive.com/news/report-applicant-tracking-systems-may-exclude-whole-segments-of-candidates/606614/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.Gwern.net/doc/psychology/cognitive-bias/2016-kausel.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://par.nsf.gov/biblio/10139106
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://apps.it.purdue.edu/sites/Home/DirectoryApi/Files/cbeab935-40cb-477d-b20a-64522f899930/Download
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "Roth et al. 2014 differential validity, not Roth 2008"
+- text: fetch https://apps.it.purdue.edu/sites/Home/DirectoryApi/Files/cb364143-2dbf-4235-9064-c8f40aeba4ad/Download
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "Campion et al. 2024 NLP, not Ployhart & Holtz 2008"
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/370231
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://home.ubalt.edu/tmitch/645/articles/McDanieletal1994CriterionValidityInterviewsMeta.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://ink.library.smu.edu.sg/lkcsb_research/5648
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://researchcommons.waikato.ac.nz/entities/publication/56d5dafd-0500-44bc-91e0-951a5b574835
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.siop.org/tip-article/is-cognitive-ability-the-best-predictor-of-job-performance
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://resolve.cambridge.org/core/journals/industrial-and-organizational-psychology/article/principles-for-the-validation-and-use-of-personnel-selection-procedures/730C076329F88919D5C81C6E7D304FE2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+  note: "redirect"
+- text: fetch https://journals.copmadrid.org/jwop/art/tr2013a2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.cambridge.org/core/journals/industrial-and-organizational-psychology/article/abs/principles-for-the-validation-and-use-of-personnel-selection-procedures/730C076329F88919D5C81C6E7D304FE2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://hlc.com/en/publications/doj-enforcement-of-us-export-controls-compliance-in-context-of-anti-discrimination-laws-2024-update
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://littler.com/news-analysis/asap/new-federal-fair-chance-act-applies-federal-contractors-and-agencies
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.eeoc.gov/laws/guidance/enforcement-guidance-consideration-arrest-and-conviction-records-employment-decisions
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.justice.gov/opa/pr/justice-department-secures-agreement-it-staffing-and-services-company-posting-discriminatory
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+- text: fetch https://www.bipc.com/doj-releases-employer-guidance-to-avoid-immigration-related-discrimination-when-complying-with-us-export-laws
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '1'
+
+# ---- slice 2: the attract sweep, 2026-10-21 ----
+- text: "Burks Cowgill Hoffman Housman 2015 \"The value of hiring through employee referrals\" Quarterly Journal of Economics referred workers less likely to quit productivity"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "Brown Setren Topa 2016 \"Do informal referrals lead to better matches? Evidence from a firm's employee referral system\" Journal of Labor Economics"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "Zottoli Wanous 2000 \"Recruitment source research: Current status and future directions\" Human Resource Management Review meta-analysis referrals rehires"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+  note: "primary not found open; QIC-WD summary read"
+- text: "Chapman Uggerslev Carroll Piasentin Jones 2005 \"Applicant attraction to organizations and job choice: A meta-analytic review\" Journal of Applied Psychology"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "Uggerslev Fassina Kraichy 2012 \"Recruiting through the stages: A meta-analytic test of predictors of applicant attraction at different stages\" Personnel Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+  note: "primary not found open; QIC-WD summary read"
+- text: "Breaugh 2013 \"Employee recruitment\" Annual Review of Psychology; Lievens Slaughter 2016 \"Employer image and employer branding\" Annual Review of Organizational Psychology"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+  note: "Breaugh not fetched"
+- text: "Marinescu Wolthoff 2020 \"Opening the black box of the matching function: The power of words\" Journal of Labor Economics job titles applicants"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "Lambrecht Tucker 2019 \"Algorithmic bias? An empirical study of apparent gender-based discrimination in the display of STEM career ads\" Management Science"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "Burning Glass Institute \"Skills-Based Hiring: The Long Road from Pronouncements to Practice\" PDF findings 3.6% of degree-requirement removals hires 0.14 percentage points"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+  note: "report PDF returned the landing page; AEI summary read"
+- text: "Barrero Bloom Davis 2023 \"The evolution of work from home\" Journal of Economic Perspectives workers value working from home percent of pay SWAA"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "NFIB Small Business Economic Trends jobs report September 2026 unfilled job openings few or no qualified applicants percent"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "BLS Employment Situation of Veterans 2025 news release unemployment rate veterans Gulf War era II"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "41 CFR 60-300.5 VEVRAA job listing requirement employment service delivery system contractors post openings"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "DoD SkillBridge memorandum August 2024 industry partner requirements 75 percent job offer minimum participants employer size official"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "Indeed Hiring Lab share of job postings with salary information pay transparency 2026"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "ODNI \"security clearance determinations\" annual report fiscal year 2024 2025 number of individuals eligible for access to classified information"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+  note: "no report newer than 2019 found; CRS R43216 used"
+- text: "Gaucher Friesen Kay 2011 \"Evidence that gendered wording in job advertisements exists and sustains gender inequality\" Journal of Personality and Social Psychology"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "29 CFR 1625.4 help wanted notices or advertisements age preferences ADEA; NACE Job Outlook 2026 survey hiring projections starting salary"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "NACE Job Outlook 2026 employers plan to hire class of 2026 graduates percent change hiring projections"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "ODNI annual report security clearance determinations fiscal year 2023 or 2024 PDF dni.gov number of clearance holders contractors"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "Hiring Our Heroes corporate fellowship program employer how it works 12 weeks hire rate official site"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "Swider Zimmerman Charlier Pierotti 2015 \"Deep-level and surface-level individual differences and applicant attraction to organizations\" Journal of Vocational Behavior abstract"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "employee referral programs adverse impact homogeneity network hiring diversity evidence Fernandez Fernandez-Mateo 2006 \"Networks, race, and hiring\" American Sociological Review"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+  note: "Fernandez & Fernandez-Mateo abstract not readable; Miller & Schmutte 2021 read"
+- text: "Uggerslev Fassina Kraichy 2012 meta-analysis perceived fit strongest predictor applicant attraction correlation .45 recruiter behaviors stages abstract Personnel Psychology 65 597"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "employer brand Glassdoor ratings job applications effect study \"employer reputation\" applicant quantity quality field evidence"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+  note: "the one academic paper found (arXiv 2305.02587) is withdrawn; not carried"
+- text: "site:hiringourheroes.org fellowship programs corporate fellowship transitioning service members military spouses employers"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "relocation willingness survey 2025 job seekers percent willing to relocate for a job; remote job postings share Indeed Hiring Lab 2026 remote hybrid postings"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "passive candidates evidence \"actively looking\" share of employed workers job search BLS or Gallup 2025 2026 percent watching for opportunities"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+  note: "vendor claims only (LinkedIn 70% passive); no primary; not carried"
+- text: "BLS Occupational Employment and Wage Statistics May 2025 software developers 15-1252 national median annual wage employment release"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+  note: "aggregator sites only; OOH page used"
+- text: "BLS employment projections 2024-34 computer and information technology occupations growth fastest growing occupations"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: "ClearanceJobs \"cleared hiring trends\" employers report time to fill cleared positions days 2025 2026 survey"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "OFCCP internet applicant rule 41 CFR 60-1.3 definition four criteria recordkeeping federal contractors status after 2026 rescission"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '2'
+- text: "Federal Register OFCCP final rule August 21 2026 rescission Executive Order 11246 regulations 41 CFR part 60-1 citation"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.iza.org/en/publications/dp/7382
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "redirects to liser.lu; Bonn PDF used"
+- text: fetch https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr568.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Recruitment%20101921.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/372374
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://ink.library.smu.edu.sg/lkcsb_research/5704
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://docs.iza.org/dp9071.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "redirects to liser.lu; abstract mirror used"
+- text: fetch https://dspace.mit.edu/handle/1721.1/134404
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/369761
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://epflicht.ulb.uni-bonn.de/download/pdf/103985
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/276930
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.burningglassinstitute.org/s/Skills-Based-Hiring-02122024-vF-srmp.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "served the landing page, not the PDF"
+- text: fetch https://www.nber.org/papers/w31686
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.nfib.com/wp-content/uploads/2026/09/NFIB-September-2026-Jobs-Report.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.bls.gov/news.release/archives/vet_04282026.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.law.cornell.edu/cfr/text/41/60-300.5
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://skillbridge.osd.mil/docs/DoD_SkillBridge_MOU_Aug_2024_Release.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://cosm.aei.org/a-slow-start-for-skills-based-hiring/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.hoover.org/sites/default/files/2024-01/Shift%20to%20Remote%20Work-Slides-January%202024.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "redirect"
+- text: fetch https://about.clearancejobs.com/hubfs/pdfs/ClearanceJobs_Compensation_Report_2025.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://sgp.fas.org/othergov/intel/clearance.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "empty content"
+- text: fetch https://www.indeed.com/news/releases/pay-transparency-across-high-earning-sectors
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.jacksonlewis.com/publication/navigating-2026-pay-transparency-laws-and-employer-obligations
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://hoover-s3-website.s3.us-west-2.amazonaws.com/s3fs-public/2024-01/Shift%20to%20Remote%20Work-Slides-January%202024.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://gap.hks.harvard.edu/evidence-gendered-wording-job-advertisements-exists-and-sustains-gender-inequality
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.law.cornell.edu/cfr/text/29/1625.4
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.naceweb.org/job-outlook/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.congress.gov/crs-product/R43216
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "robots disallowed; EveryCRSReport mirror used"
+- text: fetch https://www.london.edu/faculty-and-research/academic-research/n/networks-race-and-hiring
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "citation only; not carried"
+- text: fetch https://nber.org/papers/w29246
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://digitalcommons.georgiasouthern.edu/management-facpubs/29
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.hiringourheroes.org/?p=919
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "blog post; thin"
+- text: fetch https://arxiv.org/abs/2305.02587v2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "withdrawn paper; not carried"
+- text: fetch https://www.everycrsreport.com/reports/R43216.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://digitalcommons.unl.edu/qicwdumbrella/77
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.bls.gov/ooh/Computer-and-Information-Technology
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.challengergray.com/?p=18219
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.hiringourheroes.org/?p=22077
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.federalregister.gov/documents/2026/08/21/2026-17114/rescission-of-executive-order-11246-implementing-regulations
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "first 100,000 characters read"
+- text: fetch https://news.clearancejobs.com/2026/09/08/2026-cleared-recruiting-trends-new-report-notes-fs-poly-hires-at-100-days/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "server error; todo"
+- text: fetch https://about.clearancejobs.com/employers/recruiting-resources/cleared_recruiting_metrics
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+- text: fetch https://www.dol.gov/sites/dolgov/files/ofccp/regs/compliance/05_20176.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '2'
+  note: "first 100,000 characters read"
+
+# ---- slice 3: the offer sweep, 2026-10-21 ----
+- text: "Cullen Pakzad-Hurson 2023 \"Equilibrium effects of pay transparency\" Econometrica wages decline 2 percent"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Cullen 2024 \"Is pay transparency good?\" Journal of Economic Perspectives cross-worker vertical cross-firm transparency"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Card Mas Moretti Saez 2012 \"Inequality at work: The effect of peer salaries on job satisfaction\" American Economic Review"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Bidwell 2011 \"Paying more to get less: The effects of external hiring versus internal mobility\" Administrative Science Quarterly external hires paid more perform worse"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Mas Pallais 2017 \"Valuing alternative work arrangements\" American Economic Review willingness to pay flexibility; Maestas Mullen Powell von Wachter Wenger 2023 \"The value of working conditions in the United States\""
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Leibbrandt List 2015 \"Do women avoid salary negotiations? Evidence from a large-scale natural field experiment\" Management Science negotiable wages"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "salary history ban effects evidence Hansen McNichols 2020 NBER; Sinha salary history bans gender pay gap; Mask 2023 salary history bans wages"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+  note: "Hansen & McNichols read; later studies (Sinha; Tunc JMP) not read"
+- text: "Arnold Quach Taska \"The impact of pay transparency in job postings on the labor market\" Colorado posted wages applications working paper"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "FAR 31.205-6 compensation for personal services reasonableness acquisition.gov; contractor compensation cap 2026 OFPP memorandum benchmark amount 41 U.S.C. 4304"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "FAR 16.601 time-and-materials contracts fixed hourly rates labor category qualifications 52.232-7 contractor employees must meet labor category"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "Service Contract Act wage determinations SAM.gov FAR 22.10 29 CFR part 4 health and welfare rate 2026 fringe benefit amount"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "Executive Order 14236 March 2025 rescinds EO 14055 nondisplacement of qualified workers and EO 14026 federal contractor minimum wage DOL status"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+  note: "EO 14055 nondisplacement status not confirmed this sweep; todo"
+- text: "BLS Employment Cost Index news release 2026 wages and salaries private industry 12-month percent change latest"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "BLS Employer Costs for Employee Compensation June 2026 benefits percent of total compensation private industry"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "KFF Employer Health Benefits Survey 2025 average annual premium family coverage worker contribution"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "salary history ban states list 2026 employers prohibited from asking prior salary which states and cities"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+  note: "vendor lists only; primaries in sweep 8"
+- text: "OFPP contractor compensation cap benchmark amount 2025 2026 41 U.S.C. 1127 memorandum \"$\" per fiscal year whitehouse.gov"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+  note: "archived Obama-era pages only; current OFPP determination not found"
+- text: "GAO bid protest key personnel unavailable before award letter of commitment contingent offer decision 2024 2025 \"key personnel\" became unavailable proposal"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "BLS Occupational Employment and Wage Statistics May 2025 news release April 2026 national employment and wage estimates"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "GSA CALC+ contract awarded labor categories tool buy.gsa.gov pricing how it works hourly rates data source"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "EEOC Equal Pay Act 29 U.S.C. 206(d) equal pay for equal work employer defenses \"factor other than sex\" state equal pay laws substantially similar work"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+- text: "counteroffer acceptance evidence study employees who accept counteroffers leave within a year source; retention bonus effectiveness evidence turnover study"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+  note: "staffing-firm surveys only; no peer-reviewed study"
+- text: "Rizo v. Yovino Ninth Circuit en banc 2020 prior salary cannot justify wage differential Equal Pay Act \"factor other than sex\""
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+- text: "GSAR 552.216-70 economic price adjustment FSS multiple award schedule contracts annual price increase limit 10 percent acquisition.gov"
+  engine: WebSearch
+  hits: 9
+  date: '2026-10-21'
+  slice: '3'
+  note: "clause text not fetched; law-firm note read"
+- text: "sign-on bonus effectiveness evidence turnover hiring study economics \"signing bonus\" field evidence retention; WorldatWork bonus programs survey 2025"
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-21'
+  slice: '3'
+  note: "no effectiveness evidence found; prevalence survey read"
+- text: fetch https://www.nber.org/papers/w28903
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.nber.org/papers/w31060
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://papers.nber.org/papers/w16396
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+  note: "redirect"
+- text: fetch https://repository.upenn.edu/mgmt_papers/65/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.nber.org/papers/25204
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+  note: "abstract only; valuations not shown"
+- text: fetch https://www.nber.org/papers/w18511
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.nber.org/papers/w27054
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.nber.org/papers/w34480
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.nber.org/papers/w16396
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.acquisition.gov/far/16.601
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.law.cornell.edu/cfr/text/48/52.232-7
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.acquisition.gov/node/30667/printable/pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.everycrsreport.com/files/2026-05-14_IF13227_bddb6ad78d2e8ef74f902088a8c7066452ea97dd.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.dol.gov/agencies/whd/government-contracts/minimum-wage
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.bls.gov/opub/ted/2026/compensation-costs-for-private-industry-workers-up-3-3-percent-over-the-year-ended-june-2026.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.bls.gov/news.release/archives/ecec_09092026.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+  note: "first 100,000 characters"
+- text: fetch https://files.kff.org/attachment/Employer-Health-Benefits-Survey-2025-Annual-Survey-Summary-of-Findings.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.paycor.com/resource-center/articles/states-with-salary-history-bans/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+  note: "vendor page; dating inconsistent"
+- text: fetch https://www.gao.gov/products/b-422978,b-422978.2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.crowell.com/NewsEvents/AlertsNewsletters/all/COFC-Rejects-GAOs-Duty-to-Notify-of-Key-Personnel-Departures
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.aprio.com/2025-and-estimated-2026-compensation-limits-a-strategic-guide-for-government-contractors-ins-article-gc/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.bls.gov/news.release/archives/ocwage_05152026.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+  note: "first 100,000 characters"
+- text: fetch https://buy.gsa.gov/pricing/assets/documents/user-guides/CALC+%20User%20Guide%20for%20Labor%20Ceiling%20Rates.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.eeoc.gov/facts/fs-epa.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://press.roberthalf.com/2018-07-17-MORE-MONEY-SAME-PROBLEMS-Firms-Often-Counter-With-Higher-Salaries-to-Keep-Departing-Employees-but-Staff-Leave-in-Less-Than-2-Years-Anyway
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.jenner.com/print/v2/content/92767/the-price-of-silence-gao-dismisses-protest-because-the-protesters-key-personnel-were-unavailable.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://collaborate.princeton.edu/en/publications/valuing-alternative-work-arrangements/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.sullcrom.com/blogs-ninth-circuit-finds-employers-cannot-use-an-employees-prior-pay-to-defend-against-equal-pay-act-claims
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://www.pilieromazza.com/gsa-moratorium-on-enforcement-of-economic-price-adjustment-provisions-3-important-takeaways-for-government-contractors/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+- text: fetch https://worldatwork.org/about/press-room/new-report-highlights-growing-use-of-bonus-programs-across-organizations
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '3'
+
+# ---- slice 4: the clear-and-start sweep, 2026-10-21 ----
+- text: "32 CFR 117.10 personnel security clearances contractor sponsorship \"need for access\" interim eligibility ecfr"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+  note: "vendor blogs only"
+- text: "ecfr.gov 32 CFR part 117 NISPOM rule §117.10 \"Determination of eligibility for access to classified information\" contractor \"interim\" sponsorship"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "Security Executive Agent Directive 8 \"Temporary Eligibility\" dni.gov SEAD 8 interim clearance criteria 2022"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "SEAD 4 National Security Adjudicative Guidelines text Guideline A through M \"whole-person concept\" Bond Amendment ecfr OR govinfo OR dni.gov"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DCSA background investigation processing times 2026 secret top secret average days initiation to adjudication"
+  engine: WebSearch (extended)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+  note: "vendor explainers; the ClearanceJobs quarterly updates restate DCSA"
+- text: "NISPPAC meeting 2026 DCSA industry timeliness slides \"fastest 90\" secret top secret days dcsa.mil OR archives.gov"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DCSA interim secret clearance determination industry how long days percentage granted 2025 2026 \"interim\" NISPPAC OR dcsa.mil"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+  note: "no public interim data; FEDCAS op-ed confirms"
+- text: "USCIS I-9 Central \"Section 1\" \"first day of employment\" \"Section 2\" \"within three business days\" completing Form I-9 timeline"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "uscis.gov \"Form I-9\" \"Section 1\" \"no later than the first day of employment\" \"Section 2\" \"within 3 business days\" handbook M-274"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "justice.gov Civil Rights Division \"export control\" employer fact sheet April 2023 \"U.S. person\" ITAR EAR immigration-related discrimination pdf"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "DFARS 252.223-7004 \"Drug-Free Work Force\" removed OR rescinded 2026 DFARS change part 223 reserved Federal Register"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+  note: "removal notice not found"
+- text: "FAR overhaul 2025 2026 \"drug-free workplace\" clause 52.223-6 renumbered OR removed OR \"52.226\" part 23 rewrite statutory requirement 41 U.S.C. 8102"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "Common Access Card contractor eligibility sponsorship TASS \"background investigation\" requirements DoDM 1000.13 Volume 1 \"favorable\" fingerprint \"NACI\" OR \"Tier 1\" issuance CAC contractor"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DoDM 8140.03 cyberspace workforce qualification contractor personnel requirement DFARS 252.239-7001 \"information assurance\" certification before privileged access timeline"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "H-1B $100,000 fee proclamation September 19 2025 \"Restriction on Entry of Certain Nonimmigrant Workers\" status 2026 litigation injunction current"
+  engine: WebSearch (extended)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: "reneging on accepted job offers study predictors time between acceptance and start date \"reneging\" job offer research journal"
+  engine: WebSearch (extended)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "Speer \"new hire ghosting\" antecedents Human Resource Management Journal 2025 abstract accepted offer no-show start date"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DOHA industrial security clearance decisions statistics denied granted percent 2024 2025 statement of reasons hearings contractors"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+  note: "no DOHA statistics page; vendor tally only"
+- text: "ClearanceJobs 2026 cleared recruiting report time to fill polygraph \"100 days\" employers survey findings"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DCSA facility clearance FCL process sponsorship small business how long \"facility clearance\" dcsa.mil entity vetting timeline 2025"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "GAO report security clearance reciprocity delays contractors 2024 2025 \"reciprocity\" personnel vetting GAO-2"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '4'
+- text: "DoDM 1000.13 Volume 1 CAC eligibility contractor \"Trusted Associate Sponsorship System\" TASS \"6 months\" employment OR \"DoD-sponsored\" affiliation requirement text"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.law.cornell.edu/cfr/text/32/117.10
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.law.cornell.edu/cfr/text/32/117.9
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.dni.gov/files/NCSC/documents/Regulations/SEAD-8_Temporary_Eligibility_U.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "redirect to archive.dni.gov"
+- text: fetch https://archive.dni.gov/files/NCSC/documents/Regulations/SEAD-8_Temporary_Eligibility_U.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "2,615 characters only; body unread; direct download refused by the proxy"
+- text: fetch https://archive.dni.gov/files/NCSC/documents/Regulations/SEAD-7_BI_ReciprocityU.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://archive.dni.gov/files/NCSC/documents/Regulations/SEAD-4-Adjudicative-Guidelines-U.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "no machine-readable text"
+- text: fetch https://sgp.fas.org/othergov/intel/sead-4.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "no text returned"
+- text: fetch https://www.energy.gov/sites/prod/files/2018/02/f48/SEAD4_20170608.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://news.clearancejobs.com/2026/03/19/how-long-does-it-take-to-get-a-clearance-q1-2026-update/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.archives.gov/files/isoo/oversight-groups/nisppac/20260902-nisppac-public-meeting-slides.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "chart labels garbled"
+- text: fetch https://news.clearancejobs.com/2026/09/02/how-long-does-it-take-to-process-a-security-clearance-q3-2026-fy-update/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://news.clearancejobs.com/2026/06/24/a-simple-data-change-could-transform-the-security-clearance-process/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://assets.performance.gov/files/Personnel_Vetting_QPR_(FY26-Q3).pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "quarter labels partly inferred"
+- text: fetch https://www.acquisition.gov/far/52.222-54
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.uscis.gov/i-9-central/completing-form-i-9
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "no timing rules on the page"
+- text: fetch https://www.uscis.gov/i-9-central/form-i-9-resources/handbook-for-employers-m-274/20-completing-section-1-of-form-i-9
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "client error, twice"
+- text: fetch https://uscis.gov/i-9-central/form-i-9-resources/handbook-for-employers-m-274/40-completing-section-2-employer-review-and-verification
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.justice.gov/crt/media/1287536/dl
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "the fact sheet, rev. March 2024"
+- text: fetch https://www.law.cornell.edu/cfr/text/22/120.50
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.law.cornell.edu/cfr/text/22/120.62
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.acquisition.gov/dfars/252.223-7004-drug-free-work-force.
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "Reserved"
+- text: fetch https://www.acquisition.gov/dfars/part-223-environment-energy-and-water-efficiency-renewable-energy-technologies-occupational-safety-and-drug-free-workplace
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.acquisition.gov/far/subpart-26.5
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-employers-need-know
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-F/part-157
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.govinfo.gov/content/pkg/CFR-2018-title32-vol1/pdf/CFR-2018-title32-vol1-sec161-8.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "excerpt begins mid-§161.7"
+- text: fetch https://www.law.cornell.edu/cfr/text/32/161.7
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/814003p.PDF
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.law.cornell.edu/uscode/text/42/2000e-2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.federalregister.gov/documents/2026/08/25/2026-17324/fee-for-certain-h-1b-petitions
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "first 100,000 characters"
+- text: fetch https://www.gtlaw-insidebusinessimmigration.com/h-1b/september-2026-h-1b-changes-new-compliance-scrutiny-and-extension-of-the-100000-entry-restriction/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.uscis.gov/newsroom/alerts/presidential-proclamation-on-restriction-on-entry-of-certain-nonimmigrant-workers
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "client error"
+- text: fetch https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/26-1699O-01A.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70050
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "client error"
+- text: fetch https://www.hirevue.com/wp-content/uploads/2026/07/Human-Res-Mgmt-Journal-2026-Speer-Now-You-See-Them-Now-You-Don-t-Understanding-New-Hire-Ghosting-and-Its-2.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://news.clearancejobs.com/2025/01/05/top-reasons-security-clearances-were-denied-and-revoked-in-2024/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://news.clearancejobs.com/2026/09/08/2026-cleared-recruiting-trends-new-report-notes-fs-poly-hires-at-100-days/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "headline and body disagree"
+- text: fetch https://about.clearancejobs.com/employers/recruiting-resources-2026-cleared-recruiting-guide
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "gated landing page"
+- text: fetch https://www.dtra.mil/Portals/125/Documents/Business Docs/events/Mallow-FCL-Process-Sponsorship-Briefing-July-2024.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "client error"
+- text: fetch https://www.onr.navy.mil/media/document/roadmap-getting-facility-clearancefcl-sponsorship
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "DCSA June 2022 roadmap"
+- text: fetch https://www.gao.gov/products/GAO-24-105669
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "summary page"
+- text: fetch https://www.law.cornell.edu/uscode/text/29/2006
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.dcsa.mil/Systems-Applications/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+  note: "system names absent from the fetched text"
+- text: fetch https://www.acquisition.gov/far/22.1803
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+- text: fetch https://www.acquisition.gov/far/31.203
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '4'
+
+# ---- slice 5: the onboard-and-develop sweep, 2026-10-21 ----
+- text: "Bauer Bodner Erdogan Truxillo Tucker 2007 \"Newcomer adjustment during organizational socialization\" meta-analysis Journal of Applied Psychology role clarity self-efficacy social acceptance turnover"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "Bauer Erdogan Ellis Truxillo Brady Bodner \"New Horizons for Newcomer Organizational Socialization\" Journal of Management 2025 doi"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Allen 2006 \"Do organizational socialization tactics influence newcomer embeddedness and turnover?\" Journal of Management abstract collective fixed investiture turnover"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Shaw Lazear 2008 \"Tenure and output\" Labour Economics windshield installers productivity tenure learning curve abstract"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Jarosch Oberfield Rossi-Hansberg \"Learning from coworkers\" Econometrica 2021 abstract knowledge diffusion coworkers wage growth"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "Dearden Reed Van Reenen 2006 \"The impact of training on productivity and wages: evidence from British panel data\" Oxford Bulletin productivity 0.6 wages 0.3 percent"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "Manchester 2012 \"General human capital and employee mobility: How tuition reimbursement increases retention through sorting and participation\" ILR Review abstract turnover"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Blume Ford Baldwin Huang 2010 \"Transfer of training: A meta-analytic review\" Journal of Management abstract predictors transfer supervisor support"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+  note: "no primary surfaced"
+- text: "\"Transfer of training: A meta-analytic review\" Blume 2010 journals.sagepub.com OR researchgate abstract \"open skills\" \"closed skills\" cognitive ability conscientiousness motivation work environment"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+  note: "scinapse behind a captcha; Grossman & Salas review served"
+- text: "Allen Eby Poteet Lentz Lima 2004 \"Career benefits associated with mentoring for protégés: A meta-analysis\" Journal of Applied Psychology effect sizes compensation promotion satisfaction"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "training repayment agreement provisions TRAPs 2026 legal status NLRB GC memo rescinded CFPB \"employer-driven debt\" California AB 692 stay-or-pay law effective January 1 2026"
+  engine: WebSearch (extended)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "CFPB July 2023 \"Employer-Driven Debt\" issue spotlight training repayment agreements findings consumerfinance.gov"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "FTC noncompete rule status 2025 2026 appeal dismissed vacatur Ryan LLC v. FTC \"September 2025\" FTC accedes vacatur case-by-case enforcement"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "DOL Wage and Hour Fact Sheet 22 hours worked FLSA \"lectures, meetings, and training programs\" four criteria 29 CFR 785.27 compensable training time"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Registered Apprenticeship data active apprentices 2025 new apprentices apprenticeship.gov statistics employers IT occupations; Reed 2012 Mathematica \"cost-benefit analysis of Registered Apprenticeship\" earnings gains"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Acemoglu Pischke \"Why do firms train? Theory and evidence\" Quarterly Journal of Economics 1998 NBER w5605 abstract general training compressed wage structure"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "DoD Inspector General audit contractor employees did not meet labor category qualifications education experience requirements time-and-materials report billed unqualified"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "IRS educational assistance program section 127 $5,250 exclusion employer-provided educational assistance student loan payments through 2025 irs.gov"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "IRS FS-2026-10 educational assistance programs student loan payments permanent inflation adjustment section 127 2026"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "irs.gov \"FS-2026-10\" educational assistance programs frequently asked questions May 2026"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-21'
+  slice: '5'
+- text: "CDSE Center for Development of Security Excellence FSO training courses free industry cdse.edu facility security officer curriculum"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: "Kammeyer-Mueller Wanberg Rubenstein Song 2013 \"Support, undermining, and newcomer socialization: Fitting in during the first 90 days\" Academy of Management Journal abstract"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://pubmed.ncbi.nlm.nih.gov/17484552/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "abstract"
+- text: fetch https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Organizational%20Socialization%20090220.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://ore.exeter.ac.uk/rest/bitstreams/200827/retrieve
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "first 100,000 characters"
+- text: fetch https://pure.ul.ie/en/publications/new-horizons-for-newcomer-organizational-socialization-a-review-m/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "record"
+- text: fetch https://www.uv.es/777AR05KTYgNhw=/PSI%20ORG%2006-07/ARTICULOS%20SOCIALIZACION%20ORG/ARTICULO%202-SOCIALIZATION%20TACTICS.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.nber.org/papers/w13652
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "abstract"
+- text: fetch https://econometricsociety.org/publications/econometrica/2021/03/01/learning-coworkers
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "abstract"
+- text: fetch https://ifs.org.uk/publications/impact-training-productivity-and-wages-evidence-british-panel-data
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "working-paper abstract"
+- text: fetch https://experts.umn.edu/en/publications/general-human-capital-and-employee-mobility-how-tuition-reimburse/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "record"
+- text: fetch https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Training%20Transfer%20120222.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.scinapse.io/papers/2165041900
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "captcha"
+- text: fetch https://ftq.qc.ca/wp-content/uploads/sites/5/2019/04/Grossman_et_al-2011-International_Journal_of_Training_and_Development.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://pubmed.ncbi.nlm.nih.gov/14769125/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "captcha"
+- text: fetch https://digitalcommons.usf.edu/psy_facpub/38/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "record and abstract"
+- text: fetch https://digitalcommons.usf.edu/psy_facpub/23/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "record and abstract"
+- text: fetch https://www.littler.com/news-analysis/asap/california-goes-after-traps-and-stay-or-pay-provisions
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.hklaw.com/en/insights/publications/2025/08/is-it-a-trap-training-repayment-agreement-provisions-in-uncertain
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-consumer-risks-posed-by-employer-driven-debt/full-report/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://ftc.gov/news-events/news/press-releases/2025/09/federal-trade-commission-files-accede-vacatur-non-compete-clause-rule
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.dol.gov/agencies/eta/research/publications/effectiveness-assessment-and-cost-benefit-analysis-registered
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.gao.gov/assets/gao-25-107040.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://ideas.repec.org/a/oup/qjecon/v113y1998i1p79-119..html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "abstract"
+- text: fetch https://www.dodig.mil/reports.html/Article/1700761/dod-task-orders-issued-under-one-acquisition-solution-for-integrated-services-c/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.natptax.com/news-insights/blog/are-student-loan-payments-still-covered-by-employer-education-assistance-in-2025/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "superseded"
+- text: fetch https://www.irs.gov/newsroom/frequently-asked-questions-about-educational-assistance-programs
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "superseded by FS-2026-10"
+- text: fetch https://www.bdo.com/insights/tax/irs-updates-faq-on-section-127-educational-assistance-programs-key-changes-employers-should-note
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "secondary; not carried"
+- text: fetch https://irs.gov/newsroom/updates-to-frequently-asked-questions-about-educational-assistance-programs
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://www.cdse.edu/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "home page only"
+- text: fetch https://www.apprenticeship.gov/employers
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+  note: "hub page only"
+- text: fetch https://www.acquisition.gov/far/31.205-44
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+- text: fetch https://carlsonschool-d8.prd.umn.edu/sites/carlsonschool.umn.edu/files/2018-10/kammeyer-mueller_wanberg_rubenstein_and_song_2013_support_undermining_and_newcomer_socialization_0.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-21'
+  slice: '5'
+
+# ---- slice 6: the retain-and-handover sweep, 2026-10-22 ----
+- text: "Rubenstein Eberly Lee Mitchell 2018 \"Surveying the forest\" meta-analysis antecedents voluntary employee turnover Personnel Psychology strongest predictors"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '6'
+- text: "Allen Bryant Vardaman 2010 \"Retaining talent: Replacing misconceptions with evidence-based strategies\" Academy of Management Perspectives turnover cost 90 200 percent salary misconceptions"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "Boushey Glynn 2012 \"There Are Significant Business Costs to Replacing Employees\" Center for American Progress 21 percent of annual salary 30 case studies"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '6'
+- text: "Park Shaw 2013 \"Turnover rates and organizational performance: A meta-analysis\" Journal of Applied Psychology voluntary turnover performance correlation; Hancock 2013 meta-analytic review employee turnover firm performance"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+  note: "Heavey et al. 2013 served; Park & Shaw and Hancock not read"
+- text: "Dube Giuliano Leonard 2019 \"Fairness and Frictions: The Impact of Unequal Raises on Quit Behavior\" American Economic Review abstract quits peer wages"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "Harter Schmidt Hayes 2002 \"Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis\" Journal of Applied Psychology turnover effect size"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "Benson Li Shue 2019 \"Promotions and the Peter Principle\" Quarterly Journal of Economics abstract sales workers promoted to manager team performance declines"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '6'
+- text: "EO 14055 nondisplacement of qualified workers under service contracts revoked 2025 EO 14236 DOL 29 CFR part 9 status rescinded rule"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+  note: "revoked by EO 14148, not 14236"
+- text: "DOJ FTC \"Antitrust Guidelines for Business Activities Affecting Workers\" January 2025 no-poach agreements non-solicitation teaming agreements status 2026"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "HHSAR 352.237-75 \"Key Personnel\" clause text substitute key personnel advance notice 30 days qualifications equal or better acquisition.gov"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "DOL \"Worker Adjustment and Retraining Notification\" WARN Act employer guide 100 or more employees 60 days notice plant closing mass layoff dol.gov"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "SEAD 3 reporting requirements cleared contractor employees foreign travel foreign contacts text \"Security Executive Agent Directive 3\" dcsa industry implementation"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "Jiang Liu McKay Lee Mitchell 2012 \"When and how is job embeddedness predictive of turnover? A meta-analytic investigation\" Journal of Applied Psychology abstract on-the-job off-the-job embeddedness"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '6'
+  note: "QIC-WD summary served; Jiang not read"
+- text: "Jäger Heining \"How Substitutable Are Workers? Evidence from Worker Deaths\" NBER abstract coworkers wages firm hiring small firms specialized"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: "commuting distance employee turnover quits study effect longer commute probability of quitting job search evidence economics journal"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.Gwern.net/doc/economics/2017-rubenstein.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "predictor table read; text truncated"
+- text: fetch https://digitalcommons.memphis.edu/facpubs/12050
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+- text: fetch https://www.scribd.com/document/459006655/AllenAMP-pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "blocked"
+- text: fetch https://www.incentivemarketing.org/common/Uploaded%20files/IESP/Resources/2014_11_EmployeeRetention_No.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "trade white paper"
+- text: fetch https://www.americanprogress.org/article/there-are-significant-business-costs-to-replacing-employees/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://ecommons.cornell.edu/bitstream/1813/75344/1/Hausknecht9_Causes_and_consequences.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "first 100,000 characters"
+- text: fetch https://www.aeaweb.org/doi/10.1257/aer.20160232
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+- text: fetch https://nber.org/papers/w24906
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+- text: fetch https://academicnewsletter.sufe.edu.cn/info/372605
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract mirror"
+- text: fetch https://www.nber.org/papers/24343
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+- text: fetch https://voxeu.org/article/promotions-and-peter-principle
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.govinfo.gov/content/pkg/FR-2025-12-22/html/2025-23626.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.ftc.gov/system/files/ftc_gov/pdf/p251201antitrustguidelinesbusinessactivitiesaffectingworkers2025.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.law.cornell.edu/cfr/text/48/352.237-75
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.law.cornell.edu/cfr/text/32/117.8
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.dol.gov/agencies/whd/fact-sheets/warn
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "client error"
+- text: fetch https://www.dol.gov/general/topic/termination/plantclosings
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://archive.dni.gov/files/NCSC/documents/Regulations/SEAD-3-Reporting-U.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "no machine-readable text"
+- text: fetch https://www.nrc.gov/security/required-reporting-for-clearance-holders
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Job%20EmbeddednessV2.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+- text: fetch https://www.nber.org/papers/w30629
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+- text: fetch https://edworkingpapers.com/ai22-691
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '6'
+  note: "abstract"
+
+# ---- slice 7: the plan sweep, 2026-10-22 ----
+- text: "SHRM cost per hire average 2024 OR 2025 benchmark \"cost-per-hire\" talent acquisition benchmarking report dollars per hire method"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '7'
+- text: "GAO bid protest \"bait and switch\" key personnel standard offeror represented personnel it did not expect to use misrepresentation decision 2024 2025"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '7'
+- text: "Rynes Colbert Brown 2002 \"HR professionals' beliefs about effective human resource practices: Correspondence between research and practice\" Human Resource Management abstract percent correct intelligence"
+  engine: WebSearch (standard)
+  hits: 10
+  date: '2026-10-22'
+  slice: '7'
+- text: "GAO-04-39 \"Human Capital: Key Principles for Effective Strategic Workforce Planning\" five principles involve top management identify critical skills gaps strategies monitor evaluate"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '7'
+- text: "DCAA \"Information for Contractors\" DCAAM 7641.90 indirect cost rates overhead G&A fully burdened labor rate provisional billing rates contractor guide pdf"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '7'
+  note: "DOT SBIR cost instructions served for the rate structure"
+- text: "contingency recruiting agency fee percent of first-year salary survey 20 25 percent retained search 30 percent American Staffing Association OR Staffing Industry Analysts data"
+  engine: WebSearch (standard)
+  hits: 9
+  date: '2026-10-22'
+  slice: '7'
+  note: "vendor pages only; no figure carried"
+- text: fetch https://www.acquisition.gov/far/37.104
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.acquisition.gov/far/52.219-14
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.acquisition.gov/far/52.244-2
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.law.cornell.edu/cfr/text/29/1602.14
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.acquisition.gov/far/32.009-1
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.shrm.org/content/dam/en/shrm/research/2025-recruiting-benchmarking-report.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.gao.gov/products/b-421008%2Cb-421008.2%2Cb-421008.3
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://iro.uiowa.edu/esploro/outputs/journalArticle/HR-professionals-beliefs-about-effective-human/9983557549702771
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+  note: "record"
+- text: fetch https://www.gao.gov/products/GAO-04-39
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+  note: "summary page"
+- text: fetch https://www.gao.gov/assets/a240817.html
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+  note: "accessible text"
+- text: fetch https://www.volpe.dot.gov/sites/volpe.dot.gov/files/docs/171SBIRCostPriceInstructions%20508.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+- text: fetch https://www.law.cornell.edu/cfr/text/5/1315.4
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '7'
+
+# ---- slice 8 (states, indicator refresh, changes), 2026-10-22 ----
+- text: DOL Women's Bureau map equal pay and pay transparency protections state table data.gov
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+  note: query text reconstructed after a context reset; the data.gov record for the Women's Bureau map surfaced
+- text: fetch https://www.dol.gov/agencies/wb/equal-pay-protections
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: the state table is an image; not readable
+- text: fetch https://marketingpreview.mercer.com/content/dam/mercer-dotcom/migrated-assets/blogs/law-and-policy/2025/11/pdf-2025-roundup-us-employer-resources-on-states-recent-equal-pay-laws.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: 'read twice: once for the state list, once separating posting, on-request and salary-history rules'
+- text: 50-state noncompete law chart 2026 states ban noncompetes California North Dakota Oklahoma Minnesota Wyoming income thresholds Colorado Washington Oregon Illinois Virginia Maryland notice requirements tracker
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: state mini-WARN acts list 2026 thresholds New York New Jersey California Illinois Maryland Vermont Tennessee Wisconsin Iowa tracker
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: ban the box states list 2026 private employers fair chance hiring laws state by state NELP guide
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: state laws restricting employer use of credit reports in hiring list California Colorado Connecticut Hawaii Illinois Maryland Nevada Oregon Vermont Washington Delaware
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: states prohibiting employer cannabis testing pre-employment off-duty marijuana protections list 2026 California Minnesota New York Washington Nevada
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: training repayment agreement state laws 2026 tracker stay-or-pay California AB 692 Colorado Connecticut Minnesota Pennsylvania New York statute
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: state AI hiring laws 2026 tracker Illinois Colorado California Texas New York City automated employment decision tools status
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://loio.com/guides/non-compete-tracker-state-by-state/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: vendor tracker; every state
+- text: fetch https://btlaw.com/en/insights/alerts/2025/the-rapid-expansion-of-mini-warn-acts
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: fifteen states; no thresholds
+- text: fetch https://www.uis.edu/sites/default/files/2026-04/Ban%20the%20Box%20Complete.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: NELP 2021 guide; first 100,000 characters
+- text: fetch https://help.verifiedfirst.com/hc/en-us/articles/40773437432973-Employment-Credit-Reports-A-State-by-State-Guide-to-Restrictions
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.mpp.org/issues/legalization/cannabis-legalization-and-employment-protections/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.wilmerhale.com/en/insights/client-alerts/20260323-its-a-trap-california-and-new-york-restrict-stay-or-pay-provisions-in-employment-agreements
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: mini-WARN state laws chart thresholds employees notice days California 75 employees 60 days New York 50 employees 90 days New Jersey 100 employees 90 days Illinois Maryland Vermont Tennessee Wisconsin Iowa Hawaii Maine Delaware New Hampshire Ohio Washington 2026
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+  note: extended mode
+- text: Colorado AI Act SB 24-205 June 30 2026 effective date status delayed again repealed replaced 2026 session
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: H-1B $100,000 payment proclamation appeal First Circuit decision 2026 California v. Mullin ruling
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: FAR overhaul Revolutionary FAR Overhaul Part 19 Part 22 Part 37 Part 44 final rule 2026 status rewrite renumbering
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://layoffdata.com/blog/warn-laws-by-state/
+  engine: WebFetch
+  hits: 0
+  date: '2026-10-22'
+  slice: '8'
+  note: failed (client error)
+- text: fetch https://www.jdsupra.com/legalnews/colorado-ai-law-in-flux-comprehensive-2107294/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.leagle.com/decision/infco20260724067
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: the First Circuit order excerpt; stay motion only; already carried as [143]
+- text: fetch https://www.wiley.law/alert-FAR-Council-Begins-Rulemaking-to-Implement-FAR-Overhaul-Proposing-Revisions-to-20-FAR-Parts
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://layoffcalculator.com/insights/state-mini-warn-guide
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: vendor page listing seven states; not carried
+- text: fetch https://www.brightmine.com/us/resources/charts/ai-laws-by-state-and-locality
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://iprospectcheck.com/ban-the-box-laws/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: read in two passes (offset 100000); the Minnesota row and the tail were cut
+- text: fetch https://www.immihelp.com/h1b-100000-fee-first-circuit-ruling-2026/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.acquisition.gov/node/64187
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: Colorado SB26-189 artificial intelligence consumer protections bill signed May 2026 leg.colorado.gov
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://natlawreview.com/article/state-employment-law-13-states-have-mini-warn-acts
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: June 2025; three states' thresholds only
+- text: fetch https://www.sullivan-benefits.com/wp-content/uploads/2024/04/What-Employers-Should-Know-About-State-Mini-WARN-Acts.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: Zywave chart; thirteen states with thresholds
+- text: fetch https://leg.colorado.gov/bill_files/115717/download
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: the SB 26-189 fiscal note (introduced bill)
+- text: new pay transparency laws effective 2026 2027 states added Delaware Oregon Michigan Virginia Maine Washington amendments salary range posting law 2026 roundup
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: New York "Trapped at Work Act" employment promissory note Labor Law section chapter amendment February 2026 effective date 2027 nysenate.gov
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: Washington ESHB 1155 noncompetition covenants 2026 signed March 23 2026 effective June 30 2027 lawfilesext.leg.wa.gov bill report
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.foley.com/insights/publications/2026/05/trends-of-pay-transparency-laws-and-salary-history-bans-continue-to-grow-new-laws-enacted-in-virginia-maine-and-delaware/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.cooley.com/news/insight/2026/2026-07-06-show-me-the-money-or-the-wage-range-new-state-pay-transparency-laws
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.jacksonlewis.com/sites/default/files/2026-04/Washington-HB1155-S.SL_.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: the session law (law-firm-hosted copy)
+- text: fetch https://www.mayerbrown.com/en/insights/publications/2026/02/updates-to-new-yorks-trapped-at-work-act
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: BLS JOLTS series id JTS000000000000000JOR job openings rate total nonfarm "JTS540099000000000JOR" professional business services quits rate series id
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: BLS Employment Cost Index series id CIU2020000000000A wages and salaries private industry 12-month percent change ECEC series CMU2010000000000D
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: ODNI security clearance determinations annual report fiscal year 2024 2025 number of individuals eligible for access to classified information contractors
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+  note: only 2011–2017 reports surfaced
+- text: Trusted Workforce 2.0 quarterly progress report FY2026 Q4 performance.gov personnel vetting September 2026
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+  note: FY26 Q3 is the latest
+- text: relocation for a job survey 2026 share of job seekers relocated Challenger Gray third quarter 2026 relocation rate
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: bls.gov help "series id" formats hlpforma JOLTS "JT" seasonal industry code dataelement ratelevel "Employment Cost Index" "CI" format
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://db.nomics.world/BLS/jt
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: first page of the series listing
+- text: fetch https://assets.performance.gov/files/Personnel_Vetting_QPR_(FY26-Q3).pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: re-read; no Q4 date given
+- text: fetch https://www.bls.gov/help/hlpforma.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.bls.gov/eci/factsheets/eci-series-id-guide.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://www.bls.gov/ecec/factsheets/ecec-series-id-guide.htm
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: BLS OEWS series id format "OEU" area type industry occupation code datatype "15-1252" annual mean wage series example
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://download.bls.gov/pub/time.series/oe/oe.txt
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: format only; datatype mapping not reproduced
+- text: how many people hold security clearances 2025 2026 ODNI latest count eligible population contractors million
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: Challenger Gray Christmas relocation report 2026 job seekers relocating percent Q2 2026
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://news.clearancejobs.com/2026/03/16/the-cleared-workforce-is-increasing-but-probably-not-how-you-think/
+  engine: WebFetch
+  hits: 0
+  date: '2026-10-22'
+  slice: '8'
+  note: failed (server error)
+- text: fetch https://www.challengergray.com/blog/relocation-rising-for-job-seekers-in-q2-of-2024-as-job-market-cools/
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: Washington "RCW 50.110" Securing Timely Notification and Benefits for Laid-Off Employees Act Employment Security Department notice 50 employees July 27 2025
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: Federal Register June 23 2026 "FAR Case 2026-002" proposed rule Federal Acquisition Regulation overhaul parts 6 7 10 18 26 37 41
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: '"Chamber of Commerce" v. DHS H-1B $100,000 proclamation district court District of Columbia decision upheld 2026 opinion'
+  engine: WebSearch
+  hits: 10
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://news.clearancejobs.com/?p=1080412
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: undated; restates the 2019 ODNI count
+- text: fetch https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6106.SL.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+- text: fetch https://public-inspection.federalregister.gov/2026-12560.pdf
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'
+  note: truncated before the personal-services section
+- text: fetch https://www.aau.edu/resource-library/resources-on-aau-chamber-of-commerce-litigation-challenging-100-000-h-1b-visa-petition-fee
+  engine: WebFetch
+  hits: 1
+  date: '2026-10-22'
+  slice: '8'

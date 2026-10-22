@@ -1,0 +1,1116 @@
+# gates.yaml — Key Personnel · regulatory and contractual gates, FAR Out field style. Sweep 1: the gates that bind the select stage.
+# pending_changes status vocabulary: proposed | announced | class-deviation | final | pending-implementation | suspended | withdrawn
+- id: ugesp
+  name: Uniform Guidelines on Employee Selection Procedures (29 CFR 1607)
+  what: >
+    The 1978 framework the EEOC, DOL, DOJ and the Civil Service Commission adopted for judging selection procedures under
+    Title VII [30]. It expects records of selection rates by sex and by race or ethnic group, treats a group selection rate
+    below four-fifths of the highest group's as generally evidencing adverse impact, and generally does not expect component
+    validation when the overall process shows no impact [31]. A procedure with adverse impact needs criterion-related, content
+    or construct validity evidence tied to important elements of job performance, cutoffs set to normal expectations of
+    proficiency, and more evidence for ranking than for pass/fail use [32].
+  governing_text: 29 CFR Part 1607; 42 U.S.C. 2000e-8 and 2000e-12
+  applies_when: 'Any employer covered by Title VII using any selection procedure, including algorithmic tools used to make or inform decisions [35]'
+  binds: [select]
+  steps:
+  - 'Keep selection-rate records by sex and by race or ethnic group (sampling allowed at high volume) [31]'
+  - 'Compare each group''s rate to the highest group''s; investigate below four-fifths, with statistical and practical significance in mind [31]'
+  - 'Hold validity evidence (criterion, content or construct) for any procedure with adverse impact; more for ranking than pass/fail [32]'
+  - 'Document per 1607.15 (not read this sweep; todo)'
+  official_url: https://www.law.cornell.edu/cfr/text/29/part-1607
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [30, 31, 32, 35]
+  conflicts: []
+
+- id: eeoc-selection-procedures
+  name: Title VII, ADA and ADEA rules on tests and selection procedures (EEOC fact sheet)
+  what: >
+    The EEOC's technical assistance of December 1, 2007 maps the three statutes onto selection: disparate treatment is
+    intentional; disparate impact is a neutral procedure that disproportionately excludes a protected group and must be
+    job-related and consistent with business necessity, with a less discriminatory alternative available to the challenger;
+    the ADA bars disability-related questions and medical exams before a conditional offer; the ADEA permits neutral practices
+    affecting workers 40 and older only on a reasonable factor other than age [33]. Vendor documentation helps but the employer
+    stays responsible for validation [33].
+  governing_text: Title VII of the Civil Rights Act of 1964; Americans with Disabilities Act; Age Discrimination in Employment Act
+  applies_when: 'All covered employers using cognitive or physical tests, work samples and simulations, medical inquiries, personality or integrity tests, background or credit checks, appraisals or English-proficiency tests [33]'
+  binds: [select, offer]
+  steps:
+  - 'Administer tests without regard to protected characteristics [33]'
+  - 'Validate for the specific job and purpose; obtain vendor documentation but own the responsibility [33]'
+  - 'If a procedure screens out a protected group, look for an equally effective alternative with less impact and adopt it if one exists [33]'
+  - 'Update test specifications as the job changes [33]'
+  official_url: https://eeoc.gov/laws/guidance/employment-tests-and-selection-procedures
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [33]
+  conflicts: []
+
+- id: ada-pre-offer-inquiries
+  name: ADA limits on pre-offer disability questions and medical examinations
+  what: >
+    Before a conditional offer an employer may not ask disability-related questions, defined as questions likely to elicit
+    information about a disability, or require medical examinations; it may ask whether the applicant can perform job
+    functions with or without reasonable accommodation, may ask for a demonstration if everyone in the category is asked, and
+    may ask about licences, attendance and arrest or conviction records [34]. After a conditional offer, medical questions and
+    exams are allowed if required of everyone entering the job category; a withdrawn offer must be job-related and consistent
+    with business necessity, or rest on a direct threat for safety exclusions [34]. Physical agility and fitness tests are not
+    medical unless physiological responses are measured; psychological tests are medical if they can identify a mental
+    disorder; tests for current illegal drug use are not medical examinations [34].
+  governing_text: Americans with Disabilities Act, 42 U.S.C. 12112(d); EEOC Enforcement Guidance 915.002 (October 10, 1995)
+  applies_when: 'Every covered employer at the application, interview and conditional-offer steps; the 1995 guidance predates the ADA Amendments Act of 2008 [34]'
+  binds: [select, offer, clear-start]
+  steps:
+  - 'Pre-offer: ask about ability to perform job functions with or without accommodation; ask whether accommodation is needed for the hiring process [34]'
+  - 'Post-offer: medical inquiries and exams only if applied to all entering employees in the same job category [34]'
+  - 'Keep the offer "real": evaluate all reasonably obtainable non-medical information before extending it [34]'
+  official_url: https://www.eeoc.gov/laws/guidance/enforcement-guidance-preemployment-disability-related-questions-and-medical
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [33, 34]
+  conflicts: []
+
+- id: arrest-conviction-records
+  name: Criminal records under Title VII (EEOC 2012 guidance)
+  what: >
+    A criminal-record policy that disproportionately screens out a protected group must be job-related and consistent with
+    business necessity; the EEOC accepts a validated screen or a targeted screen built on the nature and gravity of the
+    offence, the time elapsed and the nature of the job, paired with an individualised assessment in which the person can
+    respond [47]. Exclusions based on an arrest alone are generally not job-related; a conviction is usually sufficient
+    evidence of conduct [47]. Federal statutes and regulations that bar people with certain records from certain jobs are a
+    defence, but only as far as the federal requirement reaches; for cleared work the national security exception applies only
+    where the position is actually subject to federal security requirements and the action followed a clearance denial [47].
+  governing_text: Title VII; EEOC Enforcement Guidance 915.002 (April 25, 2012); Green v. Missouri Pacific Railroad (8th Cir. 1977)
+  applies_when: 'Any employer using criminal history in selection; federal contractors additionally under the Fair Chance Act (fair-chance-act-contractors)'
+  binds: [select, clear-start]
+  steps:
+  - 'Eliminate blanket exclusions; write a targeted screen naming disqualifying offences and justified durations [47]'
+  - 'Give an individualised assessment: notify, allow a response, weigh circumstances, age at conviction, work history, rehabilitation [47]'
+  - 'Limit inquiries to records that would actually justify exclusion; keep the information confidential [47]'
+  official_url: https://www.eeoc.gov/laws/guidance/enforcement-guidance-consideration-arrest-and-conviction-records-employment-decisions
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [47]
+  conflicts: []
+
+- id: fair-chance-act-contractors
+  name: Federal Fair Chance Act (criminal-history timing for federal contractors)
+  what: >
+    Since December 20, 2021, federal contractors may not ask about or seek an applicant's criminal history for positions
+    within the scope of a federal contract until after a conditional offer, under the Fair Chance Act enacted in the FY2020
+    National Defense Authorization Act of December 20, 2019 [48]. Exceptions cover positions with law-enforcement or
+    national-security duties, positions requiring access to classified information, and positions where a law requires the
+    inquiry earlier; a first violation brings a notice and warning and later violations can suspend payments under the
+    contract [48].
+  governing_text: Fair Chance to Compete for Jobs Act of 2019 (Pub. L. 116-92, FY2020 NDAA); implementing FAR clause TODO(author)
+  applies_when: 'Federal contractors hiring for positions related to work under a federal contract; largely exempts cleared positions [48]'
+  binds: [select, offer]
+  steps:
+  - 'Remove criminal-history questions from applications and interviews for contract positions; ask after the conditional offer [48]'
+  - 'Confirm whether the position falls in an exception (classified access, national security, law enforcement, statutory requirement) [48]'
+  official_url: https://littler.com/news-analysis/asap/new-federal-fair-chance-act-applies-federal-contractors-and-agencies
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [48]
+  conflicts:
+  - 'Only a law-firm summary was read; the FAR subpart and clause number and the OPM exclusion regulations must be confirmed from primary text (todo t-P008).'
+
+- id: citizenship-status-export-control
+  name: Citizenship-status discrimination in export-controlled hiring (8 U.S.C. 1324b)
+  what: >
+    An employer may not limit a job to U.S. citizens, or to citizens and permanent residents, unless a law, regulation,
+    executive order or government contract requires it; ITAR and EAR do not, because the export rules' "U.S. person" matches
+    the protected-individual definition in 8 U.S.C. 1324b(a)(3): citizens, nationals, lawful permanent residents, refugees and
+    asylees [49]. There is no good-faith exception [49]. DOJ's Civil Rights Division fact sheet of April 18, 2023 says not to
+    state that export rules require a citizenship, to make clear U.S. persons includes more than citizens, to keep export
+    assessments separate from Form I-9, and not to limit which I-9 documents a worker presents [51]. Settlements include
+    Georgia Tech ($500,000, August 2023), more than $2.5 million across job-platform users (2022–2023), General Motors
+    ($365,000, April 2023) and American CyberSystems (May 2023) [49] [50].
+  governing_text: 8 U.S.C. 1324b; 22 CFR 120 (ITAR) and 15 CFR 772 (EAR) definitions of U.S. person; DOJ IER employer fact sheet (April 18, 2023)
+  applies_when: 'Any posting or screen for work involving ITAR- or EAR-controlled items or technical data; any employer with four or more employees under 1324b (threshold not read this sweep; todo)'
+  binds: [attract, select, clear-start]
+  steps:
+  - 'Write postings that admit all U.S. persons; never "U.S. citizens only" for export reasons [51] [50]'
+  - 'Run export-compliance screening as a separate step from Form I-9, and let workers choose their I-9 documents [51] [49]'
+  - 'Restrict by citizenship only where a law or a government contract requires it, and cite that requirement [49]'
+  official_url: https://www.justice.gov/opa/pr/justice-department-secures-agreement-it-staffing-and-services-company-posting-discriminatory
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [49, 50, 51]
+  conflicts: []
+
+- id: ai-screening-laws
+  name: Automated and AI screening tools (federal framework and state laws)
+  what: >
+    Federally, an algorithmic tool used to make or inform a selection decision is a selection procedure under the Uniform
+    Guidelines and the employer answers for a vendor's tool, as the EEOC stated on May 18, 2023 in technical assistance it
+    removed on January 27, 2025; the Title VII rules it restated remain in force [35] [36]. New York City Local Law 144 requires
+    a bias audit no more than a year old, a published summary and candidate notice, with penalties of $500–$1,500 a day [37].
+    Illinois Public Act 103-0804 bars discriminatory use of AI in employment decisions and requires notice from January 1,
+    2026; the Department of Human Rights withdrew its proposed clarifying rules on June 2, 2026 [38]. California's Civil Rights
+    Council regulations, effective October 1, 2025, define automated-decision systems, extend liability to agents, treat
+    anti-bias testing before and after adoption as a defence factor, and require four-year retention of ADS records [40].
+    Colorado's SB 24-205 was delayed to June 30, 2026 by SB25B-004 with amendments expected [39].
+  governing_text: Title VII and 29 CFR 1607 (federal); NYC Local Law 144 of 2021; Illinois Public Act 103-0804; 2 CCR 11008 et seq. (California); Colorado SB 24-205 as amended by SB25B-004
+  applies_when: 'Any employer using software, algorithms or AI to screen, rank, score or interview candidates; state duties attach by the candidate''s or the job''s location [37] [38] [40]'
+  binds: [attract, select]
+  steps:
+  - 'Ask the vendor whether the tool was tested for substantially lower selection rates by group and by what standard [35]'
+  - 'New York City: obtain the bias audit, publish the summary, notify candidates [37]'
+  - 'Illinois: give notice when AI is used to influence or facilitate a covered decision [38]'
+  - 'California: test for bias before and after adoption and keep ADS records four years [40]'
+  - 'Colorado: confirm the law''s status after June 30, 2026 before relying on it (todo)'
+  official_url: https://www.osc.ny.gov/state-agencies/audits/2025/12/02/enforcement-local-law-144-automated-employment-decision-tools
+  pending_changes:
+  - status: withdrawn
+    date: '2025-01-27'
+    text: 'EEOC removed its May 2023 AI technical assistance from its website; the underlying law did not change [36] [35].'
+  - status: pending-implementation
+    date: '2026-06-02'
+    text: 'Illinois IDHR withdrew and postponed its proposed notice rules; the statute remains in effect [38].'
+  - status: final
+    date: '2025-08-28'
+    text: 'Colorado SB25B-004 moved the AI Act''s effective date to 2026-06-30; substantive amendments were expected in the 2026 session and must be checked [39].'
+  - status: pending-implementation
+    date: '2027-01-01'
+    text: 'Colorado SB 26-189 (signed 2026-05-14) repealed and reenacted the Act: notice before ADMT materially influences an employment decision, an explanation within 30 days of an adverse outcome, human review and three-year records from 2027-01-01; SB 24-205 never took effect after the stipulated non-enforcement order of 2026-04-27 [222] [221].'
+  - status: pending-implementation
+    date: '2027-01-01'
+    text: 'Connecticut SB 5 (employer notice from 2027-10-01), Delaware HB 380 (2027-01-01) and three California bills (AB 1883, SB 951 from 2027-01-01; SB 947 from 2027-07-01) add duties listed in the October 2026 chart; states.yaml carries them with the statutes pending [220].'
+  as_of: '2026-10-22'
+  sources: [35, 36, 37, 38, 39, 40, 220, 221, 222]
+  conflicts:
+  - 'The Illinois and California entries rest on secondary alerts; Colorado now has the legislature''s fiscal note [222]; the per-state overlay is states.yaml (sweep 8) with the statutes pending (t-8001).'
+
+# ---- sweep 2 (attract), 2026-10-21 ----
+- id: vevraa-job-listing
+  name: VEVRAA mandatory job listing (41 CFR 60-300.5(a)(2))
+  what: >
+    A covered federal contractor lists every employment opening, at every establishment and whether or not the opening is
+    contract-funded, with the appropriate employment service delivery system where the opening occurs, at least concurrently
+    with any other recruiting; listing with the state workforce agency job bank satisfies it [73]. Executive and senior
+    management positions, positions filled from within, and positions of three days or less are excepted [73]. The contractor
+    tells the ESDS in each state that it is a federal contractor, that it wants priority referral of protected veterans, and
+    gives its hiring locations and contacts; the listing must accept referrals of veterans and nonveterans alike [73].
+  governing_text: Vietnam Era Veterans' Readjustment Assistance Act, 38 U.S.C. 4212; 41 CFR 60-300.5(a)(2)
+  applies_when: 'Contracts at or above the VEVRAA threshold ($200,000 under the 2026 update [55]; the printed clause still shows a $100,000 subcontract flow-down figure [73]); the written AAP applies at 50 employees and a covered contract [55]'
+  binds: [attract]
+  steps:
+  - 'Post every opening to the state workforce agency job bank no later than other recruiting [73]'
+  - 'Notify the ESDS of contractor status, hiring sites, contacts and any outside search firms; update on change [73]'
+  - 'Keep the veteran applicant and hire data that remains required after the 2026 rule [55]'
+  official_url: https://www.law.cornell.edu/cfr/text/41/60-300.5
+  pending_changes:
+  - status: final
+    date: '2026-09-21'
+    text: 'VEVRAA regulations updated; coverage threshold $200,000; written AAP and veteran applicant and hire reporting remain [55].'
+  as_of: '2026-10-21'
+  sources: [55, 73]
+  conflicts:
+  - 'Threshold: the clause text read shows $100,000 for subcontract flow-down [73]; the 2026 final rule reports $200,000 [55]. Confirm against the amended 60-300.5 in sweep 8.'
+
+- id: adea-advertising
+  name: Age-preference terms in help-wanted ads (29 CFR 1625.4)
+  what: >
+    An ad that uses terms such as "age 25 to 35", "young", "college student", "recent college graduate", "boy" or "girl"
+    indicates an unlawful preference against workers forty and older unless a statutory exception applies; preferences for
+    older workers ("over age 60", "retirees") are permitted; asking an applicant's age is scrutinised for a lawful purpose [78].
+  governing_text: Age Discrimination in Employment Act; 29 CFR 1625.4
+  applies_when: 'Any employer covered by the ADEA writing a job advertisement or application [78]'
+  binds: [attract]
+  steps:
+  - 'Remove the listed age terms from postings and campus-recruiting copy [78]'
+  official_url: https://www.law.cornell.edu/cfr/text/29/1625.4
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [78]
+  conflicts: []
+
+- id: pay-transparency-posting-laws
+  name: Pay ranges in job postings (state and local laws)
+  what: >
+    Thirteen states and the District of Columbia require a pay range in the posting itself, at thresholds from one employee
+    (Colorado, DC) to fifty (Hawaii): California (15+), Colorado (1+), Delaware (26+, from September 26, 2027), Hawaii (50+),
+    Illinois (15+), Maryland, Massachusetts (25+), Minnesota (30+), New Jersey (10+), New York (4+), Vermont (5+), Washington
+    (15+) and DC (1+), with local rules in Ohio cities and parts of New Jersey and New York; Connecticut, Rhode Island and Nevada
+    require ranges at other points, not in the posting [76]. By May 2025, 59 percent of US postings carried a salary figure
+    regardless [75]. Within a title, a 10 percent higher posted wage draws 7.7 percent more applicants [65].
+  governing_text: state statutes (sweep-8 primaries); California SB 642 effective 2026-01-01 clarifies "pay scale" [76]
+  applies_when: 'Postings for work performed in, or open to applicants in, a covered jurisdiction; remote postings reachable from a covered state are commonly treated as covered (secondary; verify per statute)'
+  binds: [attract, offer]
+  steps:
+  - 'Show a good-faith range in every posting; the rule attaches by jurisdiction and the range is also the strongest applicant-count lever [65] [76]'
+  official_url: https://www.jacksonlewis.com/publication/navigating-2026-pay-transparency-laws-and-employer-obligations
+  pending_changes:
+  - status: final
+    date: '2026-07-01'
+    text: 'Virginia requires a wage or salary range in every public and internal posting and bans salary-history inquiries, with a private right of action after a 15-day cure notice [223] [224].'
+  - status: final
+    date: '2026-07-29'
+    text: 'Maine requires a pay range in every posting for employers with ten or more employees [223] [224].'
+  - status: final
+    date: '2026-10-01'
+    text: 'Connecticut PA 26-12 requires the wage or wage range and a benefits description in every advertisement, for all employers [224].'
+  - status: final
+    date: '2027-09-26'
+    text: 'Delaware''s posting requirement (more than 25 employees) takes effect [76] [223].'
+  as_of: '2026-10-22'
+  sources: [65, 75, 76, 207, 223, 224]
+  conflicts:
+  - 'The jurisdiction list rests on law-firm summaries [76] [207] [223] [224]; states.yaml carries the per-state overlay (sweep 8) with the statutes pending (t-8001); the DOL Women''s Bureau map [208] exists but its table is an image.'
+
+- id: eeo-contractor-framework-2026
+  name: The contractor EEO framework after the EO 11246 rescission (41 CFR 60-1 ff. removed)
+  what: >
+    From October 26, 2026 the regulations issued under Executive Order 11246 are removed: 41 CFR parts 60-1, 60-2, 60-3, 60-4,
+    60-20, 60-40, 60-50 and 60-999, with the EO 11246 content stripped from part 60-30 [86]. With part 60-1 go the Internet
+    Applicant definition and the online-recruiting recordkeeping rule of 2006 [87] [86]. What remains for contractors is
+    statutory: Section 503 (written AAP at 50 employees and a $50,000 contract; threshold $20,000; the 7 percent goal and
+    applicant self-identification rescinded) and VEVRAA (written AAP; threshold $200,000; veteran applicant and hire reporting
+    kept), both effective September 21, 2026 [55]. Title VII and the Uniform Guidelines are unchanged [30] [31].
+  governing_text: 91 FR 54444 (August 21, 2026); EO 14173 (January 2025); 41 CFR 60-300 and 60-741 as amended
+  applies_when: 'Every federal contractor and subcontractor from 2026-10-26; the EEO-1 filing duty and the Internet Applicant rule''s fate are to be confirmed from the unread portion of the rule (todo)'
+  binds: [attract, select, plan]
+  steps:
+  - 'Stop maintaining EO 11246 AAPs after 2026-10-26; keep the Section 503 and VEVRAA plans and the veteran applicant data [55] [86]'
+  - 'Keep Uniform Guidelines selection-rate records regardless [31]'
+  official_url: https://www.federalregister.gov/documents/2026/08/21/2026-17114/rescission-of-executive-order-11246-implementing-regulations
+  pending_changes:
+  - status: final
+    date: '2026-10-26'
+    text: 'EO 11246 implementing regulations rescinded [86].'
+  - status: final
+    date: '2026-09-21'
+    text: 'Section 503 and VEVRAA regulations updated [55].'
+  as_of: '2026-10-21'
+  sources: [30, 31, 55, 86, 87]
+  conflicts:
+  - 'Whether the EEO-1 filing duty (60-1.7) survives in another instrument and whether the Internet Applicant definition is removed in terms were not in the portion of the rule read; the Section 503/VEVRAA details rest on a law-firm alert [55].'
+
+# ---- sweep 3 (offer), 2026-10-21 ----
+- id: tm-labor-category-rates
+  name: Labor-category rates and qualifications under T&M and labor-hour contracts (FAR 16.601; 52.232-7)
+  what: >
+    A time-and-materials or labor-hour contract pays fixed hourly rates per labor category that include wages, overhead, G&A
+    and profit, for labor that meets the category's qualifications [98]. Hours performed by employees who do not meet the
+    qualifications are not paid unless the contracting officer authorises it, and vouchers must be supported by records showing
+    qualifications [99]. Where not competitively awarded, separate rates apply to the contractor, each subcontractor and each
+    affiliate [98].
+  governing_text: FAR 16.601; FAR 52.232-7
+  applies_when: 'Any T&M or labor-hour contract or order; the labor-category qualifications in the contract decide who can be billed [99]'
+  binds: [offer, select, plan]
+  steps:
+  - 'Read the labor-category qualifications before writing the posting; a candidate who does not meet them cannot be billed [99]'
+  - 'Derive the affordable salary from the rate less indirect costs and fee (synthesis from [98])'
+  - 'Seek CO authorisation before billing anyone who does not meet the category [99]'
+  official_url: https://www.acquisition.gov/far/16.601
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [98, 99]
+  conflicts: []
+
+- id: far-31-205-6-compensation-allowability
+  name: Compensation allowability on cost-type contracts (FAR 31.205-6)
+  what: >
+    Compensation is allowable when reasonable for the work and conforming to an established plan or consistent practice;
+    reasonableness is judged against firms of similar size, industry and area doing similar non-government work; no
+    presumption of allowability attaches to major plan changes made without the administrative contracting officer's chance to
+    review; bonuses are allowable only under a pre-existing agreement or plan; severance and pension supplements are limited;
+    compensation above the OFPP benchmark is unallowable for all employees on awards from June 24, 2014 [100]. The benchmark
+    was $671,000 for 2025 by an accounting firm's figure [107].
+  governing_text: FAR 31.205-6; 41 U.S.C. 4304(a)(16) and 1127; 10 U.S.C. 3744(a)(16)
+  applies_when: 'Cost-reimbursement contracts and any contract where allowability is determined under FAR Part 31 [100]'
+  binds: [offer, retain]
+  steps:
+  - 'Keep a written compensation plan; apply it consistently [100]'
+  - 'Adopt any bonus plan before the services it rewards [100]'
+  - 'Give the ACO a chance to review major plan changes [100]'
+  official_url: https://www.acquisition.gov/node/30667/printable/pdf
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [100, 107]
+  conflicts:
+  - 'The benchmark amount rests on an accounting firm''s page [107]; the OFPP determination is a todo.'
+
+- id: sca-wage-determinations
+  name: Service Contract Act wage determinations and the health-and-welfare rate
+  what: >
+    Federal service contracts over $2,500 whose principal purpose is services by service employees must pay the locally
+    prevailing wages and fringe benefits in the wage determination attached to the contract, generally drawn from BLS OEWS data,
+    plus vacation and holiday pay [101]. The health-and-welfare rate is $5.55 per hour from July 2025 ($5.09 where EO 13706
+    also applies; Hawaii $2.42/$1.96) [101]. EO 14026's higher contractor minimum was revoked by EO 14236 on March 14, 2025 and
+    is no longer enforced; EO 13658 remains for contracts entered or renewed January 1, 2015–January 29, 2022, at $13.65 from
+    May 11, 2026 [102] [101].
+  governing_text: 41 U.S.C. chapter 67; 29 CFR part 4; FAR subpart 22.10; EO 13658; EO 14236
+  applies_when: 'Service contracts over $2,500 with service employees; wage determinations by locality on SAM.gov; conformance for unlisted classifications [101]'
+  binds: [offer, plan]
+  steps:
+  - 'Read the wage determination attached to the contract; the listed rate and the H&W amount are floors [101]'
+  - 'Check whether the contract falls in the EO 13658 window [102]'
+  official_url: https://www.dol.gov/agencies/whd/government-contracts/minimum-wage
+  pending_changes:
+  - status: final
+    date: '2025-03-14'
+    text: 'EO 14236 §2(d) revoked EO 14026; DOL will rescind 29 CFR part 23 [102].'
+  - status: final
+    date: '2026-05-11'
+    text: 'EO 13658 rate $13.65 (non-tipped) and $9.55 (tipped) [102].'
+  as_of: '2026-10-21'
+  sources: [101, 102]
+  conflicts: []
+
+- id: contract-price-adjustment-limits
+  name: Price and labor-rate adjustment limits on schedule and T&M contracts
+  what: >
+    A labor rate fixed at award moves only through the contract's adjustment clause. On GSA Multiple Award Schedule contracts
+    the economic price adjustment clause allows at most three increases per contract period, requested from thirty days after
+    the period starts to sixty days before it ends, thirty days apart, with contracting-officer approval for increases other
+    than ten percent; GSA suspended those limits from March 17 to September 30, 2022 when inflation outran them [117]. The ECI
+    wage series the government itself uses rose 3.1 percent in the year to June 2026 [103].
+  governing_text: GSAR 552.216-70 (and I-FSS-969, 552.216-71); FAR 16.203 for economic price adjustment generally
+  applies_when: 'GSA schedule contracts and, by their own clauses, other T&M and labor-hour vehicles'
+  binds: [offer, plan]
+  steps:
+  - 'Diary the request window; prepare the evidence (ECI, CALC+ comparables) before it opens [117] [103] [111]'
+  official_url: https://www.pilieromazza.com/gsa-moratorium-on-enforcement-of-economic-price-adjustment-provisions-3-important-takeaways-for-government-contractors/
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [103, 111, 117]
+  conflicts:
+  - 'The clause terms rest on a 2022 law-firm note [117]; the current GSAR text and GSA''s 2025 pricing-policy changes are a sweep-7 todo.'
+
+- id: equal-pay-act
+  name: Equal Pay Act and pay discrimination (EPA; Title VII)
+  what: >
+    Men and women must receive equal pay for substantially equal work (skill, effort, responsibility, working conditions) in
+    the same establishment; differences are lawful only on seniority, merit, quantity or quality of production, or a factor
+    other than sex, with the employer carrying the burden; no one's pay may be cut to close a gap [112]. In the Ninth Circuit
+    prior salary, alone or in combination, is not a factor other than sex; the Seventh Circuit holds otherwise [116]. Title
+    VII, the ADEA and the ADA also prohibit pay discrimination without the same-establishment or substantially-equal
+    requirements [112].
+  governing_text: 29 U.S.C. 206(d); Title VII; Rizo v. Yovino (9th Cir. en banc 2020)
+  applies_when: 'Every covered employer setting pay; state equal-pay laws may be broader (sweep 8)'
+  binds: [offer, retain]
+  steps:
+  - 'Justify any differential with a documented job-related factor [112]'
+  - 'Cure gaps upward [112]'
+  - 'Do not rely on prior pay to justify a difference [116]'
+  official_url: https://www.eeoc.gov/facts/fs-epa.pdf
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [112, 116]
+  conflicts:
+  - 'Circuit split on prior pay [116]; state laws vary (states.yaml, sweep 8).'
+
+- id: salary-history-bans
+  name: Salary-history bans (state and local)
+  what: >
+    About twenty states bar all employers from asking applicants about salary history, with public-employer-only bans
+    elsewhere and local ordinances on top; several states permit asking or confirming only after an offer, and Michigan and
+    Wisconsin have ended bans for most employers [106]. The early bans raised women's earnings relative to men's by about 1
+    percent, mainly among job changers [96].
+  governing_text: state statutes (sweep-8 primaries)
+  applies_when: 'Applicants in a covered state or locality; the rule attaches to the question, however asked [106]'
+  binds: [select, offer]
+  steps:
+  - 'Remove prior- and current-pay questions from applications, screens and interviews [106]'
+  - 'Where confirmation after an offer is permitted, document that it followed the offer [106]'
+  official_url: https://www.paycor.com/resource-center/articles/states-with-salary-history-bans/
+  pending_changes:
+  - status: final
+    date: '2026-07-01'
+    text: 'Virginia bars salary-history inquiries and reliance for all employers under its 2026 pay-transparency law [223].'
+  as_of: '2026-10-22'
+  sources: [96, 106, 207, 223]
+  conflicts:
+  - 'The jurisdiction list rests on a vendor page [106] and the Mercer roundup [207], which disagree on Missouri; states.yaml carries the per-state overlay (sweep 8) with the statutes pending (t-8001).'
+
+- id: key-personnel-availability-rule
+  name: Key-personnel availability in proposals (GAO and the Court of Federal Claims)
+  what: >
+    At GAO an offeror with actual knowledge that a proposed key person has become unavailable before award must notify the
+    agency; the agency then rejects the proposal as unacceptable or reopens discussions, and the duty applies to protesters as
+    well as awardees [108]. The Court of Federal Claims declined to impose that duty absent a solicitation provision, requiring
+    only a reasonable belief at submission [109]. Declarations of continued availability have defeated dismissal motions [114].
+  governing_text: GAO bid-protest decisions (Orion Government Services, B-422978, 2024); Golden IT v. United States (COFC 2022); the solicitation's key-personnel clause
+  applies_when: 'Any competition in which the proposal names key personnel; the solicitation''s own notice terms control [109]'
+  binds: [offer, plan]
+  steps:
+  - 'Read the solicitation''s key-personnel and notice terms [109]'
+  - 'Keep letters of commitment current; notify promptly on unavailability [108] [114]'
+  official_url: https://www.gao.gov/products/b-422978,b-422978.2
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [108, 109, 114]
+  conflicts:
+  - 'GAO and the COFC differ on the duty to notify [108] [109].'
+
+# ---- clear-start stage (sweep 4, 2026-10-21) ----
+- id: nispom-eligibility-and-sponsorship
+  name: Personnel clearance eligibility and sponsorship under the NISPOM rule (32 CFR 117.10)
+  what: >
+    A contractor may request eligibility only where access is essential to a classified contract, for the minimum number of
+    employees, never to build a cache of cleared staff, and never for non-employees or subcontractor employees [119]. A
+    request before employment needs a written commitment the candidate accepted in writing, and employment must begin within
+    45 days of the grant [119]. Temporary eligibility is available only where no adverse information appears, for up to a
+    year, valid at its level but not for RD, COMSEC or NATO information until the final grant; its withdrawal is not a
+    denial and cannot be appealed [119]. An eligibility held elsewhere is accepted under SEAD 7 and access may be restored
+    after a break in employment without a new investigation where eligibility continued [119]. On notice of a denial,
+    suspension or revocation the contractor removes the employee from access at once [119]. A non-U.S. citizen can hold only
+    a Limited Access Authorization, in rare cases, never for Top Secret, RD, COMSEC, intelligence or NATO information [119].
+  governing_text: 32 CFR part 117 (NISPOM rule, 85 FR 83300), §117.10
+  applies_when: 'Any contractor in the National Industrial Security Program requesting or holding personnel clearance eligibility for an employee [119]'
+  binds: [clear-start, plan, attract, offer]
+  steps:
+  - 'Confirm the classified contract and the access the position needs [119]'
+  - 'Obtain the written commitment before a pre-employment request; plan a start within 45 days of the grant [119]'
+  - 'Check for current eligibility elsewhere before requesting a new investigation [119] [122]'
+  official_url: https://www.law.cornell.edu/cfr/text/32/117.10
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [119, 122]
+  conflicts: []
+
+- id: facility-clearance-sponsorship
+  name: Entity eligibility (facility clearance) and its sponsorship (32 CFR 117.9)
+  what: >
+    A firm cannot apply for its own entity eligibility determination; a government contracting activity or a cleared
+    contractor sponsors it when the firm needs access to compete or perform, on a legitimate government requirement [120]
+    [146]. The firm must be organised under U.S. law with a record of integrity; its senior management official, facility
+    security officer and insider-threat official must hold eligibility; foreign ownership, control or influence must not be
+    disqualifying [120]. An interim determination is at the agency's sole discretion; while a determination is invalidated
+    the firm may not bid on new classified work [120]. DCSA's roadmap puts the package review at day 20 and the key officials'
+    questionnaires and fingerprints at day 45; the government funds the processing; no end-to-end time is given [146].
+  governing_text: 32 CFR §117.9; DCSA Facility Clearance Branch sponsorship roadmap
+  applies_when: 'Any firm without an entity eligibility determination that needs to hire or assign cleared staff [120]'
+  binds: [clear-start, plan]
+  steps:
+  - 'Find a sponsor with a bona fide need and the DD 254 or pre-award authorization [146]'
+  - 'Submit the NISS package; clear the SMO, FSO and ITPSO [120] [146]'
+  - 'Mitigate FOCI where it applies [120]'
+  official_url: https://www.law.cornell.edu/cfr/text/32/117.9
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [120, 146]
+  conflicts: []
+
+- id: temporary-eligibility
+  name: Temporary (interim) eligibility (SEAD 8; 32 CFR 117.10(l))
+  what: >
+    Government-wide policy on temporary eligibility dates from Security Executive Agent Directive 8 of May 18, 2020 [121];
+    for contractors it is implemented at §117.10(l): granted only where no adverse information is found, limited to one year
+    without approval, valid at its level but not for RD, COMSEC or NATO information before the final grant, with SCI and SAP
+    access a separate decision of the granting authority; non-U.S. citizens are ineligible; withdrawal is not a denial and
+    cannot be appealed [119]. No public figure reports how often contractor applicants receive it or how long the decision
+    takes [127].
+  governing_text: SEAD 8 (2020); 32 CFR §117.10(l)
+  applies_when: 'A sponsored hire whose final determination will not arrive before the work must start [119]'
+  binds: [clear-start]
+  steps:
+  - 'Submit the questionnaire and fingerprints; the determination follows the initial checks [119] [146]'
+  - 'Confirm the customer accepts an interim for the work and the facility (synthesis)'
+  official_url: https://www.law.cornell.edu/cfr/text/32/117.10
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [119, 121, 127, 146]
+  conflicts:
+  - 'The SEAD 8 body could not be read; the operative text is carried from §117.10(l) [119] [121].'
+
+- id: reciprocity-sead-7
+  name: Reciprocity of investigations and adjudications (SEAD 7)
+  what: >
+    An agency accepts a background investigation and a national security adjudication by an authorized agency unless an
+    exception applies: new adjudicatively relevant information; an investigation more than seven years old; an adjudication
+    recorded with an exception; a Bond Amendment disqualifier where SCI, SAP or RD access is needed; an agency-specific
+    requirement the Security Executive Agent approved; an interim, limited or one-time grant; or a current denial or
+    revocation, with ineligibility for at least a year [122]. Polygraphs are accepted when they match the receiving agency's
+    requirement, reciprocity cannot be denied for want of one, and the polygraph is scheduled after a preliminary
+    determination [122]. The determination is due within five business days of receipt and records within ten [122].
+    GAO found the government's reciprocity data inconsistent and incomplete, agency systems often lacking the needed
+    information, and contractors left without status updates [145].
+  governing_text: SEAD 7 (effective November 9, 2018); 32 CFR §117.10(a)(6), (h)
+  applies_when: 'Any hire who holds or held eligibility granted by another agency or contractor sponsor [122]'
+  binds: [clear-start, select, attract]
+  steps:
+  - 'Collect level, investigation date and whether the grant was final [122]'
+  - 'Submit the request on acceptance; escalate at five business days [122] [145]'
+  official_url: https://archive.dni.gov/files/NCSC/documents/Regulations/SEAD-7_BI_ReciprocityU.pdf
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [119, 122, 145]
+  conflicts:
+  - 'The five-day standard is a rule, not a measured outcome; GAO could not establish how often it is met [145].'
+
+- id: adjudicative-guidelines-sead-4
+  name: National security adjudicative guidelines (SEAD 4) and the Bond Amendment
+  what: >
+    Thirteen guidelines govern every eligibility decision: allegiance, foreign influence, foreign preference, sexual
+    behaviour, personal conduct, financial considerations, alcohol, drug involvement, psychological conditions, criminal
+    conduct, handling protected information, outside activities and use of information technology, weighed under the
+    whole-person concept, with listed conditions that raise and that mitigate each concern [123]. The Bond Amendment bars
+    eligibility outright for an unlawful drug user or addict, with no waiver, and bars SCI, SAP and RD access after a
+    sentence with a year's incarceration, a dishonourable discharge or a finding of mental incompetence [123]. The
+    guidelines apply to contractors as covered individuals [123]. A vendor's count of 624 published DOHA appeal decisions
+    for 2024 found financial issues outnumbered all other issues combined [151].
+  governing_text: SEAD 4 (effective June 8, 2017), Appendices A and B; 50 U.S.C. 3343 (Bond Amendment)
+  applies_when: 'Every sponsored hire and every reciprocity exception for new information [123] [122]'
+  binds: [clear-start, select]
+  steps:
+  - 'Do not pre-screen on the guidelines; the firm is not the adjudicator (synthesis)'
+  - 'Expect financial questions to be the common sticking point and the whole-person weighing to decide them [123] [151]'
+  official_url: https://www.energy.gov/sites/prod/files/2018/02/f48/SEAD4_20170608.pdf
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [122, 123, 151]
+  conflicts:
+  - 'The DOHA pattern rests on a vendor tally; the DOHA record itself is a todo [151].'
+
+- id: e-verify-federal-contractor
+  name: E-Verify for federal contractors (FAR 22.18; 52.222-54)
+  what: >
+    The clause goes into solicitations and contracts over $150,000 except work performed only outside the United States,
+    periods of performance under 120 days, and commercial and COTS items [129]. A contractor not yet enrolled enrolls as a
+    federal contractor within 30 calendar days of award; new hires are verified within 3 business days after the date of
+    hire; employees assigned to the contract within 90 calendar days of enrollment or award or 30 days after assignment,
+    whichever is later [128]. No re-verification is required for an employee already verified, holding an active
+    Confidential, Secret or Top Secret clearance, or credentialed after a completed HSPD-12 investigation [128]. The clause
+    flows down to service and construction subcontracts over $3,500 performed in the United States [128].
+  governing_text: FAR 22.1803; FAR 52.222-54 (Jan 2025)
+  applies_when: 'Contracts over $150,000, 120 days or longer, with work in the United States [129]'
+  binds: [clear-start, plan]
+  steps:
+  - 'Enroll within 30 days of award [128]'
+  - 'Initiate verification within 3 business days of each hire date [128]'
+  official_url: https://www.acquisition.gov/far/52.222-54
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [128, 129]
+  conflicts: []
+
+- id: form-i-9
+  name: Form I-9 employment eligibility verification (USCIS M-274)
+  what: >
+    Section 2 must be completed within three business days of the date employment begins, on the first day for a job of
+    fewer than three business days [130]. The employee chooses which acceptable documents to present and the employer cannot
+    specify them; the documents are examined in the employee's physical presence unless the employer qualifies for the
+    alternative procedure open to E-Verify participants; receipts are accepted for a limited period [130].
+  governing_text: 8 U.S.C. 1324a; USCIS Handbook for Employers M-274
+  applies_when: 'Every hire for pay in the United States [130]'
+  binds: [clear-start]
+  steps:
+  - 'Section 1 by the first day; Section 2 within three business days [130]'
+  - 'Let the employee choose the documents; keep the export assessment on a separate form [130] [131]'
+  official_url: https://uscis.gov/i-9-central/form-i-9-resources/handbook-for-employers-m-274/40-completing-section-2-employer-review-and-verification
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [130, 131]
+  conflicts:
+  - 'The Section 1 page failed to fetch; its first-day rule is carried from the Section 2 page''s structure and is a todo [130].'
+
+- id: export-control-deemed-exports
+  name: Deemed exports and the U.S.-person rule in hiring (ITAR; DOJ employer fact sheet)
+  what: >
+    Releasing or transferring technical data to a foreign person in the United States is an export, deemed to go to every
+    country of that person's citizenship or permanent residency [132]. A U.S. person is a lawful permanent resident or a
+    protected individual under 8 U.S.C. 1324b(a)(3), which includes citizens, nationals, refugees and asylees [133] [131].
+    The Justice Department's fact sheet tells employers not to state that the export rules require a citizenship, to assess
+    only positions that work with controlled items, to keep that assessment apart from the Form I-9 without limiting document
+    choice, and to apply to State or Commerce for an authorization before a non-U.S. person does the work [131]. Settlements
+    for "citizens only" postings ran from $365,000 to $500,000 per employer in 2023 [49] [50].
+  governing_text: 22 CFR §§120.50, 120.62; 15 CFR part 734 (EAR); 8 U.S.C. 1324b; DOJ IER employer fact sheet (rev. March 2024)
+  applies_when: 'Any position that handles ITAR or EAR technical data or items [131] [132]'
+  binds: [clear-start, attract, select, offer]
+  steps:
+  - 'Identify the controlled positions and assess only those, after the offer and apart from the I-9 [131]'
+  - 'Apply for the authorization before a non-U.S. person is given access [131] [132]'
+  official_url: https://www.justice.gov/crt/media/1287536/dl
+  pending_changes:
+  - status: suspended
+    date: '2026-07-24'
+    text: 'The $100,000 H-1B payment remains uncollected after the First Circuit declined to stay the June 2026 vacatur; the appeal was undecided as of September 2026, while the D.C. district court upheld the proclamation in the Chamber of Commerce case (2025-12-23) and that appeal is pending in the D.C. Circuit [143] [225] [226].'
+  as_of: '2026-10-22'
+  sources: [49, 50, 131, 132, 133, 143, 225, 226]
+  conflicts:
+  - 'Two district courts have reached opposite conclusions on the H-1B proclamation; the Massachusetts vacatur governs collection nationwide for now [143] [225].'
+
+- id: fcra-background-checks
+  name: Background reports under the Fair Credit Reporting Act (FTC employer guidance)
+  what: >
+    Before obtaining a consumer report the employer gives a written, stand-alone disclosure that is not part of the
+    application, obtains written permission, and certifies compliance to the reporting company [136]. Before taking an
+    adverse action it gives the person a copy of the report and the summary of rights so the person can dispute it; after
+    the action it sends a notice with the reporting company's name and contact, a statement that the company did not make
+    the decision, and the rights to dispute and to a free report within 60 days [136]. Investigative reports built on
+    interviews carry extra notices, and some states restrict credit reports in hiring [136].
+  governing_text: 15 U.S.C. 1681 et seq.; FTC business guidance (2016, modified 2020)
+  applies_when: 'Any hire screened through a third-party background report [136]'
+  binds: [clear-start, select, offer]
+  steps:
+  - 'Stand-alone disclosure and written permission before the report [136]'
+  - 'Pre-adverse-action notice with the report and the rights summary; adverse-action notice after [136]'
+  official_url: https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-employers-need-know
+  pending_changes:
+  - status: final
+    date: '2026-04-18'
+    text: 'New York State limits employer credit checks, joining fourteen states, DC and Puerto Rico; several of these laws except positions requiring a security clearance [218].'
+  as_of: '2026-10-22'
+  sources: [136, 218]
+  conflicts:
+  - 'The FTC states no waiting period between the two notices; state law and case law supply one in practice (todo).'
+  - 'The state credit-check and fair-chance overlays are states.yaml records (sweep 8) resting on vendor and advocacy compilations [216] [217] [218], statutes pending (t-8001).'
+
+- id: cac-credentialing
+  name: Common Access Card sponsorship and investigative standards (32 CFR parts 157 and 161)
+  what: >
+    A contractor employee is sponsored for a CAC by a DoD official, and only for both physical access to a DoD facility and
+    network logon, or recurring physical access to multiple facilities for six months or more [138]. No card is issued
+    without the required background investigation: at minimum a favourable FBI fingerprint check and a NACI or equivalent
+    submitted to the investigative provider [138]; a card may be issued on an interim basis on a favourable National Agency
+    Check, with the final determination on the completed investigation [137]. Interim credentials are not transferable or
+    reciprocally accepted; a denial or revocation can be reapplied for after one year; contractors are registered and
+    re-verified every six months through TASS [137] [138]. An employee credentialed after a completed HSPD-12 investigation
+    is exempt from E-Verify re-verification [128].
+  governing_text: 32 CFR part 157 (79 FR 55624); 32 CFR §161.7 (79 FR 709, as amended); HSPD-12
+  applies_when: 'Any contractor hire who needs a DoD facility or network on a recurring basis [138]'
+  binds: [clear-start, onboard]
+  steps:
+  - 'Government sponsor registers the request in TASS; fingerprints and the investigation submission precede issuance [138]'
+  - 'Interim card on a favourable National Agency Check; final on the completed investigation [137]'
+  official_url: https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-F/part-157
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [128, 137, 138]
+  conflicts: []
+
+- id: dod-8140-cyber-workforce
+  name: Cyberspace workforce qualification (DoDM 8140.03)
+  what: >
+    Contractors must be fully qualified for the cyberspace work roles they fill, and contracted support personnel must meet
+    the foundational qualification, by education, training or a listed certification, on commencement of the work [139].
+    Government and military personnel have nine months for the foundational and twelve for the resident qualification;
+    anyone unqualified without a waiver is removed from the role; waivers are limited to severe constraints and six months;
+    twenty hours a year of continuing development are required [139]. The manual's implementation ran to three years from
+    February 2023 for all workforce elements [139].
+  governing_text: DoDM 8140.03 (February 15, 2023); DoDD 8140.01; the contract's cyber workforce terms
+  applies_when: 'Any DoD contract position coded to a cyberspace work role [139]'
+  binds: [clear-start, select, develop]
+  steps:
+  - 'Read the contract for the work-role codes and the qualification required [139]'
+  - 'Verify the foundational certification before the start date [139]'
+  official_url: https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/814003p.PDF
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [139]
+  conflicts: []
+
+- id: drug-free-workplace
+  name: Drug-free workplace (FAR 26.5; 52.226-7) after the DFARS testing clause was reserved
+  what: >
+    Contracts above the simplified acquisition threshold, other than commercial products and services and work outside the
+    United States, require a policy statement, an awareness program, employee reporting of workplace drug convictions within
+    five days, notice to the contracting officer within ten and action within thirty; the subpart requires no drug testing
+    [135]. The DFARS clause that required DoD contractors on classified and other sensitive work to run a testing program,
+    252.223-7004, is reserved as of the May 7, 2026 DFARS change, and Part 223 no longer carries the drug-free work force
+    subpart [134]. Testing is therefore a matter of firm policy and state law, not a federal contract requirement, unless a
+    customer writes one into the contract (synthesis).
+  governing_text: 41 U.S.C. chapter 81; FAR subpart 26.5; FAR 52.226-7; DFARS 252.223-7004 (reserved)
+  applies_when: 'Contracts above the simplified acquisition threshold performed in the United States [135]'
+  binds: [clear-start, onboard]
+  steps:
+  - 'Publish the policy and run the awareness program within 30 days of award [135]'
+  - 'Review any testing policy written for the old DFARS clause against state law (synthesis)'
+  official_url: https://www.acquisition.gov/far/subpart-26.5
+  pending_changes:
+  - status: final
+    date: '2026-05-07'
+    text: 'DFARS 252.223-7004 Drug-Free Work Force reserved; the rulemaking citation is a todo [134].'
+  as_of: '2026-10-21'
+  sources: [134, 135]
+  conflicts:
+  - 'The Federal Register notice that removed the DFARS clause was not found; the acquisition.gov page is the only source [134].'
+
+- id: title-vii-national-security-exception
+  name: Title VII national security exception (42 U.S.C. 2000e-2(g))
+  what: >
+    It is not an unlawful employment practice to refuse to hire or to discharge an individual for a position subject to a
+    requirement imposed in the interest of national security under a statute or executive order where the individual has
+    not fulfilled or has ceased to fulfill that requirement [140]. The exception covers the clearance condition on an offer;
+    it does not cover a citizenship restriction the law does not require, which remains a citizenship-status violation [131]
+    [49].
+  governing_text: 42 U.S.C. §2000e-2(g)
+  applies_when: 'Any position conditioned on a clearance or another national-security requirement [140]'
+  binds: [clear-start, select, offer]
+  steps:
+  - 'Condition the offer on the requirement the contract imposes, not on a proxy for it [140] [131]'
+  official_url: https://www.law.cornell.edu/uscode/text/42/2000e-2
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [49, 131, 140]
+  conflicts: []
+
+# ---- onboard and develop stages (sweep 5, 2026-10-21) ----
+- id: training-repayment-and-stay-or-pay
+  name: Training repayment and stay-or-pay provisions (CFPB; state laws; the withdrawn federal positions)
+  what: >
+    The Consumer Financial Protection Bureau treats training repayment provisions as employer-driven debt, found nearly 10
+    percent of workers covered in 2020, documented repayment demands far above training cost and usurious interest, and
+    said it would evaluate them under consumer financial law [166]. California bars, for contracts entered after January 1,
+    2026, any employment-contract term requiring repayment of training, education, relocation, signing or retention amounts
+    for leaving before a date, with exceptions for a transferable credential under a separate, at-cost, prorated agreement,
+    for signing bonuses on stated conditions, and for approved apprenticeships, and with no repayment on a termination
+    except for misconduct; $5,000 or actual damages, injunction and fees [167]. Colorado allows repayment only for training
+    distinct from normal on-the-job training, at reasonable cost declining proportionally over two years, with $5,000 per
+    worker penalties and consumer-credit treatment [168]; Connecticut bars promissory notes as a condition of employment
+    [168]. The NLRB general counsel's memoranda against stay-or-pay terms were rescinded and the FTC rule that would have
+    treated some provisions as noncompetes never took effect [168] [169].
+  governing_text: 'Cal. Bus. & Prof. Code §16608 and Labor Code §926 (AB 692); Colo. Rev. Stat. §8-2-113; Conn. law; CFPB issue spotlight (2023)'
+  applies_when: 'Any agreement that makes a worker repay training, a bonus or relocation on leaving; strictest where the worker is in California or Colorado [167] [168]'
+  binds: [develop, offer, retain]
+  steps:
+  - 'Check the worker''s state; the statutes go to states.yaml in sweep 8 [167] [168]'
+  - 'If a term is used at all: separate agreement, transferable credential, actual cost, prorated, no interest, nothing on termination without misconduct [167] [168]'
+  official_url: https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-consumer-risks-posed-by-employer-driven-debt/full-report/
+  pending_changes:
+  - status: final
+    date: '2026-01-01'
+    text: 'California AB 692 applies to contracts entered after this date [167].'
+  - status: pending-implementation
+    date: '2027-02-13'
+    text: 'New York''s Trapped at Work Act (signed 2025-12-19; chapter amendment 2026-02-13) makes employment promissory notes unenforceable, with exceptions for bonuses, relocation assistance and tuition for a transferable credential; fines $1,000–$5,000 per violation [212] [211].'
+  - status: pending-implementation
+    date: '2027-06-30'
+    text: 'Washington ESHB 1155 treats repayment and forfeiture terms tied to working in one''s field as void noncompetes, excepting educational-expense agreements that expire within 18 months [210].'
+  as_of: '2026-10-22'
+  sources: [166, 167, 168, 169, 210, 211, 212]
+  conflicts:
+  - 'The California, New York, Connecticut, Colorado and Wyoming terms rest on law-firm summaries [167] [168] [211] [212]; Washington''s is the statute [210]; states.yaml carries the per-state overlay (sweep 8) with the statutes pending (t-8001).'
+
+- id: noncompete-agreements-federal-status
+  name: Noncompete agreements after the FTC rule's vacatur
+  what: >
+    The 2024 federal rule banning most noncompetes was held beyond the Commission's authority by a district court; on
+    September 5, 2025 the Commission voted 3–1 to dismiss its appeals and accede to the vacatur, leaving noncompetes to
+    state law and to case-by-case enforcement [169]. The state map (bans, income thresholds, notice rules) is a sweep-8
+    record. A noncompete on a trained and cleared engineer is therefore a state question and a retention question, not a
+    federal one (synthesis).
+  governing_text: 'Ryan LLC v. FTC (N.D. Tex. 2024), vacatur acceded to September 5, 2025; state statutes'
+  applies_when: 'Any restrictive covenant in an offer or a training agreement [169]'
+  binds: [develop, offer, retain, handover]
+  steps:
+  - 'Check the state before drafting; the federal rule is gone [169]'
+  official_url: https://ftc.gov/news-events/news/press-releases/2025/09/federal-trade-commission-files-accede-vacatur-non-compete-clause-rule
+  pending_changes:
+  - status: final
+    date: '2026-07-01'
+    text: 'Tennessee HB 1034 voids noncompetes for workers earning under $70,000 [209].'
+  - status: pending-implementation
+    date: '2027-06-30'
+    text: 'Washington ESHB 1155 voids every noncompetition covenant regardless of signing date, keeps nonsolicitation terms capped at 18 months and requires notice to affected workers by 2027-10-01 [210].'
+  as_of: '2026-10-22'
+  sources: [169, 209, 210]
+  conflicts:
+  - 'The state map rests on a vendor tracker [209] except Washington [210]; states.yaml carries the per-state overlay (sweep 8) with the statutes pending (t-8001).'
+
+- id: flsa-training-time
+  name: Compensable training time under the FLSA (29 CFR 785.27)
+  what: >
+    For non-exempt employees, time in lectures, meetings and training programs counts as hours worked unless all four
+    conditions hold: outside normal hours, voluntary, not job related, and no other work performed at the same time [170].
+    Required onboarding, certification study the job needs and in-hours courses are paid time (synthesis from [170]).
+  governing_text: '29 U.S.C. 201 et seq.; 29 CFR 785.27–785.32; DOL Fact Sheet #22'
+  applies_when: 'Any training of non-exempt staff; exempt professionals are outside the rule but the cost rules still apply [170] [175]'
+  binds: [onboard, develop]
+  steps:
+  - 'Treat required and job-related training as paid hours unless all four conditions are met [170]'
+  official_url: https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [170, 175]
+  conflicts: []
+
+- id: far-31-205-44-training-costs
+  name: Allowability of training and education costs (FAR 31.205-44)
+  what: >
+    Training and education related to the field in which the employee works or may reasonably be expected to work are
+    allowable costs, except overtime for training, salaries for attending undergraduate or part-time graduate classes in
+    working hours absent unusual circumstances, full-time graduate education beyond two school years or the program length,
+    grants and scholarships to institutions, training for other than bona fide employees, and contributions to dependents'
+    college savings [175]. The allowable cost sits in the indirect pools and the rates [148].
+  governing_text: FAR 31.205-44; FAR 31.203
+  applies_when: 'Cost-type contracts and any contract whose rates are built from allowable cost [175]'
+  binds: [develop, onboard, plan]
+  steps:
+  - 'Keep training to employees and to the field of the work; document the relation [175]'
+  - 'Budget it in the indirect rates for the cost accounting period [148]'
+  official_url: https://www.acquisition.gov/far/31.205-44
+  pending_changes: []
+  as_of: '2026-10-21'
+  sources: [148, 175]
+  conflicts: []
+
+- id: section-127-educational-assistance
+  name: Educational assistance programs (IRC §127)
+  what: >
+    Up to $5,250 per employee per calendar year of educational assistance is excludable from wages, the amount adjusted for
+    the cost of living for taxable years after 2026; it covers tuition, fees, books, supplies and equipment, and since
+    March 27, 2020, with no end date after the 2025 amendments, principal and interest on the employee's own qualified
+    education loans; the program must be a separate written plan for the exclusive benefit of employees, and employees must
+    be told it exists and what its terms are [174].
+  governing_text: 26 U.S.C. §127; IRS FS-2026-10; Publication 5993 (sample plan)
+  applies_when: 'Any employer paying for an employee''s education or student loans [174]'
+  binds: [develop, offer, retain]
+  steps:
+  - 'Adopt the written plan; notify employees; track the $5,250 per person per year [174]'
+  official_url: https://irs.gov/newsroom/updates-to-frequently-asked-questions-about-educational-assistance-programs
+  pending_changes:
+  - status: final
+    date: '2027-01-01'
+    text: 'The $5,250 limit is indexed for taxable years beginning after 2026 [174].'
+  as_of: '2026-10-21'
+  sources: [174]
+  conflicts: []
+
+# ---- retain and handover stages (sweep 6, 2026-10-22) ----
+- id: nispom-reporting-and-continuous-vetting
+  name: Reporting duties and continuous vetting for cleared employees (32 CFR 117.8; SEAD 3)
+  what: >
+    The contractor reports to the cognizant security agency adverse information about cleared employees from verified
+    sources, and the duty survives the employee's termination; suspicious contacts; deaths, name changes, terminations
+    and citizenship changes; an employee who no longer wants eligibility or classified work; refusal to sign the SF 312;
+    and changes in the firm's ownership, name, address, key management personnel, bankruptcy or foreign ownership [189].
+    Cleared employees themselves report under SEAD 3: unofficial foreign travel at least five days before departure,
+    continuing foreign contacts, foreign financial interests, bankruptcies, liens, garnishments and debts over 120 days
+    delinquent, arrests, alcohol or drug treatment, cohabitants and marriages, conflicting outside employment, and
+    concerns about other cleared individuals; failure to report can affect eligibility [190]. Enrolment in continuous
+    vetting covered 78 percent of the population in FY2026 Q3, industry about 984,000 enrollments [54] [126].
+  governing_text: 32 CFR §117.8; SEAD 3 (2016); SEAD 6 (continuous evaluation); Trusted Workforce 2.0
+  applies_when: 'Every contractor with cleared employees, throughout employment and at separation [189]'
+  binds: [retain, handover, onboard]
+  steps:
+  - 'Brief each cleared hire on the SEAD 3 self-reporting list and the firm''s reporting channel [190]'
+  - 'Report terminations and status changes; keep reporting adverse information after separation [189]'
+  official_url: https://www.law.cornell.edu/cfr/text/32/117.8
+  pending_changes:
+  - status: pending-implementation
+    date: '2028-09'
+    text: 'Full continuous-vetting enrolment planned for September 2028 [54].'
+  as_of: '2026-10-22'
+  sources: [54, 126, 189, 190]
+  conflicts:
+  - 'The SEAD 3 PDF has no machine-readable text; its terms are carried from an agency''s summary [190].'
+
+- id: key-personnel-substitution-clause
+  name: Key-personnel substitution and notice clauses (agency clauses; HHSAR 352.237-75 as the example)
+  what: >
+    Where a contract names key personnel, they are essential to performance and cannot be diverted, replaced or
+    announced as changed without the contracting officer's written consent; the HHS clause requires at least 30 days'
+    notice before a voluntary move with a justification and a replacement whose skills, experience and credentials meet
+    or exceed the requirement, and the maximum practicable notice when a person is terminated for cause or leaves on less
+    than 30 days [188]. Before award, a proposed key person's unavailability must be reported at GAO's standard [108].
+    Other agencies' clauses set their own periods and standards (todo).
+  governing_text: Agency key-personnel clauses (e.g., 48 CFR 352.237-75); the solicitation's key-personnel terms; GAO Orion
+  applies_when: 'Any contract or proposal naming key personnel [188] [108]'
+  binds: [handover, retain, offer, plan]
+  steps:
+  - 'Read the clause for the notice period and the approval standard before any move [188]'
+  - 'Keep a qualified substitute identified for each named person [188]'
+  official_url: https://www.law.cornell.edu/cfr/text/48/352.237-75
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [108, 188]
+  conflicts:
+  - 'One agency''s clause is carried; the FAR has no government-wide key-personnel clause, and agency terms vary [188].'
+
+- id: no-poach-and-non-solicitation
+  name: No-poach agreements and non-solicitation terms (DOJ/FTC worker antitrust guidelines, 2025)
+  what: >
+    Agreements between competing employers not to recruit, solicit or hire each other's workers are illegal even without
+    actual harm and may be prosecuted as felonies; agreements to align or coordinate compensation, even a starting point,
+    are wage-fixing; no-hire or no-solicit terms get an effects analysis only when subordinate and collateral to a
+    legitimate collaboration and reasonably necessary to it; exchanging competitively sensitive compensation information,
+    including through third parties or algorithms, may be unlawful; the guidelines replace the 2016 HR guidance [187].
+  governing_text: 'Sherman Act §1; DOJ/FTC Antitrust Guidelines for Business Activities Affecting Workers (January 2025)'
+  applies_when: 'Any teaming, subcontract or prime relationship with hiring or pay terms [187]'
+  binds: [retain, plan, attract]
+  steps:
+  - 'No bare no-hire terms; scope any non-solicit to the collaboration [187]'
+  - 'No compensation information exchange with competitors or primes [187]'
+  official_url: https://www.ftc.gov/system/files/ftc_gov/pdf/p251201antitrustguidelinesbusinessactivitiesaffectingworkers2025.pdf
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [187]
+  conflicts: []
+
+- id: warn-act
+  name: Worker Adjustment and Retraining Notification Act
+  what: >
+    Employers with 100 or more employees, not counting those with under six months' service or under 20 hours a week,
+    must give at least 60 calendar days' written notice before a plant closing or mass layoff affecting 50 or more
+    employees at a single site, with exceptions for unforeseeable business circumstances, faltering companies and natural
+    disasters [191]. A contract loss at a site can be such an event for a firm above the threshold; most small firms are
+    below it and owe only what state law and their own promises require (synthesis).
+  governing_text: 29 U.S.C. 2101 et seq.; 20 CFR part 639
+  applies_when: 'Employers with 100 or more employees facing a site-level loss of 50 or more jobs [191]'
+  binds: [handover, retain, plan]
+  steps:
+  - 'Count employees against the threshold before a contract ends; give 60 days where it applies [191]'
+  official_url: https://www.dol.gov/general/topic/termination/plantclosings
+  pending_changes:
+  - status: final
+    date: '2026-03-17'
+    text: 'Washington''s 2025 notice act (50 employees; 60 days; 50 affected in 30 days) was amended by ESB 6106; fifteen states now have mini-WARN laws, several with 90-day notice [215] [213].'
+  as_of: '2026-10-22'
+  sources: [191, 213, 214, 215]
+  conflicts:
+  - 'The state thresholds rest on a 2024 benefits-broker chart [214] except Washington [215]; states.yaml carries the per-state overlay (sweep 8) with the statutes pending (t-8001); the Ohio entry in [213] could not be confirmed.'
+
+- id: service-contract-transition-rules
+  name: Successor-contractor rules after the nondisplacement order's revocation
+  what: >
+    Executive Order 14055 had given qualified employees on a federal service contract a right of first refusal with the
+    successor contractor; EO 14148 revoked it on January 20, 2025, the Department of Labor removed 29 CFR part 9 effective
+    December 22, 2025, and the FAR Council had never issued the implementing clause, so the right never bound contractors
+    [186]. A worker on a lost recompete therefore has no federal claim on the successor's payroll; the Service Contract Act's
+    wage and benefit floors still attach to the successor contract [101].
+  governing_text: 'EO 14148 (2025); 90 FR (2025-12-22), rescission of 29 CFR part 9; 41 U.S.C. chapter 67 (SCA)'
+  applies_when: 'Any service contract ending, recompeted or transitioning [186]'
+  binds: [handover, retain, plan]
+  steps:
+  - 'Do not imply a right of first refusal; state the successor''s terms as unknown until known [186]'
+  official_url: https://www.govinfo.gov/content/pkg/FR-2025-12-22/html/2025-23626.htm
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [101, 186]
+  conflicts: []
+
+# ---- plan stage (sweep 7, 2026-10-22) ----
+- id: far-37-104-personal-services
+  name: Personal services contracts and the limit on customer direction (FAR 37.104)
+  what: >
+    A personal services contract is one characterized by the employer-employee relationship it creates between the
+    government and the contractor's personnel, and agencies may not award one unless a statute authorizes it [197]. The
+    relationship arises when contractor personnel are subject to the relatively continuous supervision and control of a
+    government officer or employee; giving orders for a specific result, with the right to reject the product, does not by
+    itself create it [197]. The descriptive elements are performance on site, government-furnished tools, services applied
+    to the agency's integral effort, comparable civil-service work, a need lasting beyond a year, and a nature requiring
+    government direction [197]. For staffing, the customer may set the qualifications the contract requires and may
+    accept or reject the product, including by approving named staff where the contract provides for it, but a customer
+    that selects, directs and rates the firm's individual employees is moving toward the relationship the rule forbids
+    (synthesis).
+  governing_text: FAR 37.104; 5 U.S.C. 3109 (the example authority)
+  applies_when: 'Every service contract on which the customer takes a role in who is hired and how they are supervised [197]'
+  binds: [plan, select, onboard, retain]
+  steps:
+  - 'Frame customer approval of staff as a contract requirement, not a hiring decision; keep supervision with the firm [197] (synthesis)'
+  official_url: https://www.acquisition.gov/far/37.104
+  pending_changes:
+  - status: proposed
+    date: '2026-06-23'
+    text: 'FAR Case 2026-002 proposes to reorganise Part 37 (definitions and subpart 37.5 removed; performance-based acquisition consolidated in 37.1; other policies moved to a new 37.8) with no stated change of policy, and the Council is considering moving every clause to subpart 52.4; the citation may move even if the rule does not [228] [227].'
+  as_of: '2026-10-22'
+  sources: [197, 227, 228]
+  conflicts:
+  - 'The fetched proposed-rule text did not reach the personal-services section, so 37.104''s new number is unknown (t-8006).'
+
+- id: limitations-on-subcontracting
+  name: Limitations on subcontracting (FAR 52.219-14)
+  what: >
+    On a small business set-aside or sole-source services contract, the prime will not pay more than 50 percent of the
+    amount paid by the government for contract performance to subcontractors that are not similarly situated entities;
+    50 percent for supplies excluding materials, 85 percent for general construction, 75 percent for special trades; a
+    similarly situated entity shares the prime's program status and is small under the subcontract's NAICS code, and its
+    own subcontracting counts against the cap; compliance is measured by the end of the base term and each option period,
+    or of each order [198].
+  governing_text: FAR 52.219-14 (Oct 2022); 15 U.S.C. 657s; 13 CFR 125.6
+  applies_when: 'Set-aside and sole-source contracts and orders under subparts 19.5, 19.8, 19.13, 19.14 and 19.15 [198]'
+  binds: [plan, attract]
+  steps:
+  - 'Track the subcontracted share against the limit through each period [198]'
+  official_url: https://www.acquisition.gov/far/52.219-14
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [198]
+  conflicts:
+  - 'The penalty provision (15 U.S.C. 645(d)) is not on the clause page and is a todo.'
+
+- id: consent-to-subcontract
+  name: Consent to subcontract (FAR 52.244-2)
+  what: >
+    Without an approved purchasing system, the contractor needs the contracting officer's advance consent for any
+    cost-reimbursement, time-and-materials or labor-hour subcontract and for fixed-price subcontracts above the threshold,
+    with notice describing the supplies or services, the type, the proposed subcontractor and the price; consent does not
+    make any cost allowable or relieve the contractor of responsibility for performance [199].
+  governing_text: FAR 44.2; FAR 52.244-2 (Jun 2020)
+  applies_when: 'Cost-type, T&M, labor-hour and certain fixed-price prime contracts [199]'
+  binds: [plan, attract]
+  steps:
+  - 'Send the notice and obtain consent before the partner''s people start [199]'
+  official_url: https://www.acquisition.gov/far/52.244-2
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [199]
+  conflicts: []
+
+- id: prompt-payment-and-accelerated-payment
+  name: Payment timing (Prompt Payment Act; FAR 32.009)
+  what: >
+    Where the contract sets no date, payment is due 30 days after receipt of a proper invoice, an improper invoice is
+    returned within 7 days, and interest is paid automatically on late payments [202]; agencies provide accelerated
+    payments to small business contractors with a goal of 15 days, and primes that receive accelerated payment pass it to
+    small business subcontractors within 15 days [201].
+  governing_text: 31 U.S.C. chapter 39; 5 CFR part 1315; FAR 32.009; FAR 52.232-40
+  applies_when: 'Every federal invoice; the 15-day goal for small business primes and subcontractors [201] [202]'
+  binds: [plan, clear-start, develop]
+  steps:
+  - 'Invoice promptly and properly; plan payroll against the 30-day default, not the 15-day goal [202] [201]'
+  official_url: https://www.law.cornell.edu/cfr/text/5/1315.4
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [201, 202]
+  conflicts: []
+
+- id: applicant-record-retention
+  name: Applicant and selection record retention (29 CFR 1602.14; UGESP; state rules)
+  what: >
+    Application forms and records of hiring, promotion, transfer, lay-off, termination, pay and selection for training are
+    kept one year from the record or the personnel action, whichever is later, an involuntarily terminated employee's
+    records one year from termination, and all relevant records until final disposition once a charge is filed [200].
+    The Uniform Guidelines require records by race, sex and ethnic group sufficient to compute adverse impact [31].
+    California's automated-decision rules require four-year retention [40]. The contractor-specific record duties under
+    the EO 11246 regulations, the Internet Applicant rule among them, go with those regulations on October 26, 2026 [86].
+  governing_text: 29 CFR 1602.14 (as amended 2024); 29 CFR 1607.4 and 1607.15; state ADS rules; 41 CFR 60-1.12 until 2026-10-26
+  applies_when: 'Every employer covered by Title VII; longer periods where state AI-hiring rules apply [200] [40]'
+  binds: [plan, select, attract]
+  steps:
+  - 'Keep application and selection records a year from the decision and until disposition of any charge [200]'
+  - 'Keep applicant-flow data for the adverse-impact computation [31]; four years where California''s rules apply [40]'
+  official_url: https://www.law.cornell.edu/cfr/text/29/1602.14
+  pending_changes:
+  - status: final
+    date: '2026-10-26'
+    text: 'The OFCCP record-keeping duties under 41 CFR part 60-1 (two-year retention for larger contractors; the Internet Applicant rule) are removed with the EO 11246 regulations [86].'
+  as_of: '2026-10-22'
+  sources: [31, 40, 86, 200]
+  conflicts: []
+
+- id: proposal-staffing-representations
+  name: Proposal staffing representations (GAO bait-and-switch standard)
+  what: >
+    A protest succeeds where the awardee knowingly or negligently represented it would rely on specific personnel it
+    lacked a reasonable basis to furnish, the agency relied on the representation, and the reliance had a material effect
+    on the evaluation; GAO sustained such a protest where a proposed key person had committed to a competitor and said
+    so, the quotation still carried her résumé and the agency's strength for it supported an 18.5 percent price premium,
+    and recommended exclusion, termination and a new selection [203]. Before award, an offeror with actual knowledge that
+    a proposed key person has become unavailable must notify the agency [108].
+  governing_text: GAO bid-protest decisions (ASRC Federal Data Solutions, B-421008, 2022; Orion Government Services, B-422978, 2024); the solicitation's key-personnel terms
+  applies_when: 'Any proposal that names personnel the firm does not yet employ or cannot be sure of delivering [203] [108]'
+  binds: [plan, offer]
+  steps:
+  - 'Name only people with a current written commitment; refresh it before submission [203]'
+  - 'Notify the agency when a named person becomes unavailable [108]'
+  official_url: https://www.gao.gov/products/b-421008%2Cb-421008.2%2Cb-421008.3
+  pending_changes: []
+  as_of: '2026-10-22'
+  sources: [108, 203]
+  conflicts:
+  - 'The Court of Federal Claims reads the post-submission notification duty more narrowly than GAO [109].'
