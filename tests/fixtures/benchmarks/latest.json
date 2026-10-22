@@ -1,0 +1,10 @@
+{
+  "fetchedAt": "2026-10-22T10:23:00.000Z",
+  "endpoint": "https://api.bls.gov/publicAPI/v1/timeseries/data/",
+  "series": [
+    { "series": "JTS540099000000000JOR", "period": "M08", "year": "2026", "periodName": "August", "value": "5.0", "status": "ok" },
+    { "series": "JTS000000000000000QUR", "period": "M08", "year": "2026", "periodName": "August", "value": "2.0", "status": "ok" },
+    { "series": "CIU2020000000000A", "period": "Q03", "year": "2026", "periodName": "3rd Quarter", "value": "3.4", "status": "ok" },
+    { "series": "CMU2030000000000P", "period": null, "year": null, "periodName": null, "value": null, "status": "error", "error": "no data for the series (Series does not exist)" }
+  ]
+}

@@ -1,0 +1,33 @@
+name: Probe sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 11 * * 1' # weekly, after the deploy's refresh
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Exits non-zero when any BLS series or any reference URL marked recheck: true answers outside 2xx/206 or
+      # errors, so a blocked source shows red. HEAD or a ranged GET only; no bodies are read.
+      - run: npm run probe:sources
+      - name: Summary
+        if: always()
+        run: if [ -f probe-results.md ]; then cat probe-results.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: probe-results
+          path: |
+            probe-results.json
+            probe-results.md
