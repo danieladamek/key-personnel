@@ -6717,7 +6717,7 @@
   role_here: background
   role_note: the credit-check map; never a fact alone
   cited_in: ["10-the-state-overlay", "11-how-the-evidence-was-gathered", "9-what-changed-in-2025-26", "state-overlay-counts"]
-  used_by: ["changes/ch-032", "concepts/reading-a-gate", "gates/fcra-background-checks", "glossary/credit-check-law", "states/us-ak", "states/us-ar", "states/us-az", "states/us-ca", "states/us-co", "states/us-ct", "states/us-dc", "states/us-de", "states/us-fl", "states/us-ga", "states/us-hi", "states/us-ia", "states/us-id", "states/us-il", "states/us-in", "states/us-ks", "states/us-ky", "states/us-la", "states/us-ma", "states/us-md", "states/us-me", "states/us-mi", "states/us-mn", "states/us-mo", "states/us-ms", "states/us-mt", "states/us-nc", "states/us-nd", "states/us-ne", "states/us-nh", "states/us-nj", "states/us-nm", "states/us-nv", "states/us-ny", "states/us-oh", "states/us-ok", "states/us-or", "states/us-pa", "states/us-ri", "states/us-sc", "states/us-sd", "states/us-tn", "states/us-tx", "states/us-ut", "states/us-va", "states/us-vt", "states/us-wa", "states/us-wi", "states/us-wv", "states/us-wy"]
+  used_by: ["changes/ch-032", "concepts/reading-a-gate", "gates/fcra-background-checks", "glossary/credit-check-law", "states/us-ak", "states/us-al", "states/us-ar", "states/us-az", "states/us-ca", "states/us-co", "states/us-ct", "states/us-dc", "states/us-de", "states/us-fl", "states/us-ga", "states/us-hi", "states/us-ia", "states/us-id", "states/us-il", "states/us-in", "states/us-ks", "states/us-ky", "states/us-la", "states/us-ma", "states/us-md", "states/us-me", "states/us-mi", "states/us-mn", "states/us-mo", "states/us-ms", "states/us-mt", "states/us-nc", "states/us-nd", "states/us-ne", "states/us-nh", "states/us-nj", "states/us-nm", "states/us-nv", "states/us-ny", "states/us-oh", "states/us-ok", "states/us-or", "states/us-pa", "states/us-ri", "states/us-sc", "states/us-sd", "states/us-tn", "states/us-tx", "states/us-ut", "states/us-va", "states/us-vt", "states/us-wa", "states/us-wi", "states/us-wv", "states/us-wy"]
   verified: true
   recheck: true
 - n: 219
@@ -6769,7 +6769,7 @@
   role_here: background
   role_note: the AI-hiring map; never a fact alone
   cited_in: ["10-the-state-overlay", "11-how-the-evidence-was-gathered", "abstract", "state-overlay-counts"]
-  used_by: ["gates/ai-screening-laws", "states/us-ak", "states/us-ar", "states/us-az", "states/us-ca", "states/us-ct", "states/us-dc", "states/us-de", "states/us-fl", "states/us-ga", "states/us-hi", "states/us-ia", "states/us-id", "states/us-il", "states/us-in", "states/us-ks", "states/us-ky", "states/us-la", "states/us-ma", "states/us-md", "states/us-me", "states/us-mi", "states/us-mn", "states/us-mo", "states/us-ms", "states/us-mt", "states/us-nc", "states/us-nd", "states/us-ne", "states/us-nh", "states/us-nj", "states/us-nm", "states/us-nv", "states/us-ny", "states/us-oh", "states/us-ok", "states/us-or", "states/us-pa", "states/us-ri", "states/us-sc", "states/us-sd", "states/us-tn", "states/us-tx", "states/us-ut", "states/us-va", "states/us-vt", "states/us-wa", "states/us-wi", "states/us-wv", "states/us-wy"]
+  used_by: ["gates/ai-screening-laws", "states/us-ak", "states/us-al", "states/us-ar", "states/us-az", "states/us-ca", "states/us-ct", "states/us-dc", "states/us-de", "states/us-fl", "states/us-ga", "states/us-hi", "states/us-ia", "states/us-id", "states/us-il", "states/us-in", "states/us-ks", "states/us-ky", "states/us-la", "states/us-ma", "states/us-md", "states/us-me", "states/us-mi", "states/us-mn", "states/us-mo", "states/us-ms", "states/us-mt", "states/us-nc", "states/us-nd", "states/us-ne", "states/us-nh", "states/us-nj", "states/us-nm", "states/us-nv", "states/us-ny", "states/us-oh", "states/us-ok", "states/us-or", "states/us-pa", "states/us-ri", "states/us-sc", "states/us-sd", "states/us-tn", "states/us-tx", "states/us-ut", "states/us-va", "states/us-vt", "states/us-wa", "states/us-wi", "states/us-wv", "states/us-wy"]
   verified: true
   recheck: true
 - n: 221
@@ -8113,7 +8113,7 @@
   role_here: "data-source"
   role_note: "State LMI products for al-dow-lmi and the Huntsville OEWS indicator"
   cited_in: []
-  used_by: ["enablers/al-department-of-workforce", "enablers/al-dow-lmi", "indicators/ind-huntsville-oews-software-developers-may2024"]
+  used_by: ["enablers/al-department-of-workforce", "enablers/al-dow-lmi", "indicators/ind-huntsville-oews-software-developers-may2024", "indicators/ind-oews-software-developers-2025"]
   verified: true
   recheck: true
 - n: 266
@@ -9170,12 +9170,13 @@
   - 'NAICS 5415 Computer systems design and related services (CES6054150001): Aug. 2026 (p) 2,359.8; Sept. 2026 (p) 2,355.4 (Table B-1).'
   - 'NAICS 5417 Scientific research and development services (CES6054170001): Aug. 2026 (p) 916.3; Sept. 2026 (p) 918.3 (Table B-1).'
   - 'Release headline: total nonfarm +29,000 in September 2026; unemployment rate 4.2 percent.'
+  - 'Professional and business services, all employees (thousands): seasonally adjusted Sept. 2025 22,359; Aug. 2026 (p) 22,491; Sept. 2026 (p) 22,482; not seasonally adjusted Sept. 2025 22,433; Sept. 2026 (p) 22,547 (Table B-1, read 2026-10-22).'
   quotes:
   - "Transmission of material in this news release is embargoed until 8:30 a.m. (ET) Friday, October 2, 2026 (empsit.nr0.htm header)"
   role_here: "data-source"
   role_note: "Carries the four national CES industry employment levels used as defense-adjacent labor-market indicators."
   cited_in: []
-  used_by: ["indicators/ind-ces-aerospace-3364-aug2026", "indicators/ind-ces-computer-systems-5415-sep2026", "indicators/ind-ces-engineering-5413-sep2026", "indicators/ind-ces-scientific-rd-5417-sep2026"]
+  used_by: ["indicators/ind-ces-aerospace-3364-aug2026", "indicators/ind-ces-computer-systems-5415-sep2026", "indicators/ind-ces-engineering-5413-sep2026", "indicators/ind-ces-scientific-rd-5417-sep2026", "indicators/ind-us-pbs-employment-sep2026"]
   verified: true
   recheck: true
 - n: 302

@@ -3,11 +3,15 @@
 # primary_pending flag and the gate(s) it modifies. Schema: EXTENSIONS.md (states.yaml), extended in sweep 8.
 #
 # status vocabulary — pay_transparency: posting | on-request | pending | local-only | none-found;
-# salary_history_ban: statewide | local-only | preempted | unresolved | none-found; noncompete: void | void-from-2027 |
-# income-threshold | category-limits | sector-limits | common-law; stay_or_pay: statewide | pending | sector-limits | none-found;
+# salary_history_ban: statewide | retaliation-only | local-only | preempted | unresolved | none-found; noncompete: void | void-from-2027 |
+# income-threshold | category-limits | sector-limits | statutory-presumptions | common-law; stay_or_pay: statewide | pending | sector-limits | none-found;
 # ai_hiring: statewide | pending | local-only | none-found; cannabis_testing: statewide | medical-only | not-checked | none-found;
 # ban_the_box: private | public-only | not-checked | none-found; credit_check: statewide | disclosure-only | local-only | none-found;
 # mini_warn: statewide | reported | none-found.
+# Words added in sweep 9: retaliation-only = a statute bars refusing to hire, or retaliating, because an applicant declines to give
+# wage history, without barring the question; statutory-presumptions = a statute permits restrictive covenants and sets presumptively
+# reasonable durations and protectable interests. none-found = not listed in the named compilation as of its date or, where the
+# overlay cites the Code or the Legislature's own pages (Alabama, sweep 9), not found in the Code or the bill searches logged in queries.yaml.
 #
 # Provenance. The overlays rest on dated compilations read on 2026-10-22: Mercer's equal-pay roundup [207] and the posting-law
 # map [76] with the 2026 enactments [223] [224]; the DOL Women's Bureau map [208] (table unreadable); the Loio noncompete tracker
@@ -32,7 +36,7 @@
     gates:
     - pay-transparency-posting-laws
   salary_history_ban:
-    status: statute
+    status: retaliation-only
     text: Code of Alabama § 25-1-30(c) (Act 2019-519) bars an employer from refusing to interview, hire, promote or employ an applicant, or retaliating, because the applicant does not provide wage history; it does not bar requesting wage history and has no voluntary-disclosure clause [236]. The enrolled act carries identical wage-history text and an effective date on the first day of the third month after approval [237]. HB331 (2023), which would have added an inquiry ban, died in committee after referral on 2023-04-18 [238]. Codified text read on a mirror of the Code; official text pending.
     sources:
     - 236
@@ -42,7 +46,7 @@
     gates:
     - salary-history-bans
   noncompete:
-    status: statute
+    status: statutory-presumptions
     text: Code of Alabama §§ 8-1-190 to 8-1-197 (Act 2015-465, effective January 1, 2016) permit an employee to agree not to carry on a like business in a specified area, with restraints of two years or less presumed reasonable, and customer non-solicitation restraints of 18 months, or as long as post-separation consideration is paid, presumed reasonable [239] [240]. Job skills alone are not a protectable interest, the enforcing party bears the burden of proof on every element, and a court may void a restraint in part and reform it [239] [240]. The statute sets no wage threshold, notice period or income floor [239].
     sources:
     - 239
@@ -61,14 +65,15 @@
     - training-repayment-and-stay-or-pay
   ai_hiring:
     status: none-found
-    text: No Alabama statute regulating automated or AI-assisted hiring decisions was found. The 2026 Regular Session AI bills located (HB524, HB324, SB63) address state-agency rule review, chatbot age verification and health-plan coverage determinations, and none covers employment or hiring (synthesis from the researcher's bill-text searches).
-    sources: []
+    text: No employer-AI law is listed for Alabama in the October 2026 chart [220]. The 2026 Regular Session AI bills located in the Legislature's instruments (HB524, HB324, SB63) address state-agency rule review, chatbot age verification and health-plan coverage determinations, and none covers employment or hiring (synthesis from the bill searches logged in queries.yaml, slice 9).
+    sources:
+    - 220
     primary_pending: false
     gates:
     - ai-screening-laws
     - applicant-record-retention
   cannabis_testing:
-    status: statute
+    status: none-found
     text: Code of Alabama § 20-2A-6(a) (Act 2021-450, medical cannabis) states the chapter does not require any employer to permit, accommodate or allow medical cannabis use, does not prohibit or limit an employer from establishing or enforcing a drug testing policy, and establishes no right of action against an employer [253]. Alabama has no adult-use cannabis statute and no 2026 bill adding employment protection was located [253]. Read on a mirror of the Code; official text pending.
     sources:
     - 253
@@ -85,8 +90,9 @@
     - fair-chance-act-contractors
   credit_check:
     status: none-found
-    text: No Alabama statute or 2025–2026 bill restricting employer use of credit reports or credit history in employment was found; searches of the Legislature's instruments returned only other states' bills (synthesis from the researcher's searches).
-    sources: []
+    text: No Alabama restriction is listed in the credit-check guide, and the federal FCRA notice sequence applies [218]. Searches of the Legislature's instruments for 2025–2026 returned no bill restricting employer use of credit reports (synthesis from the searches logged in queries.yaml, slice 9).
+    sources:
+    - 218
     primary_pending: false
     gates:
     - fcra-background-checks
@@ -100,6 +106,8 @@
     gates:
     - warn-act
   sources:
+  - 218
+  - 220
   - 236
   - 237
   - 238

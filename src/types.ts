@@ -105,7 +105,7 @@ export interface Enabler extends RecordBase {
 }
 export interface Indicator extends RecordBase {
   value: string; reference_period: string; published: string; publisher: string; series: string; stages: StageId[]; note: string;
-  geo: Geo; sector: Sector; counterpart: string; series_confirmed?: 'api' | 'mirror' | 'none';
+  geo: Geo; sector: Sector; counterpart: string; counterpart_note?: string; series_confirmed?: 'api' | 'mirror' | 'none';
   constraints: string[]; metric_stages: StageId[];
 }
 export interface Link { id: string; from: string; to: string; relation: Relation; link: string; evidence: string; grade: string; legacy: string[]; sources: number[]; changes_affecting: string[] }

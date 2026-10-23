@@ -62,6 +62,7 @@ function Card({ i, twin, bls }: { i: Indicator; twin?: Indicator; bls: BlsLatest
           <span className="block text-xs bx-muted">beside: {twin.name}, {twin.reference_period} ({twin.publisher})</span>
         </p>
       ) : <p className="text-xs"><span className="bx-todo">counterpart {i.counterpart} is not an indicator record</span></p>)}
+      {!i.counterpart && typeof i.counterpart_note === 'string' && <p className="text-xs bx-muted" data-testid="counterpart-note">No national twin shown: {i.counterpart_note}</p>}
       <p className="text-xs bx-muted">{i.publisher} · published {i.published}</p>
       {i.note && <div className="text-sm"><Prose md={i.note} /></div>}
       <CiteList ns={i.sources} />

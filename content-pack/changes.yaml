@@ -1,5 +1,6 @@
 # changes.yaml — Key Personnel · dated entries for /changes (FAR Out schema): what changed and what is pending, 2025–26. Started in sweep 2.
-# status: proposed | announced | class-deviation | final | pending-implementation | suspended | withdrawn
+# status: proposed | announced | class-deviation | final | pending-implementation | suspended | withdrawn | expired
+# expired (sweep 9) = a provision, credit or bill that lapsed by its own terms, a sunset, or the end of a session without passage.
 - id: ch-001
   date: '2025-01-21'
   status: final

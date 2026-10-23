@@ -84,7 +84,7 @@ export const GRADE_ORDER = ['meta-analysis', 'field-experiment', 'quasi-experime
 /** Change-record and pending-change statuses (changes.yaml header). */
 export const STATUS_WORD: Record<string, string> = {
   proposed: 'proposed', announced: 'announced', 'class-deviation': 'class deviation', final: 'final',
-  'pending-implementation': 'pending implementation', suspended: 'suspended', withdrawn: 'withdrawn',
+  'pending-implementation': 'pending implementation', suspended: 'suspended', withdrawn: 'withdrawn', expired: 'expired',
 };
 export const CHANGE_STATUSES = Object.keys(STATUS_WORD);
 /** A change's date as recorded: a day, a month or a year, never padded to a day. */

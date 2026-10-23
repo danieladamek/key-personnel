@@ -9,7 +9,7 @@ FAR Out's keys apply unchanged (`n`, `key`, `tier`, `citation`, `url`, `year`, `
 ```yaml
   doi: 10.1037/apl0000994
   journal: Journal of Applied Psychology
-  study_design: meta-analysis        # meta-analysis | field-experiment | quasi-experimental | observational | practitioner-survey | regulation | guidance | report
+  study_design: meta-analysis        # meta-analysis | field-experiment | quasi-experimental | observational | practitioner-survey | regulation | guidance | report | dataset (v0.3: a statistical series or table, e.g. a BLS series page)
   population: 'US civilian jobs; k = 24 for structured interviews'   # as the work reports it
   effect: 'operational validity ρ = .42 for structured interviews'    # exactly as reported, with the statistic named
   peer_reviewed: true                 # false for working papers, reports and surveys
@@ -102,7 +102,7 @@ FAR Out's keys apply unchanged (`n`, `key`, `tier`, `citation`, `url`, `year`, `
 
 ## gates.yaml — regulatory and contractual gates (FAR Out field style)
 
-`id, name, what (cited), governing_text, applies_when (thresholds, cited), binds (stages), steps (cited), official_url, pending_changes (status/date/text), as_of, sources, conflicts`. Status vocabulary for `pending_changes` as FAR Out: `proposed | announced | class-deviation | final | pending-implementation | suspended`.
+`id, name, what (cited), governing_text, applies_when (thresholds, cited), binds (stages), steps (cited), official_url, pending_changes (status/date/text), as_of, sources, conflicts`. Status vocabulary for `pending_changes` and `changes.yaml` as FAR Out: `proposed | announced | class-deviation | final | pending-implementation | suspended | withdrawn`, plus `expired` (v0.3: a provision, credit or bill that lapsed by its own terms, a sunset, or the end of a session without passage).
 
 ## enablers.yaml — data, programs, references and tooling
 
@@ -193,3 +193,11 @@ One record per opening: pinned primary and secondary constraints, chosen levers,
 ## todo.yaml
 
 FAR Out schema (`id, kind, about, text, owner, where, what`); `kind` adds `hypothesis` for ledger adjudications awaiting a source.
+
+## v0.3 vocabulary additions (sweep 9)
+
+- `study_design: dataset` — a statistical series or table (a BLS series page, a state LMI table).
+- `todo.kind` adds `source` (a source to find or read) and `series` (a series ID to prove through the API).
+- `changes.status` and `pending_changes[].status` add `expired`.
+- `states.yaml` overlay statuses add `retaliation-only` (salary history) and `statutory-presumptions` (noncompete); `none-found` also covers an absence confirmed from the Code and the Legislature's bill search. Definitions are in the `states.yaml` header.
+- `indicators[].counterpart_note` — when `counterpart` is `''` on an Alabama or Huntsville figure, the reason no national twin is carried (an installation count; a figure on no national basis). The app shows the note where the twin would be.

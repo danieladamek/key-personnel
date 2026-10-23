@@ -232,7 +232,7 @@
   publisher: U.S. Bureau of Labor Statistics (OEWS)
   series: ''
   stages: [offer, attract]
-  note: 'computer and mathematical occupations: employment 5,260,110, mean $120,080; metro-area tables available [110]; an OEWS series ID is OE + U + area type + seven-digit area + six-digit industry + six-digit occupation (151252) + two-digit datatype, but the wage datatype codes live in a mapping file the sweep did not read, so no ID is carried (t-8005) [233]'
+  note: 'computer and mathematical occupations: employment 5,260,110, mean $120,080; metro-area tables available [110]; an OEWS series ID is OE + U + area type + seven-digit area + six-digit industry + six-digit occupation (151252) + two-digit datatype, but the wage datatype codes live in a mapping file the sweep did not read, so no ID is carried (t-8005) [233]. The Huntsville figure beside it is a May 2024 mean aged to June 2025 from the state table, one survey year earlier [265].'
   sources: [110, 233]
 
 - id: ind-contractor-comp-cap-2025
@@ -515,7 +515,7 @@
   publisher: Alabama Department of Workforce, Labor Market Information Division
   series: ''
   series_confirmed: none
-  counterpart: ''
+  counterpart: ind-oews-software-developers-2025
   geo: huntsville-msa
   sector: all
   stages:
@@ -655,7 +655,7 @@
   publisher: U.S. Bureau of Labor Statistics, CES (state and area)
   series: SMS01000006000000001
   series_confirmed: api
-  counterpart: ''
+  counterpart: ind-us-pbs-employment-sep2026
   geo: al
   sector: all
   stages:
@@ -672,7 +672,7 @@
   publisher: U.S. Bureau of Labor Statistics, CES (state and area)
   series: SMU01266206000000001
   series_confirmed: api
-  counterpart: ''
+  counterpart: ind-us-pbs-employment-sep2026
   geo: huntsville-msa
   sector: all
   stages:
@@ -1033,6 +1033,7 @@
   series: ''
   series_confirmed: none
   counterpart: ''
+  counterpart_note: "no national figure on the same basis is in the pack; the county profile mixes ACS, LAUS, OEWS and LEHD sources (todo)"
   geo: huntsville-msa
   sector: all
   stages:
@@ -1240,6 +1241,7 @@
   series: ''
   series_confirmed: none
   counterpart: ''
+  counterpart_note: "an installation headcount has no national twin"
   geo: huntsville-msa
   sector: defense
   stages:
@@ -1250,3 +1252,20 @@
     '
   sources:
   - 312
+- id: ind-us-pbs-employment-sep2026
+  name: Professional and business services employment, United States
+  value: 22,482 thousand (preliminary, seasonally adjusted); 22,547 thousand not seasonally adjusted
+  reference_period: September 2026
+  published: 2026-10
+  publisher: U.S. Bureau of Labor Statistics, The Employment Situation, Table B-1
+  series: ''
+  series_confirmed: none
+  counterpart: ind-al-pbs-employment-sep2026
+  geo: us
+  sector: all
+  stages:
+  - plan
+  - attract
+  note: Supersector 60 (NAICS 54, 55, 56); September 2025 was 22,359 thousand seasonally adjusted and 22,433 thousand not seasonally adjusted, the comparison basis for the Alabama (seasonally adjusted) and Huntsville (not seasonally adjusted) twins [301].
+  sources:
+  - 301
